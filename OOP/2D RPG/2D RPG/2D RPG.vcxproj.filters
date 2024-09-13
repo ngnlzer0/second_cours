@@ -13,18 +13,48 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Исходные файлы\Map">
+      <UniqueIdentifier>{3de6bca0-7e32-4a11-a132-d77bfaf2da20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Unit">
+      <UniqueIdentifier>{f7ab347e-a83e-4652-b5b9-a077f803d489}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\posittion">
+      <UniqueIdentifier>{57354eb0-5f4d-4428-b8e7-41e3f5ed6df9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Weapon">
+      <UniqueIdentifier>{10018c66-a7cb-425f-addd-aed1d6fff26f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="Unit.cpp">
+      <Filter>Исходные файлы\Unit</Filter>
+    </ClCompile>
     <ClCompile Include="Map.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Исходные файлы\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="posittion.cpp">
+      <Filter>Исходные файлы\posittion</Filter>
+    </ClCompile>
+    <ClCompile Include="weapon.cpp">
+      <Filter>Исходные файлы\Weapon</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Unit.h">
+      <Filter>Исходные файлы\Unit</Filter>
+    </ClInclude>
     <ClInclude Include="Map.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>Исходные файлы\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="posittion.h">
+      <Filter>Исходные файлы\posittion</Filter>
+    </ClInclude>
+    <ClInclude Include="weapon.h">
+      <Filter>Исходные файлы\Weapon</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
