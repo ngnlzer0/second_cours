@@ -1,0 +1,17 @@
+﻿  Map.cpp
+/Map.cpp(1,1): error C1083: Не удается открыть файл источник: Map.cpp: No such file or directory,
+  (компиляция исходного файла "/Map.cpp")
+  
+  Unit.cpp
+/Unit.cpp(1,1): error C1083: Не удается открыть файл источник: Unit.cpp: No such file or directory,
+  (компиляция исходного файла "/Unit.cpp")
+  
+  posittion.cpp
+/posittion.cpp(1,1): error C1083: Не удается открыть файл источник: posittion.cpp: No such file or directory,
+  (компиляция исходного файла "/posittion.cpp")
+  
+  weapon.cpp
+/weapon.cpp(1,1): error C1083: Не удается открыть файл источник: weapon.cpp: No such file or directory,
+  (компиляция исходного файла "/weapon.cpp")
+  
+  Создание кода...
