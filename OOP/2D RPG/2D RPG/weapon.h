@@ -2,10 +2,10 @@
 class weapon
 {
 private:
-	double damage;
-	double block_damage;
-	double missing;
+	float damage;
+	const float block_damage;
+	const float missing;
 public:
-	double Get_damage() { return damage; }
+	float Get_damage() { return damage; }
 };
 
