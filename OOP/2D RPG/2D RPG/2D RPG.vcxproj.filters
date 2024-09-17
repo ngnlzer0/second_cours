@@ -30,31 +30,31 @@
     <ClCompile Include="Main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Unit.cpp">
+    <ClCompile Include="Unit\Unit.cpp">
       <Filter>Исходные файлы\Unit</Filter>
     </ClCompile>
-    <ClCompile Include="Map.cpp">
+    <ClCompile Include="Map\Map.cpp">
       <Filter>Исходные файлы\Map</Filter>
     </ClCompile>
-    <ClCompile Include="posittion.cpp">
-      <Filter>Исходные файлы\posittion</Filter>
-    </ClCompile>
-    <ClCompile Include="weapon.cpp">
+    <ClCompile Include="Unit\All_weapon\weapon\weapon.cpp">
       <Filter>Исходные файлы\Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="Unit\All_weapon\All_weapon.cpp">
+      <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Unit.h">
+    <ClInclude Include="Unit\Unit.h">
       <Filter>Исходные файлы\Unit</Filter>
     </ClInclude>
-    <ClInclude Include="Map.h">
+    <ClInclude Include="Map\Map.h">
       <Filter>Исходные файлы\Map</Filter>
     </ClInclude>
-    <ClInclude Include="posittion.h">
-      <Filter>Исходные файлы\posittion</Filter>
-    </ClInclude>
-    <ClInclude Include="weapon.h">
+    <ClInclude Include="Unit\All_weapon\weapon\weapon.h">
       <Filter>Исходные файлы\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="Unit\All_weapon\All_weapon.h">
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

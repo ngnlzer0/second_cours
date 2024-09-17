@@ -1,24 +1,13 @@
-#include <SFML/Graphics.hpp>
+#include<iostream>
+#include"Unit/Unit.h"
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
-
-    while (window.isOpen())
-    {
-        sf::Event event;
-        while (window.pollEvent(event))
-        {
-            if (event.type == sf::Event::Closed)
-                window.close();
-        }
-
-        window.clear();
-        window.draw(shape);
-        window.display();
-    }
-
-    return 0;
+	weapon Sword(3.4, 11, 15, 23.44);
+	weapon Bow(0, -3, 11, -23.4);
+	
+	Sword.Show_W();
+	std::cout<<std::endl;
+	Bow.Show_W();
+	return 0;
 }

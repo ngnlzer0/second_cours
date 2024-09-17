@@ -1,17 +1,8 @@
-﻿  Map.cpp
-/Map.cpp(1,1): error C1083: Не удается открыть файл источник: Map.cpp: No such file or directory,
-  (компиляция исходного файла "/Map.cpp")
-  
-  Unit.cpp
-/Unit.cpp(1,1): error C1083: Не удается открыть файл источник: Unit.cpp: No such file or directory,
-  (компиляция исходного файла "/Unit.cpp")
-  
-  posittion.cpp
-/posittion.cpp(1,1): error C1083: Не удается открыть файл источник: posittion.cpp: No such file or directory,
-  (компиляция исходного файла "/posittion.cpp")
-  
+﻿  Main.cpp
+C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\Main.cpp(6,28): warning C4305: аргумент: усечение из "double" в "float"
+C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\Main.cpp(6,15): warning C4305: аргумент: усечение из "double" в "float"
+C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\Main.cpp(7,24): warning C4305: аргумент: усечение из "double" в "float"
   weapon.cpp
-/weapon.cpp(1,1): error C1083: Не удается открыть файл источник: weapon.cpp: No such file or directory,
-  (компиляция исходного файла "/weapon.cpp")
-  
+  Unit.cpp
   Создание кода...
+  2D RPG.vcxproj -> C:\Git.repos\second_cours\OOP\2D RPG\Binary\x64\Debug\2D RPG.exe
