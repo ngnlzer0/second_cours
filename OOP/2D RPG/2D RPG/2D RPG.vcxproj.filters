@@ -39,7 +39,7 @@
     <ClCompile Include="Unit\All_weapon\weapon\weapon.cpp">
       <Filter>Исходные файлы\Weapon</Filter>
     </ClCompile>
-    <ClCompile Include="Unit\All_weapon\All_weapon.cpp">
+    <ClCompile Include="Unit\All_weapon\Sword.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
@@ -53,7 +53,7 @@
     <ClInclude Include="Unit\All_weapon\weapon\weapon.h">
       <Filter>Исходные файлы\Weapon</Filter>
     </ClInclude>
-    <ClInclude Include="Unit\All_weapon\All_weapon.h">
+    <ClInclude Include="Unit\All_weapon\Sword.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

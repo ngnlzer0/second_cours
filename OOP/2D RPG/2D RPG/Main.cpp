@@ -1,13 +1,14 @@
-#include<iostream>
 #include"Unit/Unit.h"
 
 int main()
 {
-	weapon Sword(3.4, 11, 15, 23.44);
-	weapon Bow(0, -3, 11, -23.4);
+	weapon Sword1(Bow, 3.4, 11.0, 15.0, 23.44,11);
+	weapon Bow(Staff, -3.0, 11.0, -23.4,12.0,50);
 	
-	Sword.Show_W();
+	Show_weapon(Sword1);
 	std::cout<<std::endl;
-	Bow.Show_W();
+	Show_weapon(Bow);
+	Bow.Get_type_weapone();
+
 	return 0;
 }
