@@ -4,6 +4,7 @@ class Unit: public weapon
 {
 private:
 	double HP;
+	int stamina;
 public:
 
 	double Get_HP() { return HP; }
