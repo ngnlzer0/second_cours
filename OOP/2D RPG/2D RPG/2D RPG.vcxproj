@@ -141,6 +141,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Unit\All_weapon\Staff.cpp" />
+    <ClCompile Include="Unit\All_weapon\Sword_and_Shield.cpp" />
+    <ClCompile Include="Unit\All_weapon\Bow.cpp" />
+    <ClCompile Include="Unit\All_Armor\jacket.cpp" />
+    <ClCompile Include="Unit\All_Armor\pants.cpp" />
+    <ClCompile Include="Unit\All_Armor\helmet.cpp" />
+    <ClCompile Include="Unit\All_Armor\shoes.cpp" />
+    <ClCompile Include="Unit\All_Armor\Gloves.cpp" />
+    <ClCompile Include="Unit\All_Armor\Armor\Armor.cpp" />
     <ClCompile Include="Unit\All_weapon\Sword.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Map\Map.cpp" />
@@ -148,10 +157,21 @@
     <ClCompile Include="Unit\All_weapon\weapon\weapon.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Unit\All_weapon\Staff.h" />
+    <ClInclude Include="Unit\All_weapon\Sword_and_Shield.h" />
+    <ClInclude Include="Unit\All_weapon\Bow.h" />
+    <ClInclude Include="Unit\All_Armor\All_Armor.h" />
+    <ClInclude Include="Unit\All_Armor\jacket.h" />
+    <ClInclude Include="Unit\All_Armor\pants.h" />
+    <ClInclude Include="Unit\All_Armor\helmet.h" />
+    <ClInclude Include="Unit\All_Armor\shoes.h" />
+    <ClInclude Include="Unit\All_Armor\Gloves.h" />
+    <ClInclude Include="Unit\All_Armor\Armor\Armor.h" />
     <ClInclude Include="Unit\All_weapon\Sword.h" />
     <ClInclude Include="Map\Map.h" />
     <ClInclude Include="Unit\Unit.h" />
     <ClInclude Include="Unit\All_weapon\weapon\weapon.h" />
+    <ClInclude Include="Unit\All_weapon\All_weapon.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

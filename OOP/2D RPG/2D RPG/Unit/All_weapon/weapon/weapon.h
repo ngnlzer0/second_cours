@@ -3,10 +3,10 @@
 
 enum weapon_type
 {
-	Sword,
-	Bow,
-	Sword_and_shield,
-	Staff
+	Sword = 0,
+	Bow = 1,
+	Sword_and_shield = 2,
+	Staff = 3
 };
 
 class weapon
@@ -19,7 +19,7 @@ private:
 	double  missing;
 	int durability;
 public:
-    weapon(weapon_type g_Type = Sword, double g_damage = 0.0, double  g_weight = 0.0, double  g_block = 0.0, double  g_missing = 0.0, int g_durability = 0);
+    weapon(double g_damage = 0.0, double  g_weight = 0.0, double  g_block = 0.0, double  g_missing = 0.0, int g_durability = 0, weapon_type g_Type);
 
 	double  Get_damage() { return damage; }
 	double  Get_weight() { return weight; }

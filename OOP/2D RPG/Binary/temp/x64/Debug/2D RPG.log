@@ -1,2 +1,40 @@
-﻿  Main.cpp
-  2D RPG.vcxproj -> C:\Git.repos\second_cours\OOP\2D RPG\Binary\x64\Debug\2D RPG.exe
+﻿  Staff.cpp
+  Sword_and_Shield.cpp
+  Bow.cpp
+  jacket.cpp
+  pants.cpp
+  helmet.cpp
+  shoes.cpp
+  Gloves.cpp
+  Armor.cpp
+  Sword.cpp
+C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\Unit\All_Armor\Gloves.h(19,8): error C2548: "Gloves::Gloves": отсутствует аргумент, используемый по умолчанию для параметра 7.
+  (компиляция исходного файла "Unit/All_Armor/Gloves.cpp")
+  
+C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\Unit\All_Armor\Gloves.cpp(4,101): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+  Main.cpp
+C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\Unit\All_Armor\Gloves.h(4,6): error C2011: weapon_type: переопределение типа "enum"
+  (компиляция исходного файла "Main.cpp")
+      C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\Unit\All_weapon\weapon\weapon.h(4,6):
+       см. объявление "weapon_type"
+  
+C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\Unit\All_Armor\Gloves.h(19,8): error C2548: "Gloves::Gloves": отсутствует аргумент, используемый по умолчанию для параметра 7.
+  (компиляция исходного файла "Main.cpp")
+  
+C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\Main.cpp(13,20): warning C4129: "G": нераспознанная escape-последовательность символов
+C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\Main.cpp(13,20): warning C4129: "s": нераспознанная escape-последовательность символов
+C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\Main.cpp(13,20): warning C4129: "O": нераспознанная escape-последовательность символов
+C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\Main.cpp(13,20): warning C4129: "R": нераспознанная escape-последовательность символов
+C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\Main.cpp(13,20): warning C4129: "w": нераспознанная escape-последовательность символов
+  Map.cpp
+  Unit.cpp
+C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\Unit\All_Armor\Gloves.h(4,6): error C2011: weapon_type: переопределение типа "enum"
+  (компиляция исходного файла "Unit/Unit.cpp")
+      C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\Unit\All_weapon\weapon\weapon.h(4,6):
+       см. объявление "weapon_type"
+  
+C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\Unit\All_Armor\Gloves.h(19,8): error C2548: "Gloves::Gloves": отсутствует аргумент, используемый по умолчанию для параметра 7.
+  (компиляция исходного файла "Unit/Unit.cpp")
+  
+  weapon.cpp
+  Создание кода...
