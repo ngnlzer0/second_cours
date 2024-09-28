@@ -30,90 +30,30 @@
     <ClCompile Include="Main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Unit\Unit.cpp">
-      <Filter>Исходные файлы\Unit</Filter>
-    </ClCompile>
-    <ClCompile Include="Map\Map.cpp">
-      <Filter>Исходные файлы\Map</Filter>
-    </ClCompile>
-    <ClCompile Include="Unit\All_weapon\weapon\weapon.cpp">
+    <ClCompile Include="weapon.cpp">
       <Filter>Исходные файлы\Weapon</Filter>
     </ClCompile>
-    <ClCompile Include="Unit\All_weapon\Sword.cpp">
+    <ClCompile Include="Armor.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Unit\All_Armor\Armor\Armor.cpp">
+    <ClCompile Include="Unit.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Unit\All_Armor\Gloves.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Unit\All_Armor\shoes.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Unit\All_Armor\helmet.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Unit\All_Armor\pants.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Unit\All_Armor\jacket.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Unit\All_weapon\Bow.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Unit\All_weapon\Sword_and_Shield.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Unit\All_weapon\Staff.cpp">
+    <ClCompile Include="Hero.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Unit\Unit.h">
-      <Filter>Исходные файлы\Unit</Filter>
-    </ClInclude>
-    <ClInclude Include="Map\Map.h">
-      <Filter>Исходные файлы\Map</Filter>
-    </ClInclude>
-    <ClInclude Include="Unit\All_weapon\weapon\weapon.h">
+    <ClInclude Include="weapon.h">
       <Filter>Исходные файлы\Weapon</Filter>
     </ClInclude>
-    <ClInclude Include="Unit\All_weapon\Sword.h">
+    <ClInclude Include="Armor.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Unit\All_Armor\Armor\Armor.h">
+    <ClInclude Include="Unit.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Unit\All_Armor\Gloves.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Unit\All_Armor\shoes.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Unit\All_Armor\helmet.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Unit\All_Armor\pants.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Unit\All_Armor\jacket.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Unit\All_weapon\All_weapon.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Unit\All_Armor\All_Armor.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Unit\All_weapon\Bow.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Unit\All_weapon\Sword_and_Shield.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Unit\All_weapon\Staff.h">
+    <ClInclude Include="Hero.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
