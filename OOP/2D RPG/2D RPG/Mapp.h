@@ -1,7 +1,7 @@
 #pragma once
 
-const int HIGHT = 20;
-const int WIDTH = 30;
+const int HIGHT = 45;
+const int WIDTH = 60;
 
 enum object_in
 {

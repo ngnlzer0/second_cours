@@ -5,13 +5,19 @@
 
 int main()
 {
-	Hero Hero(100, 90, 60, 35, 30,300);
+	Unit Hero(100, 90, 60, 35, 30,300);
 	Unit Monstr;
+	Unit Ogr;
 	Monstr.attack_enemi(&Hero);
 	Hero.inventar.add_potion(3);
 	Hero.Healt_self();
+	Hero.inventar.add_stamina_pot(5);
+
+	weapon* Bow = new weapon;
+	Armor* shoes = new Armor;
 	
-	Hero.Swap_weapon(*weapon());
+	Hero.Swap_weapon(Bow);
+	Hero.Swap_armror(shoes);
 
 	return 0;
 }
