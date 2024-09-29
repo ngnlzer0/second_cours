@@ -1,7 +1,7 @@
 #include<SFML/Graphics.hpp>
 #include<SFML/Window.hpp>
 #include<SFML/System.hpp>
-#include"Hero.h"
+#include"Unit.h"
 
 int main()
 {

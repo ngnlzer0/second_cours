@@ -39,9 +39,6 @@
     <ClCompile Include="Unit.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Hero.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="potion.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
@@ -52,6 +49,15 @@
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="stamina_pot.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="cheast.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="position.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="input_manager.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
@@ -65,9 +71,6 @@
     <ClInclude Include="Unit.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Hero.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
     <ClInclude Include="potion.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
@@ -78,6 +81,15 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="stamina_pot.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="cheast.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="position.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="input_manager.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

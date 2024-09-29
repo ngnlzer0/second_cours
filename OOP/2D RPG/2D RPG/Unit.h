@@ -2,8 +2,9 @@
 #include"weapon.h"
 #include"Armor.h"
 #include"Inventors.h"
+#include"position.h"
 
-class Unit
+class Unit : virtual public position
 {
 private:
 	weapon* c_weapon;
@@ -23,7 +24,8 @@ public:
 
 	Inventors inventar;
 
-	Unit(const double max_weight = 50, const double g_max_hp = 150, const int g_max_stamina = 100, int g_speed = 50, double g_block = 40, double g_miss = 25);
+	Unit(int X = 0, int Y = 0, const double max_weight = 50, const double g_max_hp = 150, const int g_max_stamina = 100, int g_speed = 50
+		, double g_block = 40, double g_miss = 25);
 	~Unit() = default;
 
 	const double Get_max_HP() { return max_HP; }
