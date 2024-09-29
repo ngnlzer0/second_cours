@@ -21,6 +21,7 @@ private:
 public:
     weapon(double g_damage = 0.0, double  g_weight = 0.0, double  g_block = 0.0, double  g_missing = 0.0, 
 		int g_durability = 0, weapon_type g_Type = Sword, bool random = 1);
+	weapon* operator* () { return this; }
 
 	double  Get_damage() { return damage; }
 	double  Get_weight() { return weight; }

@@ -8,5 +8,10 @@ int main()
 	Hero Hero(100, 90, 60, 35, 30,300);
 	Unit Monstr;
 	Monstr.attack_enemi(&Hero);
+	Hero.inventar.add_potion(3);
+	Hero.Healt_self();
+	
+	Hero.Swap_weapon(*weapon());
+
 	return 0;
 }

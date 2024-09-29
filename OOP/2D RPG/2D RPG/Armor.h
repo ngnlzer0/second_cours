@@ -20,6 +20,7 @@ private:
 
 public:
 	Armor(double g_weight = 0.0, double  g_block = 0.0, double  g_missing = 0.0, int g_durability = 0, Armor_type g_type = helmet, bool random = 1);
+	Armor* operator* () { return this; }
 
 	double  Get_weight() { return weight; }
 	double  Get_block() { return block; }

@@ -1,12 +1,13 @@
 #pragma once
 #include"weapon.h"
 #include"Armor.h"
+#include"Inventors.h"
 
 class Unit
 {
 private:
-	weapon c_weapon;
-	Armor c_armor;
+	weapon* c_weapon;
+	Armor* c_armor;
 
 	const double max_HP;
 	const int max_stamina;
@@ -15,8 +16,14 @@ private:
 	int speed;
 	double block;
 	double miss;
+
+	const double max_weight;
+	double cur_weight;
 public:
-	Unit(const double g_max_hp = 150, const int g_max_stamina = 100, int g_speed = 50, double g_block = 40, double g_miss = 25);
+
+	Inventors inventar;
+
+	Unit(const double max_weight = 50, const double g_max_hp = 150, const int g_max_stamina = 100, int g_speed = 50, double g_block = 40, double g_miss = 25);
 	~Unit() = default;
 
 	const double Get_max_HP() { return max_HP; }
@@ -32,5 +39,9 @@ public:
 	
 	void received_damage(double minus_damage);
 	void attack_enemi(Unit* enemi);
+
+	void Healt_self();
+
+	void Swap_weapon(weapon* other);
 };
 
