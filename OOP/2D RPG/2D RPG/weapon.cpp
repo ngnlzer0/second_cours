@@ -19,3 +19,4 @@ weapon::weapon(double g_damage, double g_weight, double g_block, double g_missin
 }
 
 
+

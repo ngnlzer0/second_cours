@@ -147,6 +147,7 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Mapp.cpp" />
     <ClCompile Include="potion.cpp" />
+    <ClCompile Include="stamina_pot.cpp" />
     <ClCompile Include="Unit.cpp" />
     <ClCompile Include="weapon.cpp" />
   </ItemGroup>
@@ -156,6 +157,7 @@
     <ClInclude Include="Inventors.h" />
     <ClInclude Include="Mapp.h" />
     <ClInclude Include="potion.h" />
+    <ClInclude Include="stamina_pot.h" />
     <ClInclude Include="Unit.h" />
     <ClInclude Include="weapon.h" />
   </ItemGroup>

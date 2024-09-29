@@ -42,6 +42,13 @@ public:
 
 	void Healt_self();
 
+	weapon* Get_weapon() { return c_weapon; }
+	Armor* Get_armor() { return c_armor; }
+
+	void Set_new_weapon(weapon* new_weapon) { c_weapon = new_weapon; }
+	void Set_new_armor(Armor* new_armor) { c_armor = new_armor; }
+
 	void Swap_weapon(weapon* other);
+	void Swap_armror(Armor* other);
 };
 
