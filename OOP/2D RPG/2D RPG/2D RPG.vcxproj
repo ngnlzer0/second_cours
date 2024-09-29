@@ -142,10 +142,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Armor.cpp" />
-    <ClCompile Include="Hero.cpp" />
+    <ClCompile Include="cheast.cpp" />
+    <ClCompile Include="input_manager.cpp" />
     <ClCompile Include="Inventors.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Mapp.cpp" />
+    <ClCompile Include="position.cpp" />
     <ClCompile Include="potion.cpp" />
     <ClCompile Include="stamina_pot.cpp" />
     <ClCompile Include="Unit.cpp" />
@@ -153,9 +155,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Armor.h" />
-    <ClInclude Include="Hero.h" />
+    <ClInclude Include="cheast.h" />
+    <ClInclude Include="input_manager.h" />
     <ClInclude Include="Inventors.h" />
     <ClInclude Include="Mapp.h" />
+    <ClInclude Include="position.h" />
     <ClInclude Include="potion.h" />
     <ClInclude Include="stamina_pot.h" />
     <ClInclude Include="Unit.h" />
