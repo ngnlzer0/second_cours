@@ -143,13 +143,19 @@
   <ItemGroup>
     <ClCompile Include="Armor.cpp" />
     <ClCompile Include="Hero.cpp" />
+    <ClCompile Include="Inventors.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Mapp.cpp" />
+    <ClCompile Include="potion.cpp" />
     <ClCompile Include="Unit.cpp" />
     <ClCompile Include="weapon.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Armor.h" />
     <ClInclude Include="Hero.h" />
+    <ClInclude Include="Inventors.h" />
+    <ClInclude Include="Mapp.h" />
+    <ClInclude Include="potion.h" />
     <ClInclude Include="Unit.h" />
     <ClInclude Include="weapon.h" />
   </ItemGroup>
