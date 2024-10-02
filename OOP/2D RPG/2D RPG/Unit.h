@@ -24,8 +24,8 @@ public:
 
 	Inventors inventar;
 
-	Unit(int X = 0, int Y = 0, const double max_weight = 50, const double g_max_hp = 150, const int g_max_stamina = 100, int g_speed = 50
-		, double g_block = 40, double g_miss = 25);
+	Unit(int X = 0, int Y = 0, const double max_weight = 50, const double g_max_hp = 150, const int g_max_stamina = 100,
+		int g_speed = 50, double g_block = 40, double g_miss = 25);
 	~Unit() = default;
 
 	const double Get_max_HP() { return max_HP; }
@@ -43,6 +43,7 @@ public:
 	void attack_enemi(Unit* enemi);
 
 	void Healt_self();
+	void push_stamina_self();
 
 	weapon* Get_weapon() { return c_weapon; }
 	Armor* Get_armor() { return c_armor; }
@@ -50,7 +51,12 @@ public:
 	void Set_new_weapon(weapon* new_weapon) { c_weapon = new_weapon; }
 	void Set_new_armor(Armor* new_armor) { c_armor = new_armor; }
 
-	void Swap_weapon(weapon* other);
-	void Swap_armror(Armor* other);
+	bool aliwe() { if (this->Get_HP() <= 0) { delete this; return false; } return true; }
+
+	void Get_accet_monstr(Unit* other);
+	void user_step(Unit* other);
+	void Show_info();
 };
+
+void Fight(Unit* hero, Unit* monstr);
 

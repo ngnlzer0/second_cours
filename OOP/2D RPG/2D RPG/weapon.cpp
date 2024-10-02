@@ -3,8 +3,8 @@
 #include<time.h>
 
 weapon::weapon(double g_damage, double g_weight, double g_block, double g_missing, int g_durability, weapon_type g_Type, bool random)
-	:Type(g_Type), damage(Set_damage(g_damage)), weight(Set_weight(g_weight)), block(Set_block(g_block)),
-	missing(Set_missing(g_missing)), durability(Set_durability(g_durability))
+	:Type(g_Type), damage(g_damage), weight(g_weight),block(g_block),
+	missing(g_missing), durability(g_durability)
 {
 	if (random)
 	{
