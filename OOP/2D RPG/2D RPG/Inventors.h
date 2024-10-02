@@ -1,7 +1,7 @@
 #pragma once
 #include"potion.h"
 #include"stamina_pot.h"
-class Inventors : public potion, stamina_pot
+class Inventors : public potion, public stamina_pot
 {
 private:
 	double weight_inventors;

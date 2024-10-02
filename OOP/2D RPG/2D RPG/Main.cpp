@@ -5,19 +5,17 @@
 
 int main()
 {
-	Unit Hero(100, 90, 60, 35, 30,300);
-	Unit Monstr;
+	Unit hero;
+	Unit* Monstr = new Unit;
 	Unit Ogr;
-	Monstr.attack_enemi(&Hero);
-	Hero.inventar.add_potion(3);
-	Hero.Healt_self();
-	Hero.inventar.add_stamina_pot(5);
+	hero.inventar.add_potion(3);
+	hero.Healt_self();
+	hero.inventar.add_stamina_pot(5);
+	Monstr->inventar.add_potion(7);
+	Monstr->inventar.add_stamina_pot(5);
 
-	weapon* Bow = new weapon;
-	Armor* shoes = new Armor;
-	
-	Hero.Swap_weapon(Bow);
-	Hero.Swap_armror(shoes);
+	Fight(&hero, Monstr);
 
+	std::cout << "end program\n";
 	return 0;
 }
