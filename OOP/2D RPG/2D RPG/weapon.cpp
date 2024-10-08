@@ -8,7 +8,7 @@ weapon::weapon(double g_damage, double g_weight, double g_block, double g_missin
 {
 	if (random)
 	{
-		srand(time(NULL));
+		std::srand(std::time(NULL));
 		Type = static_cast<weapon_type>(rand()%5) ;
 		damage = rand() % 25 + 5;
 		weight = rand() % 15 + 5;
