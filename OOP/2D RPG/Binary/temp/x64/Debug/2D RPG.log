@@ -1,4 +1,6 @@
-﻿  Unit.cpp
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\Unit.cpp(15,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\Unit.cpp(28,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+﻿  Armor.cpp
+C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\Armor.cpp(10,23): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  weapon.cpp
+C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\weapon.cpp(11,23): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Создание кода...
   2D RPG.vcxproj -> C:\Git.repos\second_cours\OOP\2D RPG\Binary\x64\Debug\2D RPG.exe

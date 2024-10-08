@@ -12,7 +12,7 @@ Unit::Unit(int X, int Y, const double max_weight, const double g_max_hp, const i
 
 void Unit::received_damage(double minus_damage)
 {
-	srand(time(NULL));
+	std::srand(std::time(NULL));
 	if (rand() % 2 == 1)
 		c_armor->Set_durability(c_armor->Get_durability() - 1);
 	HP -= minus_damage;

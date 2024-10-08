@@ -7,7 +7,7 @@ Armor::Armor(double g_weight, double g_block, double g_missing, int g_durability
 {
 	if (random)
 	{
-		srand(time(NULL));
+		std::srand(std::time(NULL));
 		type = static_cast<Armor_type>(rand() % 5);
 		weight = rand() % 30 + 10;
 		block = rand() % 40 + 10;
