@@ -129,7 +129,6 @@ void Show_Matrix(double** Mat, const int SIZE)
 	}
 }
 
-
 int main()
 {
 

@@ -142,10 +142,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Armor.cpp" />
+    <ClCompile Include="Buttons.cpp" />
     <ClCompile Include="cheast.cpp" />
+    <ClCompile Include="Game.cpp" />
     <ClCompile Include="input_manager.cpp" />
     <ClCompile Include="Inventors.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Main_menu.cpp" />
     <ClCompile Include="Mapp.cpp" />
     <ClCompile Include="position.cpp" />
     <ClCompile Include="potion.cpp" />
@@ -155,9 +158,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Armor.h" />
+    <ClInclude Include="Buttons.h" />
     <ClInclude Include="cheast.h" />
+    <ClInclude Include="Game.h" />
     <ClInclude Include="input_manager.h" />
     <ClInclude Include="Inventors.h" />
+    <ClInclude Include="Main_menu.h" />
     <ClInclude Include="Mapp.h" />
     <ClInclude Include="position.h" />
     <ClInclude Include="potion.h" />
