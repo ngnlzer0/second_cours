@@ -3,6 +3,8 @@
 potion::potion(int g_regeneration_hp, double g_weight)
 	:regeneration_hp(10),weight(1.0),number_potion(0),All_Weight_potion(0)
 {
+	Potion_B = new Buttons({ 600,600 }, { 50,50 }, "", "",
+		"C:/Git.repos/second_cours/OOP/2D RPG/2D RPG/assets/16x16 Assorted RPG Icons/potions.png",{},true,{48,96,16,16});
 }
 
 void potion::add_potion(int number)

@@ -16,6 +16,9 @@ weapon::weapon(double g_damage, double g_weight, double g_block, double g_missin
 		missing = rand() % 25 + 5;
 		durability = rand() % 90 + 10;
 	}
+
+	weapon_B = new Buttons({ 800,800 }, { 100,100 }, "", "",
+		"C:/Git.repos/second_cours/OOP/2D RPG/2D RPG/assets/16x16 Assorted RPG Icons/weapons.png", {}, true, { 112,128,16,16 });
 }
 
 

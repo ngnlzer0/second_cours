@@ -17,6 +17,9 @@ private:
 	sf::Texture Setting_texture;
 	sf::Texture Exit_texture;
 
+	sf::Text Ex_text;
+	sf::Font font;
+
 public:
 	Main_menu();
 
@@ -25,5 +28,9 @@ public:
 	sf::RectangleShape& Get_Play() { return Play; };
 	sf::RectangleShape& Get_Setting() { return Setting; };
 	sf::RectangleShape& Get_Exit() { return Exit; };
+	sf::Text& Get_Ex_text() { return Ex_text; };
+
+	void Select_exit();
+	void Deselect_exit();
 };
 

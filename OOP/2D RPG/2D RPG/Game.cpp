@@ -8,12 +8,6 @@ Game::Game()
 
 	Mfont.loadFromFile("C:/Git.repos/second_cours/OOP/2D RPG/2D RPG/assets/font/Gothical.ttf");
 
-	sf::Vector2f window_middle_point(windowSize.width / 2, windowSize.height / 2 );
-
-	sf::Vector2f standart_size_button = { 300,200 };
-	Play = Buttons({window_middle_point.x,window_middle_point.y - 250}, standart_size_button, "First Button", Mfont, 
-		"C:/Git.repos/second_cours/OOP/2D RPG/2D RPG/assets/buttons/Buttons/Rect/PlayIcon/Default.png");
-
 }
 
 void Game::HandleInput()
@@ -32,12 +26,12 @@ void Game::HandleInput()
 void Game::Update(float delta_Time)
 {
 	sf::Vector2i mouse_pos = sf::Mouse::getPosition(window);
-	Play.Deselect();
 
-	if (Play.Get_global_bounds().contains(sf::Vector2f(mouse_pos.x, mouse_pos.y)))
-	{
-		Play.Select();
-	}
+	Main_Menu.Deselect_exit();
+
+	if (Main_Menu.Get_Exit().getGlobalBounds().contains(sf::Vector2f(mouse_pos))) 
+		Main_Menu.Select_exit();
+	
 }
 
 void Game::Render()
@@ -50,6 +44,7 @@ void Game::Render()
 		window.draw(Main_Menu.Get_Play());
 		window.draw(Main_Menu.Get_Setting());
 		window.draw(Main_Menu.Get_Exit());
+		window.draw(Main_Menu.Get_Ex_text());
 	}
 
 	window.display();

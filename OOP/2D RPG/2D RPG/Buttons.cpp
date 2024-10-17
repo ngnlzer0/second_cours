@@ -4,27 +4,30 @@
 void Buttons::draw(sf::RenderTarget& target, sf::RenderStates states) const
 {
 	target.draw(Background);
-	//target.draw(title);
+	target.draw(title);
 }
 
-Buttons::Buttons(const sf::Vector2f& position, const sf::Vector2f& Size, const std::string& title,const sf::Font font_m, const std::string name_text_file_un)
+Buttons::Buttons(const sf::Vector2f& position, const sf::Vector2f& Size, const std::string& title,
+	const std::string font_m, const std::string name_text_file_un, sf::Vector2f Size_text_u, bool change_S_t,sf::IntRect Size_texture)
+	:font_file(font_m), name_textuer_file(name_text_file_un),Size_text(Size_text)
 {
-	const std::string font_or = "C:/Git.repos/second_cours/OOP/2D RPG/2D RPG/assets/font/Gothical.ttf";
-	this->name_text_file = name_text_file_un;
 
 	Background.setOrigin({ Size.x / 2, Size.y / 2 });
 	Background.setPosition(position);
 	Background.setSize(Size);
-	Background.setOutlineColor(sf::Color::Black);
 
-	texture.loadFromFile(name_text_file);
-	Background.setTexture(&texture);
-	Background.setOutlineThickness(2);
+	if (change_S_t)
+		texture.loadFromFile(name_textuer_file, Size_texture);
+	else
+		texture.loadFromFile(name_textuer_file);
 	Background.setTexture(&texture);
 
-	this->title.setFont(font_m);
+	font.loadFromFile(font_file);
+	this->title.setFont(font);
 	this->title.setString(title);
-	this->title.setPosition(position.x + 50, position.y + 50);
+	this->title.setOrigin(this->title.getLocalBounds().width / 2, this->title.getLocalBounds().height / 2);
+	this->title.setPosition(position);
+	this->title.setScale(Size_text_u);
 }
 
 void Buttons::Select()
