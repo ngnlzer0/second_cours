@@ -1,5 +1,6 @@
 #pragma once
 #include<iostream>
+#include"Buttons.h"
 
 enum weapon_type
 {
@@ -18,6 +19,8 @@ private:
 	double  block;
 	double  missing;
 	int durability;
+
+	Buttons* weapon_B;
 public:
     weapon(double g_damage = 0.0, double  g_weight = 0.0, double  g_block = 0.0, double  g_missing = 0.0, 
 		int g_durability = 0, weapon_type g_Type = Sword, bool random = 1);
@@ -36,5 +39,7 @@ public:
 	int Set_durability(int g_durability) { return (g_durability > 0 ? durability = g_durability : durability = 0); }
 	weapon_type Get_type_weapon() { std::cout << "you weapon is " << Type; return Type; }
 
+
+	Buttons* Get_Buttons() { return weapon_B; }
 };
 

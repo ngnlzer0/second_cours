@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Buttons.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|solutionrelative:2D RPG\\Buttons.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Main_menu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|solutionrelative:2D RPG\\Main_menu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -11,56 +15,12 @@
       "RelativeMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|solutionrelative:2D RPG\\Main_menu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|solutionrelative:2D RPG\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|solutionrelative:2D RPG\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\cheast.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|solutionrelative:2D RPG\\cheast.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\input_manager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|solutionrelative:2D RPG\\input_manager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|solutionrelative:2D RPG\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Buttons.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|solutionrelative:2D RPG\\Buttons.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Inventors.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|solutionrelative:2D RPG\\Inventors.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\cheast.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|solutionrelative:2D RPG\\cheast.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\library\\SFML-2.6.1\\include\\SFML\\Graphics\\Glyph.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:library\\SFML-2.6.1\\include\\SFML\\Graphics\\Glyph.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Inventors.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|solutionrelative:2D RPG\\Inventors.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Buttons.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|solutionrelative:2D RPG\\Buttons.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Armor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|solutionrelative:2D RPG\\Armor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Armor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|solutionrelative:2D RPG\\Armor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|solutionrelative:2D RPG\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\weapon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -71,24 +31,16 @@
       "RelativeMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|solutionrelative:2D RPG\\weapon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\position.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|solutionrelative:2D RPG\\position.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|solutionrelative:2D RPG\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\position.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|solutionrelative:2D RPG\\position.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Buttons.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|solutionrelative:2D RPG\\Buttons.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Mapp.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|solutionrelative:2D RPG\\Mapp.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Unit.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|solutionrelative:2D RPG\\Unit.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\stamina_pot.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|solutionrelative:2D RPG\\stamina_pot.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|solutionrelative:2D RPG\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\potion.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -99,14 +51,59 @@
       "RelativeMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|solutionrelative:2D RPG\\potion.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\position.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|solutionrelative:2D RPG\\position.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Mapp.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|solutionrelative:2D RPG\\Mapp.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\cheast.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|solutionrelative:2D RPG\\cheast.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Armor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|solutionrelative:2D RPG\\Armor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\input_manager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|solutionrelative:2D RPG\\input_manager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Unit.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|solutionrelative:2D RPG\\Unit.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\stamina_pot.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|solutionrelative:2D RPG\\stamina_pot.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.42.34321\\include\\vector||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+      "AbsoluteMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\cheast.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|solutionrelative:2D RPG\\cheast.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vanal\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\weapon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Inventors.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|solutionrelative:2D RPG\\Inventors.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\library\\SFML-2.6.1\\include\\SFML\\Graphics\\Glyph.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:library\\SFML-2.6.1\\include\\SFML\\Graphics\\Glyph.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Armor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|solutionrelative:2D RPG\\Armor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\position.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|solutionrelative:2D RPG\\position.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\stamina_pot.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1E9A4602-9403-4A15-B576-699CA058439C}|2D RPG\\2D RPG.vcxproj|solutionrelative:2D RPG\\stamina_pot.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.42.34321\\include\\vector||{3B902123-F8A7-4915-9F01-361F908088D0}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Unit\\All_weapon\\type_weapon\\weapon\\weapon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -127,7 +124,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -147,120 +144,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
+              "Title": "Buttons.h",
+              "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Buttons.h",
+              "RelativeDocumentMoniker": "2D RPG\\Buttons.h",
+              "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Buttons.h",
+              "RelativeToolTip": "2D RPG\\Buttons.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-16T09:03:42.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "weapon.h",
+              "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\weapon.h",
+              "RelativeDocumentMoniker": "2D RPG\\weapon.h",
+              "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\weapon.h",
+              "RelativeToolTip": "2D RPG\\weapon.h",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-17T17:59:36.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Game.cpp",
+              "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Game.cpp",
+              "RelativeDocumentMoniker": "2D RPG\\Game.cpp",
+              "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Game.cpp",
+              "RelativeToolTip": "2D RPG\\Game.cpp",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB0AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-15T13:41:15.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Buttons.cpp",
+              "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Buttons.cpp",
+              "RelativeDocumentMoniker": "2D RPG\\Buttons.cpp",
+              "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Buttons.cpp",
+              "RelativeToolTip": "2D RPG\\Buttons.cpp",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAABUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-16T09:12:39.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Game.h",
               "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Game.h",
               "RelativeDocumentMoniker": "2D RPG\\Game.h",
               "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Game.h",
               "RelativeToolTip": "2D RPG\\Game.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-10-14T16:16:42.403Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Main_menu.cpp",
-              "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Main_menu.cpp",
-              "RelativeDocumentMoniker": "2D RPG\\Main_menu.cpp",
-              "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Main_menu.cpp*",
-              "RelativeToolTip": "2D RPG\\Main_menu.cpp*",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-16T09:01:50.556Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Main_menu.h",
-              "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Main_menu.h",
-              "RelativeDocumentMoniker": "2D RPG\\Main_menu.h",
-              "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Main_menu.h",
-              "RelativeToolTip": "2D RPG\\Main_menu.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-16T09:01:40.878Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Glyph.hpp",
-              "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\library\\SFML-2.6.1\\include\\SFML\\Graphics\\Glyph.hpp",
-              "RelativeDocumentMoniker": "library\\SFML-2.6.1\\include\\SFML\\Graphics\\Glyph.hpp",
-              "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\library\\SFML-2.6.1\\include\\SFML\\Graphics\\Glyph.hpp",
-              "RelativeToolTip": "library\\SFML-2.6.1\\include\\SFML\\Graphics\\Glyph.hpp",
-              "ViewState": "AgIAACEAAAAAAAAAAIAwwDAAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-29T08:09:43.907Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "cheast.cpp",
-              "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\cheast.cpp",
-              "RelativeDocumentMoniker": "2D RPG\\cheast.cpp",
-              "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\cheast.cpp",
-              "RelativeToolTip": "2D RPG\\cheast.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-29T18:48:39.13Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Buttons.h",
-              "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Buttons.h",
-              "RelativeDocumentMoniker": "2D RPG\\Buttons.h",
-              "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Buttons.h",
-              "RelativeToolTip": "2D RPG\\Buttons.h",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABoAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-16T09:03:42.718Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "cheast.h",
-              "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\cheast.h",
-              "RelativeDocumentMoniker": "2D RPG\\cheast.h",
-              "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\cheast.h",
-              "RelativeToolTip": "2D RPG\\cheast.h",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAMwBAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-29T18:45:02.287Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Inventors.h",
-              "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Inventors.h",
-              "RelativeDocumentMoniker": "2D RPG\\Inventors.h",
-              "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Inventors.h",
-              "RelativeToolTip": "2D RPG\\Inventors.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-28T16:15:09.117Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "input_manager.h",
-              "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\input_manager.h",
-              "RelativeDocumentMoniker": "2D RPG\\input_manager.h",
-              "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\input_manager.h",
-              "RelativeToolTip": "2D RPG\\input_manager.h",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-29T19:43:25.143Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Main.cpp",
               "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Main.cpp",
               "RelativeDocumentMoniker": "2D RPG\\Main.cpp",
@@ -273,31 +222,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Game.cpp",
-              "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Game.cpp",
-              "RelativeDocumentMoniker": "2D RPG\\Game.cpp",
-              "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Game.cpp",
-              "RelativeToolTip": "2D RPG\\Game.cpp",
-              "ViewState": "AgIAACIAAAAAAAAAAAAhwDAAAAAoAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Main_menu.cpp",
+              "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Main_menu.cpp",
+              "RelativeDocumentMoniker": "2D RPG\\Main_menu.cpp",
+              "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Main_menu.cpp",
+              "RelativeToolTip": "2D RPG\\Main_menu.cpp",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAC0AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-15T13:41:15.786Z"
+              "WhenOpened": "2024-10-16T09:01:50.556Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "istream",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.42.34321\\include\\istream",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.42.34321\\include\\istream",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.42.34321\\include\\istream",
-              "RelativeToolTip": "..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.42.34321\\include\\istream",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAgwBIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-10-16T14:25:55.241Z"
+              "DocumentIndex": 2,
+              "Title": "Main_menu.h",
+              "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Main_menu.h",
+              "RelativeDocumentMoniker": "2D RPG\\Main_menu.h",
+              "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Main_menu.h",
+              "RelativeToolTip": "2D RPG\\Main_menu.h",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACEAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-16T09:01:40.878Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 3,
               "Title": "Inventors.cpp",
               "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Inventors.cpp",
               "RelativeDocumentMoniker": "2D RPG\\Inventors.cpp",
@@ -305,71 +256,25 @@
               "RelativeToolTip": "2D RPG\\Inventors.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-28T16:26:19.913Z"
+              "WhenOpened": "2024-09-28T16:26:19.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "weapon.cpp",
+              "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\weapon.cpp",
+              "RelativeDocumentMoniker": "2D RPG\\weapon.cpp",
+              "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\weapon.cpp",
+              "RelativeToolTip": "2D RPG\\weapon.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-17T17:56:47.05Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "Buttons.cpp",
-              "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Buttons.cpp",
-              "RelativeDocumentMoniker": "2D RPG\\Buttons.cpp",
-              "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Buttons.cpp",
-              "RelativeToolTip": "2D RPG\\Buttons.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-16T09:12:39.025Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Armor.cpp",
-              "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Armor.cpp",
-              "RelativeDocumentMoniker": "2D RPG\\Armor.cpp",
-              "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Armor.cpp",
-              "RelativeToolTip": "2D RPG\\Armor.cpp",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAkAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-19T05:49:41.931Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Armor.h",
-              "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Armor.h",
-              "RelativeDocumentMoniker": "2D RPG\\Armor.h",
-              "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Armor.h",
-              "RelativeToolTip": "2D RPG\\Armor.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-18T18:08:41.548Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "weapon.h",
-              "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\weapon.h",
-              "RelativeDocumentMoniker": "2D RPG\\weapon.h",
-              "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\weapon.h",
-              "RelativeToolTip": "2D RPG\\weapon.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-17T17:59:36.935Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Mapp.h",
-              "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Mapp.h",
-              "RelativeDocumentMoniker": "2D RPG\\Mapp.h",
-              "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Mapp.h",
-              "RelativeToolTip": "2D RPG\\Mapp.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-29T08:38:21.969Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
               "Title": "position.h",
               "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\position.h",
               "RelativeDocumentMoniker": "2D RPG\\position.h",
@@ -377,35 +282,90 @@
               "RelativeToolTip": "2D RPG\\position.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-29T19:04:55.81Z"
+              "WhenOpened": "2024-09-29T19:04:55.81Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "position.cpp",
-              "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\position.cpp",
-              "RelativeDocumentMoniker": "2D RPG\\position.cpp",
-              "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\position.cpp",
-              "RelativeToolTip": "2D RPG\\position.cpp",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAQAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "Mapp.h",
+              "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Mapp.h",
+              "RelativeDocumentMoniker": "2D RPG\\Mapp.h",
+              "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Mapp.h",
+              "RelativeToolTip": "2D RPG\\Mapp.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-29T08:38:21.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "potion.h",
+              "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\potion.h",
+              "RelativeDocumentMoniker": "2D RPG\\potion.h",
+              "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\potion.h",
+              "RelativeToolTip": "2D RPG\\potion.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-28T16:04:32.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "potion.cpp",
+              "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\potion.cpp",
+              "RelativeDocumentMoniker": "2D RPG\\potion.cpp",
+              "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\potion.cpp",
+              "RelativeToolTip": "2D RPG\\potion.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-29T19:06:01.557Z"
+              "WhenOpened": "2024-09-28T16:05:10.763Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "weapon.cpp",
-              "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\weapon.cpp",
-              "RelativeDocumentMoniker": "2D RPG\\weapon.cpp",
-              "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\weapon.cpp",
-              "RelativeToolTip": "2D RPG\\weapon.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-17T17:56:47.05Z"
+              "Title": "input_manager.h",
+              "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\input_manager.h",
+              "RelativeDocumentMoniker": "2D RPG\\input_manager.h",
+              "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\input_manager.h",
+              "RelativeToolTip": "2D RPG\\input_manager.h",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-29T19:43:25.143Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 14,
+              "Title": "cheast.cpp",
+              "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\cheast.cpp",
+              "RelativeDocumentMoniker": "2D RPG\\cheast.cpp",
+              "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\cheast.cpp",
+              "RelativeToolTip": "2D RPG\\cheast.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-29T18:48:39.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Armor.h",
+              "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Armor.h",
+              "RelativeDocumentMoniker": "2D RPG\\Armor.h",
+              "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Armor.h",
+              "RelativeToolTip": "2D RPG\\Armor.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-18T18:08:41.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "Unit.cpp",
               "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Unit.cpp",
               "RelativeDocumentMoniker": "2D RPG\\Unit.cpp",
@@ -417,43 +377,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "stamina_pot.h",
-              "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\stamina_pot.h",
-              "RelativeDocumentMoniker": "2D RPG\\stamina_pot.h",
-              "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\stamina_pot.h",
-              "RelativeToolTip": "2D RPG\\stamina_pot.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-29T14:07:43.802Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "potion.cpp",
-              "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\potion.cpp",
-              "RelativeDocumentMoniker": "2D RPG\\potion.cpp",
-              "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\potion.cpp",
-              "RelativeToolTip": "2D RPG\\potion.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-28T16:05:10.763Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "potion.h",
-              "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\potion.h",
-              "RelativeDocumentMoniker": "2D RPG\\potion.h",
-              "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\potion.h",
-              "RelativeToolTip": "2D RPG\\potion.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-28T16:04:32.718Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 18,
               "Title": "stamina_pot.cpp",
               "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\stamina_pot.cpp",
               "RelativeDocumentMoniker": "2D RPG\\stamina_pot.cpp",
@@ -462,6 +386,90 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAB0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-29T14:08:29.271Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "cheast.h",
+              "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\cheast.h",
+              "RelativeDocumentMoniker": "2D RPG\\cheast.h",
+              "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\cheast.h",
+              "RelativeToolTip": "2D RPG\\cheast.h",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAMwBAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-29T18:45:02.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Inventors.h",
+              "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Inventors.h",
+              "RelativeDocumentMoniker": "2D RPG\\Inventors.h",
+              "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Inventors.h",
+              "RelativeToolTip": "2D RPG\\Inventors.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-28T16:15:09.117Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Glyph.hpp",
+              "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\library\\SFML-2.6.1\\include\\SFML\\Graphics\\Glyph.hpp",
+              "RelativeDocumentMoniker": "library\\SFML-2.6.1\\include\\SFML\\Graphics\\Glyph.hpp",
+              "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\library\\SFML-2.6.1\\include\\SFML\\Graphics\\Glyph.hpp",
+              "RelativeToolTip": "library\\SFML-2.6.1\\include\\SFML\\Graphics\\Glyph.hpp",
+              "ViewState": "AgIAACEAAAAAAAAAAIAwwDAAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-29T08:09:43.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "istream",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.42.34321\\include\\istream",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.42.34321\\include\\istream",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.42.34321\\include\\istream",
+              "RelativeToolTip": "..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.42.34321\\include\\istream",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAgwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-16T14:25:55.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Armor.cpp",
+              "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Armor.cpp",
+              "RelativeDocumentMoniker": "2D RPG\\Armor.cpp",
+              "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Armor.cpp",
+              "RelativeToolTip": "2D RPG\\Armor.cpp",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAkAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-19T05:49:41.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "position.cpp",
+              "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\position.cpp",
+              "RelativeDocumentMoniker": "2D RPG\\position.cpp",
+              "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\position.cpp",
+              "RelativeToolTip": "2D RPG\\position.cpp",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-29T19:06:01.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "stamina_pot.h",
+              "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\stamina_pot.h",
+              "RelativeDocumentMoniker": "2D RPG\\stamina_pot.h",
+              "ToolTip": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\stamina_pot.h",
+              "RelativeToolTip": "2D RPG\\stamina_pot.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-29T14:07:43.802Z"
             },
             {
               "$type": "Document",
@@ -477,7 +485,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 26,
               "Title": "weapon.cpp",
               "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Unit\\All_weapon\\type_weapon\\weapon\\weapon.cpp",
               "RelativeDocumentMoniker": "2D RPG\\Unit\\All_weapon\\type_weapon\\weapon\\weapon.cpp",
@@ -489,19 +497,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "weapon.h",
-              "DocumentMoniker": "C:\\Users\\vanal\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\weapon.h",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\Users\\vanal\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\weapon.h",
-              "ToolTip": "C:\\Users\\vanal\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\weapon.h",
-              "RelativeToolTip": "..\\..\\..\\..\\Users\\vanal\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\weapon.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-18T09:00:13.705Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 27,
               "Title": "weapon.h",
               "DocumentMoniker": "C:\\Git.repos\\second_cours\\OOP\\2D RPG\\2D RPG\\Unit\\All_weapon\\type_weapon\\weapon\\weapon.h",
               "RelativeDocumentMoniker": "2D RPG\\Unit\\All_weapon\\type_weapon\\weapon\\weapon.h",

@@ -1,4 +1,5 @@
 #pragma once
+#include"Buttons.h"
 class potion
 {
 private:
@@ -6,6 +7,7 @@ private:
 	double All_Weight_potion;
 	const int regeneration_hp;
 	const double weight;
+	Buttons* Potion_B;
 public:
 	potion(int g_regeneration_hp = 10,double g_weight =1.0);
 	double Get_weight_potion() { return weight; }
@@ -17,5 +19,7 @@ public:
 
 	void add_potion(int number);
 	void dell_potion(int number);
+
+	Buttons* Get_Buttons() { return Potion_B; }
 };
 
