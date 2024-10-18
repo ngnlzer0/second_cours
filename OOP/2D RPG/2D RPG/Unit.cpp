@@ -3,7 +3,7 @@
 #include<time.h>
 
 Unit::Unit(int X, int Y, const double max_weight, const double g_max_hp, const int g_max_stamina,int g_speed, double g_block, double g_miss)
-	:c_weapon(*weapon()), c_armor(*Armor()), position(X, Y),max_weight(max_weight), max_HP(g_max_hp),max_stamina(g_max_stamina),cur_weight(max_weight),
+	:c_weapon(new weapon()), c_armor(new Armor()), position(X, Y),max_weight(max_weight), max_HP(g_max_hp),max_stamina(g_max_stamina),cur_weight(max_weight),
 	HP(g_max_hp),stamina(g_max_stamina),speed(g_speed),block(g_block),miss(g_miss)
 {
 	cur_weight += c_armor->Get_weight();

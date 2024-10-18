@@ -20,6 +20,8 @@ private:
 
 	const double max_weight;
 	double cur_weight;
+
+
 public:
 
 	Inventors inventar;
