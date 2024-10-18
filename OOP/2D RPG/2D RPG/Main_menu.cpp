@@ -4,7 +4,7 @@ Main_menu::Main_menu()
 {
 	texture_back_fon.loadFromFile("C:/Git.repos/second_cours/OOP/2D RPG/2D RPG/assets/background_2.png");
 	Back_fon.setPosition({ 0,0 });
-	Back_fon.setSize({ 1920,980 });
+	Back_fon.setSize({ WIDHT_WINDOW,HIGHT_WINDOW});
 	Back_fon.setTexture(&texture_back_fon);
 
 	font.loadFromFile("C:/Git.repos/second_cours/OOP/2D RPG/2D RPG/assets/font/Gothical.ttf");
@@ -18,7 +18,7 @@ Main_menu::Main_menu()
 	Exit.setTexture(&Exit_texture);
 
 	sf::Vector2f Size = { 200,200 };
-	sf::Vector2f Midle_window_point = {960,550};
+	sf::Vector2f Midle_window_point = {WIDHT_WINDOW / 2,HIGHT_WINDOW/2};
 	Play.setSize(Size);
 	Setting.setSize(Size);
 	Exit.setSize(Size);
@@ -44,6 +44,26 @@ void Main_menu::Select_exit()
 void Main_menu::Deselect_exit()
 {
 	Exit.setFillColor(sf::Color(195, 200, 137));
+}
+
+void Main_menu::Select_Play()
+{
+	Play.setFillColor(sf::Color(165, 170, 107));
+}
+
+void Main_menu::Deselete_Play()
+{
+	Play.setFillColor(sf::Color(195, 200, 137));
+}
+
+void Main_menu::select_Setting()
+{
+	Setting.setFillColor(sf::Color(165, 170, 107));
+}
+
+void Main_menu::Deselect_Setting()
+{
+	Setting.setFillColor(sf::Color(195, 200, 137));
 }
 
 

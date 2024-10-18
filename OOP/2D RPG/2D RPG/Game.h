@@ -2,16 +2,15 @@
 #include<list>
 #include"Main_menu.h"
 
-#include"Buttons.h"
-#include"potion.h"
-#include"weapon.h"
+#include"Includer.h"
+#include"Unit_Sprite.h"
 
 class Game 
 {
 private:
 
 	sf::Image window_icon;
-	sf::VideoMode windowSize = { 1920,1080 };
+	sf::VideoMode windowSize = {WIDHT_WINDOW,HIGHT_WINDOW};
 	sf::String windowTitle = "2D RPG game";
 	sf::RenderWindow window;
 

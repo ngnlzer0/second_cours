@@ -21,8 +21,8 @@ public:
 		bool change_S_t = false,sf::IntRect Size_texture = {0,0,0,0});
 	Buttons() =  default;
 
-	void Select();
-	void Deselect();
+	void Select(sf::Color g_color);
+	void Deselect(sf::Color g_color);
 
 	sf::FloatRect Get_global_bounds() const ;
 };

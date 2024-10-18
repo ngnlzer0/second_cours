@@ -1,8 +1,6 @@
 #pragma once
 
-#include<SFML/Window.hpp>
-#include<SFML/Graphics.hpp>
-#include<SFML/System.hpp>
+#include"Includer.h"
 
 class Main_menu
 {
@@ -32,5 +30,9 @@ public:
 
 	void Select_exit();
 	void Deselect_exit();
+	void Select_Play();
+	void Deselete_Play();
+	void select_Setting();
+	void Deselect_Setting();
 };
 

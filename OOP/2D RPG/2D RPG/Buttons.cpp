@@ -1,5 +1,4 @@
 #include "Buttons.h"
-#include<SFML/Graphics.hpp>
 
 void Buttons::draw(sf::RenderTarget& target, sf::RenderStates states) const
 {
@@ -30,14 +29,14 @@ Buttons::Buttons(const sf::Vector2f& position, const sf::Vector2f& Size, const s
 	this->title.setScale(Size_text_u);
 }
 
-void Buttons::Select()
+void Buttons::Select(sf::Color g_color)
 {
-	Background.setFillColor(sf::Color(0, 200, 0));
+	Background.setFillColor(g_color);
 }
 
-void Buttons::Deselect()
+void Buttons::Deselect(sf::Color g_color)
 {
-	Background.setFillColor(sf::Color(100, 100, 100));
+	Background.setFillColor(g_color);
 }
 
 sf::FloatRect Buttons::Get_global_bounds() const

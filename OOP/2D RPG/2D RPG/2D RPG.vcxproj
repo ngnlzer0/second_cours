@@ -154,6 +154,7 @@
     <ClCompile Include="potion.cpp" />
     <ClCompile Include="stamina_pot.cpp" />
     <ClCompile Include="Unit.cpp" />
+    <ClCompile Include="Unit_Sprite.cpp" />
     <ClCompile Include="weapon.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -169,7 +170,10 @@
     <ClInclude Include="potion.h" />
     <ClInclude Include="stamina_pot.h" />
     <ClInclude Include="Unit.h" />
+    <ClInclude Include="Unit_Sprite.h" />
     <ClInclude Include="weapon.h" />
+    <ClInclude Include="Includer.h" />
+    <ClInclude Include="Randomaizer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

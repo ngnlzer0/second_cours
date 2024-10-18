@@ -19,6 +19,21 @@ void Game::HandleInput()
 		{
 		case sf::Event::Closed:
 			window.close();
+
+		case sf::Event::MouseButtonPressed:
+			if (event.mouseButton.button == sf::Mouse::Left)
+			{
+				sf::Vector2i mouse_pos = sf::Mouse::getPosition(window);
+				if (Main_Menu.Get_Exit().getGlobalBounds().contains(sf::Vector2f(mouse_pos)))
+				{
+					exit(0);
+					window.close();
+				}
+				if (Main_Menu.Get_Play().getGlobalBounds().contains(sf::Vector2f(mouse_pos)))
+				{
+					Main_menu_open = false;
+				}
+			}
 		}
 	}
 }
@@ -28,9 +43,15 @@ void Game::Update(float delta_Time)
 	sf::Vector2i mouse_pos = sf::Mouse::getPosition(window);
 
 	Main_Menu.Deselect_exit();
+	Main_Menu.Deselect_Setting();
+	Main_Menu.Deselete_Play();
 
-	if (Main_Menu.Get_Exit().getGlobalBounds().contains(sf::Vector2f(mouse_pos))) 
+	if(Main_Menu.Get_Exit().getGlobalBounds().contains(sf::Vector2f(mouse_pos))) 
 		Main_Menu.Select_exit();
+	if (Main_Menu.Get_Play().getGlobalBounds().contains(sf::Vector2f(mouse_pos)))
+		Main_Menu.Select_Play();
+	if (Main_Menu.Get_Setting().getGlobalBounds().contains(sf::Vector2f(mouse_pos)))
+		Main_Menu.select_Setting();
 	
 }
 
