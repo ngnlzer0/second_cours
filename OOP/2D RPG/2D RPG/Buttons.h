@@ -1,29 +1,37 @@
-#pragma once
+﻿#pragma once
 
-#include<SFML/Graphics.hpp>
+#include <SFML/Graphics.hpp>
+#include <string>
+#include <memory>  
 
-class Buttons : public sf::Transformable, public sf::Drawable
+class Buttons : public sf::Drawable, public sf::Transformable
 {
 private:
-	virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
-	sf::Text title;
-	const std::string font_file;
-	sf::Font font;
-	sf::RectangleShape Background;
-	sf::Texture texture;
-	const std::string name_textuer_file;
+    friend class sf::Drawable;
 
-	int Size_text;
+    sf::Text title;
+    sf::Font font;
+    sf::RectangleShape Background;
+    sf::Texture texture;
+    std::string font_file;
+    std::string name_textuer_file;
 
+    // Приватний метод draw з правильними параметрами
+    
 public:
-	Buttons(const sf::Vector2f& position,const sf::Vector2f& Size, const std::string& title,
-		const std::string font_m, const std::string name_text_file_up,sf::Vector2f Size_text_u = {1,1},
-		bool change_S_t = false,sf::IntRect Size_texture = {0,0,0,0});
-	Buttons() =  default;
+    Buttons(const sf::Vector2f& position = {0,0}, const sf::Vector2f& size = {1,1},
+        const std::string& texturePath = "",const std::string& titleText = "",
+        const std::string& fontPath = "", const sf::Vector2f& textScale = {1,1},
+        bool useSubRect = false, const sf::IntRect& textureRect = sf::IntRect() = {0,0,100,100});
 
-	void Select(sf::Color g_color);
-	void Deselect(sf::Color g_color);
+    Buttons();
 
-	sf::FloatRect Get_global_bounds() const ;
+    virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
+
+    void Select(sf::Color color);
+    void Deselect(sf::Color color);
+    sf::FloatRect GetGlobalBounds() const;
 };
+
+
 

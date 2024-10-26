@@ -5,4 +5,4 @@
 #include"weapon.h"
 
 const int WIDHT_WINDOW = 1920;
-const int HIGHT_WINDOW = 1080;
+const int HIGHT_WINDOW = 1040;
