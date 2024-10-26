@@ -1,9 +1,11 @@
 #pragma once
 
-const int HIGHT = 45;
-const int WIDTH = 60;
+const int WIDHT_Mapp = 1920;
+const int HIGHT_Mapp = 1040;
+const int NUMBER_TIEL_IN_WIDTH = WIDHT_Mapp / 16;
+const int NUMBER_TIEL_IN_HIGHT = HIGHT_Mapp / 16;
 
-enum object_in
+enum tiels
 {
 	ground = 1,
 	wall = 2,
@@ -16,7 +18,9 @@ enum object_in
 
 class Mapp
 {
-	object_in Maps[HIGHT][WIDTH];
-
+protected:
+	tiels Mapptiels[NUMBER_TIEL_IN_HIGHT][NUMBER_TIEL_IN_WIDTH];
+public:
+	Mapp();
 };
 

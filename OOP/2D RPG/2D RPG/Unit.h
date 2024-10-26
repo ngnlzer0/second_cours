@@ -3,10 +3,12 @@
 #include"Armor.h"
 #include"Inventors.h"
 #include"position.h"
+#include"Unit_Sprite.h"
 
-class Unit : virtual public position
+class Unit : virtual public position, public Unit_Sprite
 {
 private:
+
 	weapon* c_weapon;
 	Armor* c_armor;
 
@@ -26,7 +28,8 @@ public:
 
 	Inventors inventar;
 
-	Unit(int X = 0, int Y = 0, const double max_weight = 50, const double g_max_hp = 150, const int g_max_stamina = 100,
+	Unit(const std::string texture_file = "", sf::Vector2f pos={}, sf::Vector2f size={}, bool chois_rect = false, sf::IntRect Pos_texture = {0,0,0,0},
+		int X = 0, int Y = 0, const double max_weight = 50, const double g_max_hp = 150, const int g_max_stamina = 100,
 		int g_speed = 50, double g_block = 40, double g_miss = 25);
 	~Unit() = default;
 
@@ -57,7 +60,6 @@ public:
 
 	void Get_accet_monstr(Unit* other);
 	void user_step(Unit* other);
-	void Show_info();
 };
 
 void Fight(Unit* hero, Unit* monstr);

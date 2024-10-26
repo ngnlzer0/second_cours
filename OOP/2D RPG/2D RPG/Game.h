@@ -3,7 +3,8 @@
 #include"Main_menu.h"
 
 #include"Includer.h"
-#include"Unit_Sprite.h"
+#include"Unit.h"
+#include"Armor.h"
 
 class Game 
 {
@@ -17,6 +18,9 @@ private:
 	Main_menu Main_Menu;
 
 	sf::Font Mfont;
+
+	Armor* head;
+	weapon* sword;
 
 	bool Main_menu_open = true;
 

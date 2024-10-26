@@ -5,9 +5,12 @@ Game::Game()
 {
 	window_icon.loadFromFile("C:/Git.repos/second_cours/OOP/2D RPG/2D RPG/assets/Icon_Games.png");
 	window.setIcon(window_icon.getSize().x, window_icon.getSize().y, window_icon.getPixelsPtr());
+	window.setPosition({ 0,0 });
 
 	Mfont.loadFromFile("C:/Git.repos/second_cours/OOP/2D RPG/2D RPG/assets/font/Gothical.ttf");
 
+	head = new Armor(100,100);
+	sword = new weapon(200, 200);
 }
 
 void Game::HandleInput()
@@ -66,6 +69,9 @@ void Game::Render()
 		window.draw(Main_Menu.Get_Setting());
 		window.draw(Main_Menu.Get_Exit());
 		window.draw(Main_Menu.Get_Ex_text());
+
+		window.draw(head->Get_buttons());
+		window.draw(sword->Get_Buttons());
 	}
 
 	window.display();
