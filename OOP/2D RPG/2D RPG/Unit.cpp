@@ -9,13 +9,12 @@ Unit::Unit(const std::string texture_file, sf::Vector2f pos, sf::Vector2f size, 
 {
 	cur_weight += c_armor->Get_weight();
 	cur_weight += c_weapon->Get_weight();
-	Unit_Sprite(texture_file, pos, size, chois_rect, Pos_texture);
 }
 
 void Unit::received_damage(double minus_damage)
 {
 	std::srand(std::time(NULL));
-	if (rand() % 2 == 1)
+	if (Genereta_int_random_number() % 2 == 1)
 		c_armor->Set_durability(c_armor->Get_durability() - 1);
 	HP -= minus_damage;
 	if (HP <= 0)
@@ -28,7 +27,7 @@ void Unit::attack_enemi(Unit* enemi)
 	{
 		enemi->received_damage(this->Get_weapon()->Get_damage() * ((100 - enemi->Get_block()) / 100));
 		srand(time(NULL));
-		if (rand() % 2 == 1)
+		if (Genereta_int_random_number() % 2 == 1)
 			c_weapon->Set_durability(c_weapon->Get_durability() - 1);
 		this->Set_new_stamina(Get_stamina() - 12);
 	}

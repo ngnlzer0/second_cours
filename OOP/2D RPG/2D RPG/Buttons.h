@@ -13,8 +13,8 @@ private:
     sf::Font font;
     sf::RectangleShape Background;
     sf::Texture texture;
-    std::string font_file;
-    std::string name_textuer_file;
+    const std::string font_file;
+    const std::string name_textuer_file;
 
     // Приватний метод draw з правильними параметрами
     
@@ -23,8 +23,6 @@ public:
         const std::string& texturePath = "",const std::string& titleText = "",
         const std::string& fontPath = "", const sf::Vector2f& textScale = {1,1},
         bool useSubRect = false, const sf::IntRect& textureRect = sf::IntRect() = {0,0,100,100});
-
-    Buttons();
 
     virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 
