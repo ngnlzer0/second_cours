@@ -3,9 +3,9 @@
 #include"Armor.h"
 #include"Inventors.h"
 #include"position.h"
-#include"Unit_Sprite.h"
+#include"Randomaizer.h"
 
-class Unit : virtual public position, public Unit_Sprite
+class Unit : virtual public position
 {
 private:
 

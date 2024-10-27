@@ -1,70 +1,53 @@
-#include "Main_menu.h"
+﻿#include "Main_menu.h"
 
-Main_menu::Main_menu()
+Main_menu::Main_menu(const sf::Vector2u& windowSize)
+    : PlayButton(
+        sf::Vector2f(windowSize.x / 2.f, windowSize.y / 2.f - 250),
+        sf::Vector2f(200, 200),
+        "C:/Git.repos/second_cours/OOP/2D RPG/2D RPG/assets/buttons/Buttons/Rect/PlayIcon/Default.png",
+        "PLAY",
+        "C:/Git.repos/second_cours/OOP/2D RPG/2D RPG/assets/font/Gothical.ttf",
+        sf::Vector2f(1.0f, 1.0f)),
+    SettingButton(
+        sf::Vector2f(windowSize.x / 2.f, windowSize.y / 2.f),
+        sf::Vector2f(200, 200),
+        "C:/Git.repos/second_cours/OOP/2D RPG/2D RPG/assets/buttons/Buttons/Square/Levels/Default.png",
+        "SETTINGS",
+        "C:/Git.repos/second_cours/OOP/2D RPG/2D RPG/assets/font/Gothical.ttf",
+        sf::Vector2f(1.0f, 1.0f)),
+    ExitButton(
+        sf::Vector2f(windowSize.x / 2.f, windowSize.y / 2.f + 250),
+        sf::Vector2f(200, 200),
+        "C:/Git.repos/second_cours/OOP/2D RPG/2D RPG/assets/buttons/Button/Rect/Default.png",
+        "EXIT",
+        "C:/Git.repos/second_cours/OOP/2D RPG/2D RPG/assets/font/Gothical.ttf",
+        sf::Vector2f(1.0f, 1.0f))
 {
-	texture_back_fon.loadFromFile("C:/Git.repos/second_cours/OOP/2D RPG/2D RPG/assets/background_2.png");
-	Back_fon.setPosition({ 0,0 });
-	Back_fon.setSize({ WIDHT_WINDOW,HIGHT_WINDOW});
-	Back_fon.setTexture(&texture_back_fon);
-
-	font.loadFromFile("C:/Git.repos/second_cours/OOP/2D RPG/2D RPG/assets/font/Gothical.ttf");
-
-	Play_texture.loadFromFile("C:/Git.repos/second_cours/OOP/2D RPG/2D RPG/assets/buttons/Buttons/Rect/PlayIcon/Default.png");
-	Setting_texture.loadFromFile("C:/Git.repos/second_cours/OOP/2D RPG/2D RPG/assets/buttons/Buttons/Square/Levels/Default.png");
-	Exit_texture.loadFromFile("C:/Git.repos/second_cours/OOP/2D RPG/2D RPG/assets/buttons/Button/Rect/Default.png");
-
-	Play.setTexture(&Play_texture);
-	Setting.setTexture(&Setting_texture);
-	Exit.setTexture(&Exit_texture);
-
-	sf::Vector2f Size = { 200,200 };
-	sf::Vector2f Midle_window_point = {WIDHT_WINDOW / 2,HIGHT_WINDOW/2};
-	Play.setSize(Size);
-	Setting.setSize(Size);
-	Exit.setSize(Size);
-	Play.setPosition(Midle_window_point.x, Midle_window_point.y - 250);
-	Setting.setPosition(Midle_window_point);
-	Exit.setPosition(Midle_window_point.x, Midle_window_point.y + 250);
-	Play.setOrigin(100, 100);
-	Setting.setOrigin(100, 100);
-	Exit.setOrigin(100, 100);
-
-	Ex_text.setString("EXIT");
-	Ex_text.setFont(font);
-	Ex_text.setOrigin(Ex_text.getLocalBounds().getSize().x / 2, Ex_text.getLocalBounds().getSize().y / 2);
-	Ex_text.setPosition(Midle_window_point.x - 10, Midle_window_point.y + 200);
-	Ex_text.setCharacterSize(50);
+    if (!texture_back_fon.loadFromFile("C:/Git.repos/second_cours/OOP/2D RPG/2D RPG/assets/background_2.png")) {
+        throw std::runtime_error("Failed to load background texture");
+    }
+    Back_fon.setSize({ float(windowSize.x), float(windowSize.y) });
+    Back_fon.setPosition({ 0, 0 });
+    Back_fon.setTexture(&texture_back_fon);
 }
 
-void Main_menu::Select_exit()
+void Main_menu::UpdateSelection(const sf::Vector2i& mousePos)
 {
-	Exit.setFillColor(sf::Color(165, 170, 107));
+    // Скидання вибору для всіх кнопок
+    ExitButton.Deselect(sf::Color(195, 200, 137));
+    PlayButton.Deselect(sf::Color(195, 200, 137));
+    SettingButton.Deselect(sf::Color(195, 200, 137));
+
+    // Перевірка вибору
+    if (ExitButton.GetGlobalBounds().contains(sf::Vector2f(mousePos)))
+        ExitButton.Select(sf::Color(165, 170, 107));
+    else if (PlayButton.GetGlobalBounds().contains(sf::Vector2f(mousePos)))
+        PlayButton.Select(sf::Color(165, 170, 107));
+    else if (SettingButton.GetGlobalBounds().contains(sf::Vector2f(mousePos)))
+        SettingButton.Select(sf::Color(165, 170, 107));
 }
 
-void Main_menu::Deselect_exit()
-{
-	Exit.setFillColor(sf::Color(195, 200, 137));
-}
 
-void Main_menu::Select_Play()
-{
-	Play.setFillColor(sf::Color(165, 170, 107));
-}
-
-void Main_menu::Deselete_Play()
-{
-	Play.setFillColor(sf::Color(195, 200, 137));
-}
-
-void Main_menu::select_Setting()
-{
-	Setting.setFillColor(sf::Color(165, 170, 107));
-}
-
-void Main_menu::Deselect_Setting()
-{
-	Setting.setFillColor(sf::Color(195, 200, 137));
-}
 
 
 

@@ -1,12 +1,2 @@
-﻿  weapon.cpp
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\weapon.cpp(27,50): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\weapon.cpp(27,50): warning C4244:         with
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\weapon.cpp(27,50): warning C4244:         [
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\weapon.cpp(27,50): warning C4244:             T=float
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\weapon.cpp(27,50): warning C4244:         ]
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\weapon.cpp(27,43): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\weapon.cpp(27,43): warning C4244:         with
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\weapon.cpp(27,43): warning C4244:         [
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\weapon.cpp(27,43): warning C4244:             T=float
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\weapon.cpp(27,43): warning C4244:         ]
+﻿  Game.cpp
   2D RPG.vcxproj -> C:\Git.repos\second_cours\OOP\2D RPG\Binary\x64\Debug\2D RPG.exe

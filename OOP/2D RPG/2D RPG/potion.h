@@ -1,5 +1,5 @@
 #pragma once
-#include"Buttons.h"
+#include"Includer.h"
 class potion
 {
 private:
@@ -7,9 +7,9 @@ private:
 	double All_Weight_potion;
 	const int regeneration_hp;
 	const double weight;
-	Buttons* Potion_B;
+	Buttons Potion_sprite;
 public:
-	potion(int g_regeneration_hp = 10,double g_weight =1.0);
+	potion(float pos_x = 0,float pos_y = 0,int g_regeneration_hp = 10,double g_weight =1.0);
 	double Get_weight_potion() { return weight; }
 	int Get_regeneration_hp() { return regeneration_hp; }
 	int Get_number_potion() { return number_potion; }
@@ -20,6 +20,6 @@ public:
 	void add_potion(int number);
 	void dell_potion(int number);
 
-	Buttons* Get_Buttons() { return Potion_B; }
+	Buttons& Get_Buttons() { return Potion_sprite; }
 };
 

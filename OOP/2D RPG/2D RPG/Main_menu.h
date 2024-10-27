@@ -1,38 +1,36 @@
-#pragma once
+﻿#pragma once
 
-#include"Includer.h"
+#include "Includer.h"
+#include "Buttons.h"
 
-class Main_menu
-{
+class Main_menu {
 private:
-	sf::RectangleShape Back_fon;
-	sf::RectangleShape Play;
-	sf::RectangleShape Setting;
-	sf::RectangleShape Exit;
+    sf::RectangleShape Back_fon;
+    sf::Texture texture_back_fon;
 
-	sf::Texture texture_back_fon;
-	sf::Texture Play_texture;
-	sf::Texture Setting_texture;
-	sf::Texture Exit_texture;
-
-	sf::Text Ex_text;
-	sf::Font font;
+    Buttons PlayButton;     // Звичайні об'єкти
+    Buttons SettingButton;  // Звичайні об'єкти
+    Buttons ExitButton;     // Звичайні об'єкти
 
 public:
-	Main_menu();
+    Main_menu(const sf::Vector2u& windowSize);
+    Main_menu() = default;
 
-	void Run_M();
-	sf::RectangleShape& Get_Back_fon() { return Back_fon; };
-	sf::RectangleShape& Get_Play() { return Play; };
-	sf::RectangleShape& Get_Setting() { return Setting; };
-	sf::RectangleShape& Get_Exit() { return Exit; };
-	sf::Text& Get_Ex_text() { return Ex_text; };
+    void UpdateSelection(const sf::Vector2i& mousePos);
 
-	void Select_exit();
-	void Deselect_exit();
-	void Select_Play();
-	void Deselete_Play();
-	void select_Setting();
-	void Deselect_Setting();
+    Buttons& Get_PlayButton() { return PlayButton; }
+    Buttons& Get_SettingButton() { return SettingButton; }
+    Buttons& Get_ExitButton() { return ExitButton; }
+
+    // Метод draw
+    void draw(sf::RenderTarget& target, sf::RenderStates states) const {
+        // Малюємо фон та кнопки
+        target.draw(Back_fon, states);
+        PlayButton.draw(target, states);        // Використання методу draw кнопки
+        SettingButton.draw(target, states);
+        ExitButton.draw(target, states);
+    }
 };
+
+
 

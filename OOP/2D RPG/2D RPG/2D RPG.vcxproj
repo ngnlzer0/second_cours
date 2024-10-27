@@ -141,6 +141,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="WFC\Tile.cpp" />
+    <ClCompile Include="WFC\Map.cpp" />
+    <ClCompile Include="WFC\WFCMapGenerator.cpp" />
+    <ClCompile Include="WFC\EntropyCell.cpp" />
+    <ClCompile Include="WFC\TileMap.cpp" />
+    <ClCompile Include="Unit_sprite\Animation\Animation.cpp" />
     <ClCompile Include="Armor.cpp" />
     <ClCompile Include="Buttons.cpp" />
     <ClCompile Include="cheast.cpp" />
@@ -149,15 +155,20 @@
     <ClCompile Include="Inventors.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Main_menu.cpp" />
-    <ClCompile Include="Mapp.cpp" />
     <ClCompile Include="position.cpp" />
     <ClCompile Include="potion.cpp" />
     <ClCompile Include="stamina_pot.cpp" />
     <ClCompile Include="Unit.cpp" />
-    <ClCompile Include="Unit_Sprite.cpp" />
+    <ClCompile Include="Unit_sprite\Unit_Sprite.cpp" />
     <ClCompile Include="weapon.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="WFC\Tile.h" />
+    <ClInclude Include="WFC\Map.h" />
+    <ClInclude Include="WFC\WFCMapGenerator.h" />
+    <ClInclude Include="WFC\EntropyCell.h" />
+    <ClInclude Include="WFC\TileMap.h" />
+    <ClInclude Include="Unit_sprite\Animation\Animation.h" />
     <ClInclude Include="Armor.h" />
     <ClInclude Include="Buttons.h" />
     <ClInclude Include="cheast.h" />
@@ -165,12 +176,11 @@
     <ClInclude Include="input_manager.h" />
     <ClInclude Include="Inventors.h" />
     <ClInclude Include="Main_menu.h" />
-    <ClInclude Include="Mapp.h" />
     <ClInclude Include="position.h" />
     <ClInclude Include="potion.h" />
     <ClInclude Include="stamina_pot.h" />
     <ClInclude Include="Unit.h" />
-    <ClInclude Include="Unit_Sprite.h" />
+    <ClInclude Include="Unit_sprite\Unit_Sprite.h" />
     <ClInclude Include="weapon.h" />
     <ClInclude Include="Includer.h" />
     <ClInclude Include="Randomaizer.h" />

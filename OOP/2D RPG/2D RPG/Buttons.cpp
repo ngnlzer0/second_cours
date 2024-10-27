@@ -15,11 +15,11 @@ Buttons::Buttons(const sf::Vector2f& position, const sf::Vector2f& size,
 
     // Завантаження текстури
     if (!texture.loadFromFile(name_textuer_file, useSubRect ? textureRect : sf::IntRect())) {
-        throw std::runtime_error("Failed to load texture from file: " + name_textuer_file);
+       throw std::runtime_error("Failed to load texture from file: " + name_textuer_file);
     }
     Background.setTexture(&texture);
 
-    // Завантаження шрифту
+    //Завантаження шрифту
     if (!font.loadFromFile(font_file)) {
         throw std::runtime_error("Failed to load font from file: " + font_file);
     }
