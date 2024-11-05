@@ -1,2 +1,28 @@
 ﻿  Main.cpp
-  Group(lab 1).vcxproj -> C:\Git.repos\second_cours\Algorithm\Group(lab 1)\x64\Debug\Group(lab 1).exe
+C:\Git.repos\second_cours\Algorithm\Group(lab 1)\Group(lab 1)\Main.cpp(34,32): warning C4566: символ, представленный универсальным именем символа "\u0417", невозможно представить в текущей кодовой странице (1250)
+C:\Git.repos\second_cours\Algorithm\Group(lab 1)\Group(lab 1)\Main.cpp(34,32): warning C4566: символ, представленный универсальным именем символа "\u043D", невозможно представить в текущей кодовой странице (1250)
+C:\Git.repos\second_cours\Algorithm\Group(lab 1)\Group(lab 1)\Main.cpp(34,32): warning C4566: символ, представленный универсальным именем символа "\u0430", невозможно представить в текущей кодовой странице (1250)
+C:\Git.repos\second_cours\Algorithm\Group(lab 1)\Group(lab 1)\Main.cpp(34,32): warning C4566: символ, представленный универсальным именем символа "\u043C", невозможно представить в текущей кодовой странице (1250)
+C:\Git.repos\second_cours\Algorithm\Group(lab 1)\Group(lab 1)\Main.cpp(34,32): warning C4566: символ, представленный универсальным именем символа "\u0435", невозможно представить в текущей кодовой странице (1250)
+C:\Git.repos\second_cours\Algorithm\Group(lab 1)\Group(lab 1)\Main.cpp(34,32): warning C4566: символ, представленный универсальным именем символа "\u0438", невозможно представить в текущей кодовой странице (1250)
+C:\Git.repos\second_cours\Algorithm\Group(lab 1)\Group(lab 1)\Main.cpp(34,32): warning C4566: символ, представленный универсальным именем символа "\u043A", невозможно представить в текущей кодовой странице (1250)
+C:\Git.repos\second_cours\Algorithm\Group(lab 1)\Group(lab 1)\Main.cpp(34,32): warning C4566: символ, представленный универсальным именем символа "\u043E", невозможно представить в текущей кодовой странице (1250)
+C:\Git.repos\second_cours\Algorithm\Group(lab 1)\Group(lab 1)\Main.cpp(34,32): warning C4566: символ, представленный универсальным именем символа "\u0436", невозможно представить в текущей кодовой странице (1250)
+C:\Git.repos\second_cours\Algorithm\Group(lab 1)\Group(lab 1)\Main.cpp(34,32): warning C4566: символ, представленный универсальным именем символа "\u0431", невозможно представить в текущей кодовой странице (1250)
+C:\Git.repos\second_cours\Algorithm\Group(lab 1)\Group(lab 1)\Main.cpp(34,32): warning C4566: символ, представленный универсальным именем символа "\u0443", невозможно представить в текущей кодовой странице (1250)
+C:\Git.repos\second_cours\Algorithm\Group(lab 1)\Group(lab 1)\Main.cpp(34,32): warning C4566: символ, представленный универсальным именем символа "\u0442", невозможно представить в текущей кодовой странице (1250)
+C:\Git.repos\second_cours\Algorithm\Group(lab 1)\Group(lab 1)\Main.cpp(34,32): warning C4566: символ, представленный универсальным именем символа "\u043B", невозможно представить в текущей кодовой странице (1250)
+C:\Git.repos\second_cours\Algorithm\Group(lab 1)\Group(lab 1)\Main.cpp(63,32): warning C4566: символ, представленный универсальным именем символа "\u0414", невозможно представить в текущей кодовой странице (1250)
+C:\Git.repos\second_cours\Algorithm\Group(lab 1)\Group(lab 1)\Main.cpp(63,32): warning C4566: символ, представленный универсальным именем символа "\u0456", невозможно представить в текущей кодовой странице (1250)
+C:\Git.repos\second_cours\Algorithm\Group(lab 1)\Group(lab 1)\Main.cpp(63,32): warning C4566: символ, представленный универсальным именем символа "\u043B", невозможно представить в текущей кодовой странице (1250)
+C:\Git.repos\second_cours\Algorithm\Group(lab 1)\Group(lab 1)\Main.cpp(63,32): warning C4566: символ, представленный универсальным именем символа "\u0435", невозможно представить в текущей кодовой странице (1250)
+C:\Git.repos\second_cours\Algorithm\Group(lab 1)\Group(lab 1)\Main.cpp(63,32): warning C4566: символ, представленный универсальным именем символа "\u043D", невозможно представить в текущей кодовой странице (1250)
+C:\Git.repos\second_cours\Algorithm\Group(lab 1)\Group(lab 1)\Main.cpp(63,32): warning C4566: символ, представленный универсальным именем символа "\u044F", невозможно представить в текущей кодовой странице (1250)
+C:\Git.repos\second_cours\Algorithm\Group(lab 1)\Group(lab 1)\Main.cpp(63,32): warning C4566: символ, представленный универсальным именем символа "\u0430", невозможно представить в текущей кодовой странице (1250)
+C:\Git.repos\second_cours\Algorithm\Group(lab 1)\Group(lab 1)\Main.cpp(63,32): warning C4566: символ, представленный универсальным именем символа "\u0443", невозможно представить в текущей кодовой странице (1250)
+C:\Git.repos\second_cours\Algorithm\Group(lab 1)\Group(lab 1)\Main.cpp(63,32): warning C4566: символ, представленный универсальным именем символа "\u044C", невозможно представить в текущей кодовой странице (1250)
+C:\Git.repos\second_cours\Algorithm\Group(lab 1)\Group(lab 1)\Main.cpp(12,18): error C2039: "gcd": не является членом "std".
+      C:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\numeric(22,1):
+       см. объявление "std"
+  
+C:\Git.repos\second_cours\Algorithm\Group(lab 1)\Group(lab 1)\Main.cpp(12,18): error C2064: результатом вычисления фрагмента не является функция, принимающая 2 аргументов
