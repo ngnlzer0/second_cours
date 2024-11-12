@@ -9,6 +9,8 @@
 #include"WFC/WFCMapGenerator.h"
 #include"WFC/TileMap.h"
 
+#include"Hero.h"
+
 class Game 
 {
 private:
@@ -30,6 +32,8 @@ private:
 	weapon* sword;
 	stamina_pot* stamina;
 	potion* healt;
+
+	Hero hero = Hero();
 
 	void HandleInput();
 	void Update(float delta_Time);

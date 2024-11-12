@@ -1,2 +1,7 @@
 ﻿  Game.cpp
+  Hero.cpp
+  Main.cpp
+  Animation.cpp
+  Unit_Sprite.cpp
+  Создание кода...
   2D RPG.vcxproj -> C:\Git.repos\second_cours\OOP\2D RPG\Binary\x64\Debug\2D RPG.exe

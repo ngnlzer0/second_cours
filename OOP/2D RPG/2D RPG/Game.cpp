@@ -70,6 +70,7 @@ void Game::Render() {
     window.draw(sword->Get_Buttons());
     window.draw(stamina->Get_buttons());
     window.draw(healt->Get_Buttons());
+    hero.Get_sprite()->draw(window);
 
     window.display();
 }

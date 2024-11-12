@@ -141,6 +141,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Hero.cpp" />
     <ClCompile Include="WFC\Tile.cpp" />
     <ClCompile Include="WFC\Map.cpp" />
     <ClCompile Include="WFC\WFCMapGenerator.cpp" />
@@ -163,6 +164,7 @@
     <ClCompile Include="weapon.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Hero.h" />
     <ClInclude Include="WFC\Tile.h" />
     <ClInclude Include="WFC\Map.h" />
     <ClInclude Include="WFC\WFCMapGenerator.h" />
