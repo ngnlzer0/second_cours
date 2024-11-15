@@ -75,9 +75,6 @@
     <ClCompile Include="WFC\TileMap.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="WFC\EntropyCell.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="WFC\WFCMapGenerator.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
@@ -88,6 +85,9 @@
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="Hero.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="OtherWFC\WFC.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
@@ -143,9 +143,6 @@
     <ClInclude Include="WFC\TileMap.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="WFC\EntropyCell.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
     <ClInclude Include="WFC\WFCMapGenerator.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
@@ -156,6 +153,12 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="Hero.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="OtherWFC\Precomp.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="OtherWFC\WFC.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

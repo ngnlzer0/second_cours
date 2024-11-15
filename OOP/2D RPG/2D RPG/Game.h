@@ -21,9 +21,11 @@ private:
 
 	sf::RenderWindow window;
 	Main_menu Main_Menu; // Ваше меню
-	TileMap tileMap; // Ваша карта тайлів
-	WFCMapGenerator wfcMapGenerator; // Ваш генератор карти
-	bool Main_menu_open = true; // Стан меню
+
+	//TileMap tileMap; // Ваша карта тайлів
+	//WFCMapGenerator wfcMapGenerator; // Ваш генератор карти
+
+	bool main_menu_open = true; // Стан меню
 	bool isGameActive = false; // Стан гри
 
 	sf::Font Mfont;

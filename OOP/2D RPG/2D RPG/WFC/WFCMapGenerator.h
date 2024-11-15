@@ -9,6 +9,7 @@
 
 class WFCMapGenerator {
 public:
+    void initializeEntropy();
     WFCMapGenerator(TileMap& tileMap);
     void generate();
 
