@@ -1,30 +1,45 @@
 ﻿#pragma once
-#include"Animation/Animation.h"
-#include<iostream>
+#include <SFML/Graphics.hpp>
+#include <memory>
+#include <map>
+#include "Animation/Animation.h"
 
-class Unit_Sprite 
-{
+class Unit_Sprite {
 private:
-	sf::Sprite unit_sprite;
-	sf::Texture unit_texture;
-    sf::Texture* currentTexture;
-	const std::string name_unit_texture;
-	sf::Vector2f position_sprite;
+    sf::Sprite unit_sprite;
+    sf::Texture unit_texture;
+    sf::Texture defaultTexture;   // Стандартна текстура
+    sf::Vector2f position_sprite;
+    std::string unit_name_texture;
 
-    std::map<std::string, Animation> animations; // Набір анімацій
-    Animation* currentAnimation;                 // Поточна анімація
-    std::string idleAnimationName = "idle";
+    std::map<std::string, Animation> animations;
+    Animation* currentAnimation;
+    std::string idleAnimationName;
+
+    sf::Texture* currentTexture; // Змінна для поточної текстури
 
 public:
-	Unit_Sprite(const std::string name_file = "", sf::Vector2f pos = {0,0}, bool full_photo = false, sf::IntRect Size = {0,0,0,0});
+    Unit_Sprite(const std::string& textureFile = "", sf::Vector2f pos = { 0, 0 }, bool fullPhoto = false, sf::IntRect size = { 0, 0, 0 ,0 });
 
-    void setPosition(sf::Vector2f pos) { unit_sprite.setPosition(pos); };
-    void move(sf::Vector2f offset);
-    void update(float deltaTime);
-    void draw(sf::RenderWindow& window) { window.draw(unit_sprite); };
+    void move(sf::Vector2f offset);                // Зміщення спрайта
+    void update(float deltaTime);                  // Оновлення анімації
+    void draw(sf::RenderWindow& window);           // Відображення спрайта
+    void startAnimation(const std::string& name);  // Запуск анімації
+    void addAnimation(const std::string& name, const Animation& animation); // Додавання анімації
+    void handleEvent(const sf::Event& event);      // Обробка подій
 
-    // Робота з анімаціями
-    void startAnimation(const std::string& name);
-    void handleEvent(const sf::Event& event); // Обробка подій
+    void setRotation(float angle);                // Встановлення обертання спрайта
+    void setScale(float x, float y);              // Встановлення масштабу спрайта
+
+    void setFlipped(bool flipped);
+
+    sf::FloatRect getLocalBounds() const {
+        return unit_sprite.getLocalBounds();
+    }
+    void setOrigin(float x, float y) {
+        unit_sprite.setOrigin(x, y);
+    }
+
+    Animation* getCurrentAnimation() { return currentAnimation; };
 
 };

@@ -5,6 +5,8 @@
 #include <vector>
 #include "Tile.h"
 
+const int MAPP_WIDHT = 1920;
+
 class TileMap {
 public:
     TileMap(int width, int height);

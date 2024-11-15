@@ -1,7 +1,5 @@
 ﻿  Game.cpp
-  Hero.cpp
-  Main.cpp
-  Animation.cpp
-  Unit_Sprite.cpp
-  Создание кода...
+C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\WFC\Tile.h(33,34): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "Game.cpp")
+  
   2D RPG.vcxproj -> C:\Git.repos\second_cours\OOP\2D RPG\Binary\x64\Debug\2D RPG.exe

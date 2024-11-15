@@ -1,28 +1,29 @@
 ﻿#pragma once
 #include <SFML/Graphics.hpp>
-#include <vector>
-#include<string>
+#include <stdexcept>
 
-class Animation
-{
+class Animation {
 private:
-    std::vector<sf::IntRect> frames; // Кадри анімації
-    const std::string name_texture_animation;
-    sf::Texture texture_animation;
-    float duration;                   // Загальний час анімації
-    float elapsedTime;                // Час, що пройшов від початку анімації
-    float frameTime;
-    int currentFrame;                 // Поточний кадр
-    bool finished;
+    std::string name;
+    sf::Texture texture;
+    std::string name_texture;
+    sf::IntRect frames[10];  // Статичний масив для 100 кадрів
+    int currentFrame;
+    float duration;
+    float elapsedTime;
+    int frameCount;
 
 public:
-    Animation(const std::string name_file = " ",int number_frames = 0,sf::IntRect parametrs_frame = {}, float duration = 1.0f);
+    Animation(const std::string& textureFile = "", int frameCount = 1, sf::IntRect frameSize = { 0, 0, 0, 0 }, const std::string& animName = " ");
+    Animation(const Animation& other);              // Конструктор копіювання
+    Animation& operator=(const Animation& other);   // Оператор присвоєння
 
-    void update(float deltaTime);
-    void reset();
-    sf::Texture* getTexture() { return &texture_animation; };
-    sf::IntRect getCurrentFrame() const { return frames[currentFrame]; };
-    bool isFinished() const { return finished; };
+    void update(float deltaTime);   // Оновлення кадру анімації
+    void reset();                   // Скидання анімації до першого кадру
+    bool isFinished() const;        // Перевірка, чи завершилась анімація
+    sf::IntRect getCurrentFrame() const; // Отримання поточного кадру
+    sf::Texture* getTexture(); // Отримання текстури анімації
 
+    std::string getName() const { return name; }
 };
 

@@ -130,6 +130,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(SolutionDir)library\SFML-2.6.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -142,10 +143,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Hero.cpp" />
+    <ClCompile Include="OtherWFC\WFC.cpp" />
     <ClCompile Include="WFC\Tile.cpp" />
     <ClCompile Include="WFC\Map.cpp" />
     <ClCompile Include="WFC\WFCMapGenerator.cpp" />
-    <ClCompile Include="WFC\EntropyCell.cpp" />
     <ClCompile Include="WFC\TileMap.cpp" />
     <ClCompile Include="Unit_sprite\Animation\Animation.cpp" />
     <ClCompile Include="Armor.cpp" />
@@ -165,10 +166,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Hero.h" />
+    <ClInclude Include="OtherWFC\Precomp.h" />
+    <ClInclude Include="OtherWFC\WFC.h" />
     <ClInclude Include="WFC\Tile.h" />
     <ClInclude Include="WFC\Map.h" />
     <ClInclude Include="WFC\WFCMapGenerator.h" />
-    <ClInclude Include="WFC\EntropyCell.h" />
     <ClInclude Include="WFC\TileMap.h" />
     <ClInclude Include="Unit_sprite\Animation\Animation.h" />
     <ClInclude Include="Armor.h" />

@@ -3,6 +3,9 @@
 #include <cstdlib>
 #include <ctime>
 #include <limits>
+#include <vector>
+/*
+#pragma execution_character_set("utf-8")
 
 // Ініціалізація статичної змінної tileMapping
 std::map<int, std::string> WFCMapGenerator::tileMapping = {
@@ -30,95 +33,81 @@ std::map<int, std::vector<int>> compatibilityMap = {
     {25, {16}}, {26, {16}}, {27, {4, 16}}, {28, {16}}, {29, {16}}, {30, {16}}
 };
 
+// Конструктор
 WFCMapGenerator::WFCMapGenerator(TileMap& tileMap)
     : tileMap(tileMap)
 {
     texture.loadFromFile(name_f_texture);
     std::srand(static_cast<unsigned int>(std::time(nullptr)));
+    initializeAllPossibleTiles(); // Ініціалізація всіх можливих тайлів
 }
 
-void WFCMapGenerator::generate() {
-    while (true) {
-        // Знайти клітину з найменшою ентропією
-        int minEntropy = INT_MAX;
-        std::pair<int, int> minCoords(-1, -1);
-
-        for (int y = 0; y < tileMap.getHeight(); ++y) {
-            for (int x = 0; x < tileMap.getWidth(); ++x) {
-                int entropy = calculateEntropy(x, y);
-                if (entropy > 1 && entropy < minEntropy) {
-                    minEntropy = entropy;
-                    minCoords = { x, y };
-                }
-            }
-        }
-
-        // Якщо не знайдено більше клітин для колапсу, вийти
-        if (minCoords.first == -1) break;
-
-        // Виконати колапс для клітини з найменшою ентропією
-        collapse(minCoords.first, minCoords.second);
+// Ініціалізація всіх можливих тайлів
+void WFCMapGenerator::initializeAllPossibleTiles() {
+    int tileCount = tileMapping.size();
+    for (int id = 0; id < tileCount; ++id) {
+        Tile tile(id, &texture, sf::IntRect(
+            (id % (texture.getSize().x / TILE_WIDTH)) * TILE_WIDTH,
+            (id / (texture.getSize().x / TILE_WIDTH)) * TILE_HEIGHT, TILE_WIDTH, TILE_HEIGHT));
+        allPossibleTiles.push_back(tile);
     }
 }
 
+// Ініціалізація ентропії
+void WFCMapGenerator::initializeEntropy() {
+    for (int y = 0; y < tileMap.getHeight(); ++y) {
+        for (int x = 0; x < tileMap.getWidth(); ++x) {
+            for (const Tile& tile : allPossibleTiles) {
+                tileMap->getTile(x, y).addPossibleTile(tile);
+            }
+        }
+    }
+}
+
+// Обчислення ентропії
 int WFCMapGenerator::calculateEntropy(int x, int y) {
-    std::vector<int> possibleTiles = getPossibleTiles(x, y);
-    return static_cast<int>(possibleTiles.size());
+    return tileMap.getTile(x, y).getPossibleTiles().size();
 }
 
-int WFCMapGenerator::selectTileByEntropy(int x, int y) {
-    std::vector<int> possibleTiles = getPossibleTiles(x, y);
-    if (possibleTiles.empty()) return -1; // Якщо немає можливих тайлів
-
-    // Вибираємо випадковий тайл з можливих
-    int randomIndex = std::rand() % possibleTiles.size();
-    return possibleTiles[randomIndex];
-}
-
+// Колапс клітини
 void WFCMapGenerator::collapse(int x, int y) {
     int selectedTileId = selectTileByEntropy(x, y);
     if (selectedTileId != -1) {
-        int tileWidth = 32;  // ширина тайла, змініть на фактичну
-        int tileHeight = 32; // висота тайла, змініть на фактичну
         Tile tile(selectedTileId, &texture, sf::IntRect(
-            (selectedTileId % (texture.getSize().x / tileWidth)) * tileWidth,
-            (selectedTileId / (texture.getSize().x / tileWidth)) * tileHeight,
-            tileWidth, tileHeight
-        ));
-        tileMap.setTile(x, y, tile); // Установка тайла в мапу
+            (selectedTileId % (texture.getSize().x / TILE_WIDTH)) * TILE_WIDTH,
+            (selectedTileId / (texture.getSize().x / TILE_WIDTH)) * TILE_HEIGHT, TILE_WIDTH, TILE_HEIGHT));
+        tileMap.setTile(x, y, tile);
     }
 }
 
+// Вибір тайла за ентропією
+int WFCMapGenerator::selectTileByEntropy(int x, int y) {
+    const std::vector<int>& possibleTiles = getPossibleTiles(x, y);
+    if (possibleTiles.empty()) return -1;
+    return possibleTiles[std::rand() % possibleTiles.size()];
+}
+
+// Отримання можливих тайлів
 std::vector<int> WFCMapGenerator::getPossibleTiles(int x, int y) {
     std::vector<int> possibleTiles;
-
-    // Перебираємо всі тайли у compatibilityMap
-    for (const auto& entry : compatibilityMap) {
-        int tileId = entry.first; // Отримуємо ID тайла
-        const std::vector<int>& compatibleTiles = entry.second; // Отримуємо вектор сумісних тайлів
-
+    for (const auto& [tileId, compatibleTiles] : compatibilityMap) {
         bool isCompatible = true;
 
-        // Перевірка лівого тайла
-        if (x > 0 && tileMap.getTile(x - 1, y)) {
-            int leftTileId = tileMap.getTile(x - 1, y)->getId();
+        // Перевірка сусідів
+        if (x > 0 && tileMap.getTile(x - 1, y).isCollapsed()) {
+            int leftTileId = tileMap.getTile(x - 1, y).getId();
             isCompatible &= (std::find(compatibleTiles.begin(), compatibleTiles.end(), leftTileId) != compatibleTiles.end());
         }
-
-        // Перевірка верхнього тайла
-        if (y > 0 && tileMap.getTile(x, y - 1)) {
-            int topTileId = tileMap.getTile(x, y - 1)->getId();
+        if (y > 0 && tileMap.getTile(x, y - 1).isCollapsed()) {
+            int topTileId = tileMap.getTile(x, y - 1).getId();
             isCompatible &= (std::find(compatibleTiles.begin(), compatibleTiles.end(), topTileId) != compatibleTiles.end());
         }
 
-        // Якщо тайл сумісний, додаємо його до списку можливих тайлів
         if (isCompatible) {
             possibleTiles.push_back(tileId);
         }
     }
-
     return possibleTiles;
 }
 
-
-
+*/
