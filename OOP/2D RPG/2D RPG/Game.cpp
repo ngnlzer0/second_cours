@@ -43,7 +43,7 @@ void Game::HandleInput()
             break;
 
         default:
-            hero.handleInput(event);
+            hero.handleInput(event,window);
             break;
         }
     }
@@ -57,7 +57,7 @@ void Game::Update(float deltaTime)
     }
 
     if (isGameActive) {
-        hero.processMovement(deltaTime);
+        hero.processMovement(deltaTime,window);
         hero.update(deltaTime);
     }
 }

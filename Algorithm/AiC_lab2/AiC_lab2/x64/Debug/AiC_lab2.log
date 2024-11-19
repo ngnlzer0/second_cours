@@ -1,0 +1,9 @@
+﻿  Main.cpp
+C:\Git.repos\second_cours\Algorithm\AiC_lab2\AiC_lab2\Main.cpp(6,11): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Git.repos\second_cours\Algorithm\AiC_lab2\AiC_lab2\Main.cpp(7,11): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Git.repos\second_cours\Algorithm\AiC_lab2\AiC_lab2\Main.cpp(32,11): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Git.repos\second_cours\Algorithm\AiC_lab2\AiC_lab2\Main.cpp(33,11): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Git.repos\second_cours\Algorithm\AiC_lab2\AiC_lab2\Main.cpp(55,11): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Git.repos\second_cours\Algorithm\AiC_lab2\AiC_lab2\Main.cpp(72,11): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Git.repos\second_cours\Algorithm\AiC_lab2\AiC_lab2\Main.cpp(73,11): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  AiC_lab2.vcxproj -> C:\Git.repos\second_cours\Algorithm\AiC_lab2\x64\Debug\AiC_lab2.exe

@@ -25,6 +25,21 @@ Unit_Sprite::Unit_Sprite(const std::string& textureFile, sf::Vector2f pos, bool 
     currentTexture = &defaultTexture;
 }
 
+Unit_Sprite::~Unit_Sprite()
+{
+    for (auto& pair : animations) {
+        delete pair.second; // Звільняємо пам'ять для кожної анімації
+    }
+}
+
+sf::Vector2f Unit_Sprite::getPosition() const {
+    return unit_sprite.getPosition();
+}
+
+void Unit_Sprite::setPosition(const sf::Vector2f& position) {
+    unit_sprite.setPosition(position);
+}
+
 void Unit_Sprite::move(sf::Vector2f offset)
 {
     position_sprite += offset;
@@ -53,21 +68,27 @@ void Unit_Sprite::draw(sf::RenderWindow& window)
     window.draw(unit_sprite);
 }
 
-void Unit_Sprite::startAnimation(const std::string& name) {
-    auto it = animations.find(name);
-    if (it != animations.end()) {
-        currentAnimation = &it->second;
-        currentAnimation->reset();  // Скидаємо анімацію перед початком
+void Unit_Sprite::startAnimation(const std::string& animationName)
+{
+    // Перевірка, чи анімація існує
+    Animation* anim = getAnimation(animationName);
+    if (anim) {
+        currentAnimation = anim;  // Встановлюємо поточну анімацію
+        currentAnimation->reset();  // Оновлюємо перший кадр
+
+        // Зациклюємо анімацію, якщо це потрібно
+        //currentAnimation->setLooping(true);
+
+        std::cout << "Starting animation: " << animationName << std::endl;
     }
     else {
-        std::cerr << "Animation not found: " << name << std::endl;
-        currentAnimation = nullptr;  // Якщо не знайдена анімація, ставимо на nullptr
+        std::cout << "No animation found with name: " << animationName << std::endl;
     }
 }
 
 void Unit_Sprite::addAnimation(const std::string& name, const Animation& animation)
 {
-    animations[name] = animation;
+    animations[name] = new Animation(animation); // Копіюємо анімацію через динамічне виділення пам'яті
 }
 
 void Unit_Sprite::handleEvent(const sf::Event& event)
@@ -89,3 +110,10 @@ void Unit_Sprite::setFlipped(bool flipped) {
     unit_sprite.setScale(flipped ? -1.f : 1.f, 1.f);  // Відображення по горизонталі
 }
 
+Animation* Unit_Sprite::getAnimation(const std::string& name) {
+    auto it = animations.find(name);  // it - це std::map<std::string, Animation>::iterator
+    if (it != animations.end()) {
+        return (it->second);  // Повертаємо вказівник на Animation
+    }
+    return nullptr;  // Повертаємо nullptr, якщо анімацію не знайдено
+}
