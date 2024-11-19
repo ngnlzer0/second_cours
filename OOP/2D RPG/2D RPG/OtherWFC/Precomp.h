@@ -1,11 +1,11 @@
 #pragma once
 
-#define GRIDSIZEX	30
-#define GRIDSIZEY	25
+#define GRIDSIZEX	120
+#define GRIDSIZEY	66
 #define GRIDSIZE GRIDSIZEX * GRIDSIZEY
 
-#define SPRITESHEETFILENAME "urban.png"
+#define SPRITESHEETFILENAME "C:/Git.repos/second_cours/OOP/2D RPG/2D RPG/assets/world/Dungeon tileset.png"
 #define SPRITESHEETX 4
 #define SPRITESHEETY 4
-#define TILEAMOUNT	16
-#define TILESIZE 32.0f
+#define TILEAMOUNT	30
+#define TILESIZE 16.0f

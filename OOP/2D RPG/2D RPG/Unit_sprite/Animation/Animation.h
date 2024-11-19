@@ -6,8 +6,8 @@ class Animation {
 private:
     std::string name;
     sf::Texture texture;
-    std::string name_texture;
-    sf::IntRect frames[10];  // Статичний масив для 100 кадрів
+    const std::string name_texture;
+    std::vector<sf::IntRect> frames;
     int currentFrame;
     float duration;
     float elapsedTime;
@@ -25,5 +25,6 @@ public:
     sf::Texture* getTexture(); // Отримання текстури анімації
 
     std::string getName() const { return name; }
+
 };
 

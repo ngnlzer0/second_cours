@@ -12,7 +12,7 @@ private:
     sf::Vector2f position_sprite;
     std::string unit_name_texture;
 
-    std::map<std::string, Animation> animations;
+    std::map<std::string, Animation*> animations;
     Animation* currentAnimation;
     std::string idleAnimationName;
 
@@ -20,6 +20,7 @@ private:
 
 public:
     Unit_Sprite(const std::string& textureFile = "", sf::Vector2f pos = { 0, 0 }, bool fullPhoto = false, sf::IntRect size = { 0, 0, 0 ,0 });
+    ~Unit_Sprite();
 
     void move(sf::Vector2f offset);                // Зміщення спрайта
     void update(float deltaTime);                  // Оновлення анімації
@@ -27,6 +28,9 @@ public:
     void startAnimation(const std::string& name);  // Запуск анімації
     void addAnimation(const std::string& name, const Animation& animation); // Додавання анімації
     void handleEvent(const sf::Event& event);      // Обробка подій
+
+    sf::Vector2f getPosition() const;
+    void setPosition(const sf::Vector2f& position);
 
     void setRotation(float angle);                // Встановлення обертання спрайта
     void setScale(float x, float y);              // Встановлення масштабу спрайта
@@ -40,6 +44,7 @@ public:
         unit_sprite.setOrigin(x, y);
     }
 
+    Animation* getAnimation(const std::string& name);
     Animation* getCurrentAnimation() { return currentAnimation; };
 
 };

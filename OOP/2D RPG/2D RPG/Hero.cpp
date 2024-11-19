@@ -1,8 +1,9 @@
 ﻿#include "Hero.h"
+#include <iostream>
 
 Hero::Hero()
     : hero_sprite("C:/Git.repos/second_cours/OOP/2D RPG/2D RPG/assets/FreeKnight_v1/Comparison2x.png",
-        { 0, 0 }, true, sf::IntRect{ 0, 0, 120, 80 }), speed(200.0f), isMoving(false), state(HeroState::Idle)
+        { 0, 0 }, true, sf::IntRect{ 0, 0, 120, 80 }), speed(200.0f), isMoving(false), state(HeroState::Idle), currentAnim(nullptr)
 {
     sf::IntRect SIZE{ 0, 0, 120, 80 };
     std::cout << "Adding animation: attack" << std::endl;
@@ -24,59 +25,82 @@ void Hero::move(sf::Vector2f offset)
     hero_sprite.move(offset);
 }
 
-void Hero::update(float deltaTime) {
-    updateAnimation();  // Оновлюємо анімацію в залежності від поточного стану
-    hero_sprite.update(deltaTime); // Оновлюємо спрайт
+void Hero::update(float deltaTime)
+{
+    hero_sprite.update(deltaTime); // Оновлюємо анімацію
 }
 
-void Hero::handleInput(const sf::Event& event)
+void Hero::startAnimation(const std::string& animationName)
 {
-    if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Enter) {
-        // Перевіряємо, чи анімація поточно задана перед її запуском
-        if (hero_sprite.getCurrentAnimation() == nullptr || hero_sprite.getCurrentAnimation()->getName() != "attack") {
-            hero_sprite.startAnimation("attack");  // Запуск анімації атаки
+    if (currentAnim == nullptr || currentAnim->getName() != animationName) {
+        // Перевірка наявності анімації
+        std::cout << "Starting animation: " << animationName << std::endl;
+
+        // Якщо анімація змінилася, встановлюємо нову анімацію
+        currentAnim = hero_sprite.getAnimation(animationName);
+        if (currentAnim) {
+            hero_sprite.startAnimation(animationName);  // Запускаємо анімацію
+        }
+        else {
+            std::cout << "No animation found with name: " << animationName << std::endl;
         }
     }
 }
 
-void Hero::processMovement(float deltaTime)
+void Hero::handleInput(const sf::Event& event,const sf::RenderWindow& window)
 {
-    isMoving = false;
-    movement = { 0.0f, 0.0f };
+    if (event.type == sf::Event::KeyPressed) {
+        if (event.key.code == sf::Keyboard::W) {
+            // Напрямок вгору
+            direction = sf::Vector2f(0, -1);
+            isMoving = true;
+            state = HeroState::Running;
+            startAnimation("running");
+        }
+        else if (event.key.code == sf::Keyboard::S) {
+            // Напрямок вниз
+            direction = sf::Vector2f(0, 1);
+            isMoving = true;
+            state = HeroState::Running;
+            startAnimation("running");
+        }
+        else if (event.key.code == sf::Keyboard::A) {
+            // Напрямок вліво
+            direction = sf::Vector2f(-1, 0);
+            isMoving = true;
+            state = HeroState::Running;
+            startAnimation("running");
+        }
+        else if (event.key.code == sf::Keyboard::D) {
+            // Напрямок вправо
+            direction = sf::Vector2f(1, 0);
+            isMoving = true;
+            state = HeroState::Running;
+            startAnimation("running");
+        }
+        else if (event.key.code == sf::Keyboard::Enter) {
+            // Атака
+            isMoving = false; // Зупиняємо рух під час атаки
+            state = HeroState::Attacking;
+            startAnimation("attack");
+        }
+    }
+    else if (event.type == sf::Event::KeyReleased) {
+        if (event.key.code == sf::Keyboard::W || event.key.code == sf::Keyboard::S ||
+            event.key.code == sf::Keyboard::A || event.key.code == sf::Keyboard::D) {
+            // Якщо клавіша відпущена, змінюємо стан на Idle
+            isMoving = false;
+            state = HeroState::Idle;
+            startAnimation("idle");
+        }
+    }
+}
 
-    // Перевірка на натискання клавіш WASD
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
-        movement.y -= speed * deltaTime;
-        isMoving = true;
-    }
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
-        movement.y += speed * deltaTime;
-        isMoving = true;
-    }
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
-        movement.x -= speed * deltaTime;
-        isMoving = true;
-        hero_sprite.setFlipped(true);  // Розворот вліво
-    }
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
-        movement.x += speed * deltaTime;
-        isMoving = true;
-        hero_sprite.setFlipped(false);  // Розворот вправо
-    }
-
-    // Зміщення спрайту героя
+void Hero::processMovement(float deltaTime,const sf::RenderWindow& window)
+{
     if (isMoving) {
-        hero_sprite.move(movement);
-
-        // Перевірка, чи є поточна анімація перед її зміною
-        if (hero_sprite.getCurrentAnimation() != nullptr && hero_sprite.getCurrentAnimation()->getName() != "running") {
-            hero_sprite.startAnimation("running");  // Запускаємо анімацію бігу
-        }
-    }
-    else {
-        if (hero_sprite.getCurrentAnimation() != nullptr && hero_sprite.getCurrentAnimation()->getName() != "idle") {
-            hero_sprite.startAnimation("idle");  // Перехід до анімації "idle"
-        }
+        // Переміщаємо героя відповідно до напрямку
+        hero_sprite.move({ direction.x * speed * deltaTime, direction.y * speed * deltaTime });
     }
 }
 
@@ -86,9 +110,15 @@ void Hero::updateAnimation()
 
     // Якщо герой атакує, відтворюємо анімацію атаки
     if (state == HeroState::Attacking) {
+        // Перевіряємо, чи анімація завершилась
         if (currentAnim && currentAnim->isFinished()) {
-            state = HeroState::Idle;
+            state = HeroState::Idle;  // Змінюємо стан на Idle після атаки
             hero_sprite.startAnimation("idle");  // Повертаємось до Idle після завершення атаки
+        }
+        else {
+            if (!currentAnim || currentAnim->getName() != "attack") {
+                hero_sprite.startAnimation("attack");
+            }
         }
     }
     // Якщо герой рухається, відтворюємо анімацію бігу
