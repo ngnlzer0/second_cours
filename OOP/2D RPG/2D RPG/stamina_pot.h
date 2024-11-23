@@ -1,6 +1,7 @@
 #pragma once
 #include"Includer.h"
-class stamina_pot
+#include"BaseItem.h"
+class stamina_pot : public BaseItem
 {
 private:
 	Buttons stamina_potion_sprite;

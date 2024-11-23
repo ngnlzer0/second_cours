@@ -50,16 +50,12 @@ Animation& Animation::operator=(const Animation& other)
 }
 
 void Animation::update(float deltaTime) {
-    if (frameCount == 0) return;
+    if (frameCount <= 1) return; // Якщо кадрів немає або лише один, оновлення не потрібно
 
     elapsedTime += deltaTime;
     if (elapsedTime >= duration / frameCount) {
-        elapsedTime = 0.0f;
-        currentFrame++;
-        if (currentFrame >= frameCount) {
-            currentFrame = 0;
-            std::cout << "Animation finished!" << std::endl;
-        }
+        elapsedTime -= duration / frameCount; // Віднімаємо час кадру
+        currentFrame = (currentFrame + 1) % frameCount; // Переходимо до наступного кадру (циклічно)
     }
 }
 

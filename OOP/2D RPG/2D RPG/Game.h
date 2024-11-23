@@ -4,7 +4,9 @@
 
 #include"Includer.h"
 #include"Unit.h"
-#include"Armor.h"
+#include"Inventors.h"
+#include"potion.h"
+#include"stamina_pot.h"
 
 #include"WFC/WFCMapGenerator.h"
 #include"WFC/TileMap.h"

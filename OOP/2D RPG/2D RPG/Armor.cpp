@@ -11,7 +11,7 @@ const std::unordered_map<Armor_type, std::string> Armor::armorTexturePaths = {
 };
 
 Armor::Armor(int pos_x, int pos_y, double g_weight, double g_block, double g_missing, int g_durability, Armor_type g_type, bool random)
-	: type(g_type), weight(Set_weight(g_weight)), block(Set_block(g_block)), miss(Set_missing(g_missing)), durability(Set_durability(g_durability))
+	: BaseItem("Armor", 5.0), type(g_type), weight(Set_weight(g_weight)), block(Set_block(g_block)), miss(Set_missing(g_missing)), durability(Set_durability(g_durability))
 {
 	
 	// Якщо увімкнено випадкове генерування, генеруємо випадкові значення
@@ -19,6 +19,7 @@ Armor::Armor(int pos_x, int pos_y, double g_weight, double g_block, double g_mis
 	{
 		type = static_cast<Armor_type>(Genereta_int_random_number() % 5);
 		weight = Genereta_int_random_number() % 30 + 10;
+		Set_weight_i(weight);
 		block = Genereta_int_random_number() % 40 + 10;
 		miss = Genereta_int_random_number() % 20 + 5;
 		durability = Genereta_int_random_number() % 200 + 50;
