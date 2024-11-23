@@ -47,40 +47,31 @@ void Hero::startAnimation(const std::string& animationName)
     }
 }
 
-void Hero::handleInput(const sf::Event& event,const sf::RenderWindow& window)
+void Hero::handleInput(const sf::Event& event, const sf::RenderWindow& window)
 {
     if (event.type == sf::Event::KeyPressed) {
         if (event.key.code == sf::Keyboard::W) {
-            // Напрямок вгору
             direction = sf::Vector2f(0, -1);
             isMoving = true;
             state = HeroState::Running;
-            startAnimation("running");
         }
         else if (event.key.code == sf::Keyboard::S) {
-            // Напрямок вниз
             direction = sf::Vector2f(0, 1);
             isMoving = true;
             state = HeroState::Running;
-            startAnimation("running");
         }
         else if (event.key.code == sf::Keyboard::A) {
-            // Напрямок вліво
             direction = sf::Vector2f(-1, 0);
             isMoving = true;
             state = HeroState::Running;
-            startAnimation("running");
         }
         else if (event.key.code == sf::Keyboard::D) {
-            // Напрямок вправо
             direction = sf::Vector2f(1, 0);
             isMoving = true;
             state = HeroState::Running;
-            startAnimation("running");
         }
-        else if (event.key.code == sf::Keyboard::Enter) {
-            // Атака
-            isMoving = false; // Зупиняємо рух під час атаки
+        else if (event.key.code == sf::Keyboard::Enter && state != HeroState::Attacking) {
+            isMoving = false;
             state = HeroState::Attacking;
             startAnimation("attack");
         }
@@ -88,13 +79,14 @@ void Hero::handleInput(const sf::Event& event,const sf::RenderWindow& window)
     else if (event.type == sf::Event::KeyReleased) {
         if (event.key.code == sf::Keyboard::W || event.key.code == sf::Keyboard::S ||
             event.key.code == sf::Keyboard::A || event.key.code == sf::Keyboard::D) {
-            // Якщо клавіша відпущена, змінюємо стан на Idle
             isMoving = false;
             state = HeroState::Idle;
-            startAnimation("idle");
         }
     }
+
+    updateAnimation();
 }
+
 
 void Hero::processMovement(float deltaTime,const sf::RenderWindow& window)
 {
@@ -108,26 +100,17 @@ void Hero::updateAnimation()
 {
     auto* currentAnim = hero_sprite.getCurrentAnimation();
 
-    // Якщо герой атакує, відтворюємо анімацію атаки
     if (state == HeroState::Attacking) {
-        // Перевіряємо, чи анімація завершилась
         if (currentAnim && currentAnim->isFinished()) {
-            state = HeroState::Idle;  // Змінюємо стан на Idle після атаки
-            hero_sprite.startAnimation("idle");  // Повертаємось до Idle після завершення атаки
-        }
-        else {
-            if (!currentAnim || currentAnim->getName() != "attack") {
-                hero_sprite.startAnimation("attack");
-            }
+            state = HeroState::Idle;
+            hero_sprite.startAnimation("idle");
         }
     }
-    // Якщо герой рухається, відтворюємо анімацію бігу
     else if (state == HeroState::Running) {
         if (!currentAnim || currentAnim->getName() != "running") {
             hero_sprite.startAnimation("running");
         }
     }
-    // Якщо герой стоїть, відтворюємо анімацію стояння
     else if (state == HeroState::Idle) {
         if (!currentAnim || currentAnim->getName() != "idle") {
             hero_sprite.startAnimation("idle");

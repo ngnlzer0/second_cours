@@ -2,6 +2,7 @@
 #include <unordered_map>
 #include "Buttons.h"
 #include <SFML/Graphics.hpp>
+#include "BaseItem.h"
 
 enum Armor_type {
     helmet,
@@ -11,7 +12,7 @@ enum Armor_type {
     shoes,
 };
 
-class Armor : public sf::Drawable {
+class Armor : public sf::Drawable, public BaseItem {
 private:
     Buttons* armor_button;
     Armor_type type;

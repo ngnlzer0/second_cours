@@ -2,6 +2,7 @@
 #include <unordered_map>
 #include<iostream>
 #include"Buttons.h"
+#include "BaseItem.h"
 
 enum weapon_type
 {
@@ -11,7 +12,7 @@ enum weapon_type
 	Staff = 3
 };
 
-class weapon
+class weapon : public BaseItem
 {
 private:
 	Buttons* weapon_button;

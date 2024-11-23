@@ -48,14 +48,14 @@ void Unit_Sprite::move(sf::Vector2f offset)
 
 void Unit_Sprite::update(float deltaTime) {
     if (currentAnimation) {
-        currentAnimation->update(deltaTime);  // Оновлюємо анімацію
-        unit_sprite.setTextureRect(currentAnimation->getCurrentFrame());  // Оновлюємо кадр спрайта
+        currentAnimation->update(deltaTime);  // Оновлення кадрів анімації
 
-        // Перевірка на завершення анімації
-        if (currentAnimation->isFinished()) {
-            if (currentAnimation->getName() != idleAnimationName) {
-                startAnimation(idleAnimationName);  // Якщо анімація не idle, повертаємось до idle
-            }
+        // Встановлюємо новий кадр тільки якщо він змінився
+        unit_sprite.setTextureRect(currentAnimation->getCurrentFrame());
+
+        // Перевірка завершення анімації
+        if (currentAnimation->isFinished() && currentAnimation->getName() != idleAnimationName) {
+            startAnimation(idleAnimationName);  // Повертаємось до idle
         }
     }
     else {
@@ -70,19 +70,20 @@ void Unit_Sprite::draw(sf::RenderWindow& window)
 
 void Unit_Sprite::startAnimation(const std::string& animationName)
 {
-    // Перевірка, чи анімація існує
+    // Перевірка, чи анімація вже активна
+    if (currentAnimation && currentAnimation->getName() == animationName) {
+        return; // Якщо активна анімація відповідає, нічого не змінюємо
+    }
+
     Animation* anim = getAnimation(animationName);
     if (anim) {
-        currentAnimation = anim;  // Встановлюємо поточну анімацію
-        currentAnimation->reset();  // Оновлюємо перший кадр
-
-        // Зациклюємо анімацію, якщо це потрібно
-        //currentAnimation->setLooping(true);
-
+        currentAnimation = anim;      // Встановлюємо нову анімацію
+        currentAnimation->reset();    // Починаємо з першого кадру
+        unit_sprite.setTexture(*currentAnimation->getTexture()); // Оновлюємо текстуру спрайта
         std::cout << "Starting animation: " << animationName << std::endl;
     }
     else {
-        std::cout << "No animation found with name: " << animationName << std::endl;
+        std::cout << "Animation not found: " << animationName << std::endl;
     }
 }
 

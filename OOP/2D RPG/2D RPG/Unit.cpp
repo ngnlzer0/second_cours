@@ -33,7 +33,7 @@ void Unit::attack_enemi(Unit* enemi)
 	}
 }
 
-void Unit::Healt_self()
+/*void Unit::Healt_self()
 {
 	if (inventar.Get_number_potion() > 0)
 	{
@@ -117,3 +117,4 @@ void Fight(Unit* hero, Unit* monstr)
 	}
 	
 }
+*/

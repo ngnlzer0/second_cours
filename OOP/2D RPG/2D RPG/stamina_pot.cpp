@@ -1,7 +1,7 @@
 #include "stamina_pot.h"
 
 stamina_pot::stamina_pot(float pos_x,float pos_y,int g_regeneration_stamina, double g_weight_s)
-	:regeneration_stamina(g_regeneration_stamina),weight_s(g_weight_s),number_stamina_pot(0),All_Weight_stamina_pot(0.0),
+	:BaseItem("Stamina_pot",1.1), regeneration_stamina(g_regeneration_stamina), weight_s(g_weight_s), number_stamina_pot(0), All_Weight_stamina_pot(0.0),
 	stamina_potion_sprite(sf::Vector2f{pos_x,pos_y},{30,30}, "C:/Git.repos/second_cours/OOP/2D RPG/2D RPG/assets/other_elements/mana_potion.png","",FONT)
 {
 

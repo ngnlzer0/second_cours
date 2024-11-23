@@ -142,6 +142,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BaseItem.cpp" />
     <ClCompile Include="Hero.cpp" />
     <ClCompile Include="OtherWFC\WFC.cpp" />
     <ClCompile Include="MyWFC\Tile1.cpp" />
@@ -166,6 +167,7 @@
     <ClCompile Include="weapon.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BaseItem.h" />
     <ClInclude Include="Hero.h" />
     <ClInclude Include="OtherWFC\Precomp.h" />
     <ClInclude Include="OtherWFC\WFC.h" />

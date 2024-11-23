@@ -1,6 +1,8 @@
 #pragma once
 #include"Includer.h"
-class potion
+#include"BaseItem.h"
+
+class potion : BaseItem
 {
 private:
 	int number_potion;
