@@ -9,10 +9,10 @@ class Buttons;
 class Unit_Sprite {
 private:
     sf::Sprite unit_sprite;
+    std::string unit_name_texture;
     sf::Texture unit_texture;
     sf::Texture defaultTexture;   // Стандартна текстура
     sf::Vector2f position_sprite;
-    std::string unit_name_texture;
 
     std::map<std::string, Animation*> animations;
     Animation* currentAnimation;

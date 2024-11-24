@@ -2,15 +2,15 @@
 #include <iostream>
 
 Unit_Sprite::Unit_Sprite(const std::string& textureFile, sf::Vector2f pos, bool fullPhoto, sf::IntRect size)
-    : position_sprite(pos), idleAnimationName("idle"), currentAnimation(nullptr), currentTexture(nullptr)
+    : position_sprite(pos), idleAnimationName("idle"), currentAnimation(nullptr), currentTexture(nullptr), unit_name_texture(textureFile)
 {
     if (fullPhoto) {
-        if (!unit_texture.loadFromFile(textureFile, size)) {
+        if (!unit_texture.loadFromFile(unit_name_texture, size)) {
             throw std::runtime_error("Failed to load texture from file: " + textureFile);
         }
     }
     else {
-        if (!unit_texture.loadFromFile(textureFile)) {
+        if (!unit_texture.loadFromFile(unit_name_texture)) {
             throw std::runtime_error("Failed to load texture from file: " + textureFile);
         }
     }

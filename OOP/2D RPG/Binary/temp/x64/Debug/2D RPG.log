@@ -1,5 +1,12 @@
-﻿  Unit.cpp
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\Unit.cpp(52,22): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\Unit.cpp(65,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\Unit.cpp(74,21): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+﻿  Game.cpp
+C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\WFC\Tile.h(33,34): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "Game.cpp")
+  
+  Hero.cpp
+  Main.cpp
+C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\WFC\Tile.h(33,34): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "Main.cpp")
+  
+  Unit_Sprite.cpp
+  Создание кода...
   2D RPG.vcxproj -> C:\Git.repos\second_cours\OOP\2D RPG\Binary\x64\Debug\2D RPG.exe
