@@ -21,7 +21,7 @@ Game::Game()
     inventory.addItem(std::make_shared<stamina_pot>(*stamina));
     inventory.addItem(std::make_shared<potion>(*healt));
 
-    hero.Set_new_HP(20);
+    hero.Set_new_HP(60);
     hero.Set_new_stamina(30);
 }
 
