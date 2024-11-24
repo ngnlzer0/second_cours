@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include"weapon.h"
 #include"Armor.h"
 #include"Inventors.h"
@@ -23,10 +23,18 @@ private:
 	const double max_weight;
 	double cur_weight;
 
+	sf::RectangleShape hpBackground;
+	sf::RectangleShape staminaBackground;
+	sf::RectangleShape hpBar;
+	sf::RectangleShape staminaBar;
+
+	sf::Text hpText;
+	sf::Text staminaText;
+	sf::Font font;  // Шрифт для тексту
+
 
 public:
 
-	Inventors inventar;
 
 	Unit(const std::string texture_file = "", sf::Vector2f pos={}, sf::Vector2f size={}, bool chois_rect = false, sf::IntRect Pos_texture = {0,0,0,0},
 		int X = 0, int Y = 0, const double max_weight = 50, const double g_max_hp = 150, const int g_max_stamina = 100,
@@ -47,8 +55,8 @@ public:
 	void received_damage(double minus_damage);
 	void attack_enemi(Unit* enemi);
 
-	void Healt_self();
-	void push_stamina_self();
+	//void Healt_self();
+	//void push_stamina_self();
 
 	weapon* Get_weapon() { return c_weapon; }
 	Armor* Get_armor() { return c_armor; }
@@ -56,11 +64,15 @@ public:
 	void Set_new_weapon(weapon* new_weapon) { c_weapon = new_weapon; }
 	void Set_new_armor(Armor* new_armor) { c_armor = new_armor; }
 
-	bool aliwe() { if (this->Get_HP() <= 0) { delete this; return false; } return true; }
+	void updateBars();
+	void drawBars(sf::RenderTarget& target) const;
 
-	void Get_accet_monstr(Unit* other);
-	void user_step(Unit* other);
+
+	//bool aliwe() { if (this->Get_HP() <= 0) { delete this; return false; } return true; }
+
+	//void Get_accet_monstr(Unit* other);
+	//void user_step(Unit* other);
 };
 
-void Fight(Unit* hero, Unit* monstr);
+//void Fight(Unit* hero, Unit* monstr);
 
