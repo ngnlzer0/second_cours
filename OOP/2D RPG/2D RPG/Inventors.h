@@ -1,40 +1,55 @@
 ﻿#pragma once
+
 #include <vector>
 #include <memory>
 #include <SFML/Graphics.hpp>
 #include "BaseItem.h"
+#include"Includer.h"
 
 class Inventors {
 private:
-    double weight_inventors;                      // Поточна вага інвентаря
-    const double max_weight = 55.0;               // Максимальна вага інвентаря
-    const int max_items = 9;                      // Максимальна кількість предметів
-    std::vector<std::shared_ptr<BaseItem>> items; // Предмети в інвентарі
-    std::vector<sf::RectangleShape> grid_cells;   // Клітинки інвентаря
+    double maxWeight;                          // Максимальна вага
+    double currentWeight;                      // Поточна вага
+    unsigned int size;                         // Кількість клітинок інвентаря
+    sf::Sprite background;                     // Фон інвентаря
+    sf::Texture backgroundTexture;             // Текстура для фону
+    std::vector<std::shared_ptr<BaseItem>> slots; // Слоти для предметів (може бути порожнім)
+    std::vector<sf::RectangleShape> cells;    // Клітинки інвентаря
 
-    const std::string name_texture;
-    sf::Sprite background;                        // Фон інвентаря
-    sf::Texture texture_background;
+    std::shared_ptr<BaseItem> draggedItem;         // Предмет, який ми переміщуємо
+    sf::Vector2f originalPosition;  // Початкова позиція спрайта захопленого предмета
+    int originalSlotIndex;          // Індекс клітинки, з якої взяли предмет
+    bool isDragging;                // Флаг для визначення, чи виконується перетягування
 
 public:
-    Inventors();
+    // Конструктор
+    Inventors(unsigned int size, double maxWeight, const std::string& bgTexturePath);
 
-    // Додавання предмета
+    // Деструктор
+    ~Inventors() = default;
+
+    // Додати предмет в інвентар
     bool addItem(const std::shared_ptr<BaseItem>& item);
 
-    // Видалення предмета
-    bool removeItem(const std::shared_ptr<BaseItem>& item);
+    // Видалити предмет зі слоту
+    bool removeItem(unsigned int index);
 
-    // Отримати загальну вагу інвентаря
-    double getWeight() const { return weight_inventors; }
+    // Отримати предмет зі слоту
+    std::shared_ptr<BaseItem> getItem(unsigned int index) const;
+
+    // Отримати поточну вагу
+    double getCurrentWeight() const;
 
     // Отримати максимальну вагу
-    double getMaxWeight() const { return max_weight; }
+    double getMaxWeight() const;
 
-    // Відображення інвентаря
-    void draw(sf::RenderTarget& target) const;
+    // Відобразити інвентар
+    void draw(sf::RenderWindow& window) const;
 
-private:
-    void initializeGrid(float cell_size, float spacing, sf::Vector2f start_position);
+    // Ініціалізувати клітинки
+    void initializeCells(unsigned int columns, float slotSize, float padding);
+
+    void update(const sf::RenderWindow& window);
+    void handleInput(sf::Event& event, const sf::RenderWindow& window);
 };
 

@@ -20,6 +20,8 @@ private:
     enum class HeroState { Idle, Running, Attacking } state;
     Animation* currentAnim; // Додано для відстеження поточної анімації
 
+    sf::Vector2f initialScale_h;
+
 public:
     Hero();
 
@@ -33,4 +35,5 @@ public:
     void updateSpriteOrientation(float scaleX);
 
     Unit_Sprite* Get_sprite() { return &hero_sprite; }
+
 };

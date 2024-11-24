@@ -23,6 +23,9 @@ Unit_Sprite::Unit_Sprite(const std::string& textureFile, sf::Vector2f pos, bool 
 
     defaultTexture = unit_texture;
     currentTexture = &defaultTexture;
+
+    initialScale = unit_sprite.getScale();  // Зберігаємо початковий масштаб
+    unit_sprite.setScale(initialScale);  // Встановлюємо початковий масштаб
 }
 
 Unit_Sprite::~Unit_Sprite()

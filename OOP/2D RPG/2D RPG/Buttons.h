@@ -24,6 +24,10 @@ public:
         const std::string& fontPath = "", const sf::Vector2f& textScale = {1,1},
         bool useSubRect = false, const sf::IntRect& textureRect = sf::IntRect() = {0,0,100,100});
 
+    sf::Text& getTitle() {
+        return title;
+    }
+
     virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 
     void Select(sf::Color color);

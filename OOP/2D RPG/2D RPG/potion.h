@@ -2,7 +2,7 @@
 #include"Includer.h"
 #include"BaseItem.h"
 
-class potion : BaseItem
+class potion : public BaseItem
 {
 private:
 	int number_potion;

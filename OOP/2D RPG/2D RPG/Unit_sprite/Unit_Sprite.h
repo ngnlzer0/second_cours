@@ -4,6 +4,8 @@
 #include <map>
 #include "Animation/Animation.h"
 
+class Buttons;
+
 class Unit_Sprite {
 private:
     sf::Sprite unit_sprite;
@@ -17,6 +19,8 @@ private:
     std::string idleAnimationName;
 
     sf::Texture* currentTexture; // Змінна для поточної текстури
+
+    sf::Vector2f initialScale;
 
 public:
     Unit_Sprite(const std::string& textureFile = "", sf::Vector2f pos = { 0, 0 }, bool fullPhoto = false, sf::IntRect size = { 0, 0, 0 ,0 });
@@ -33,6 +37,7 @@ public:
     void setPosition(const sf::Vector2f& position);
 
     void setRotation(float angle);                // Встановлення обертання спрайта
+    sf::Vector2f getScale() const { return initialScale; }
     void setScale(float x, float y);              // Встановлення масштабу спрайта
 
     void setFlipped(bool flipped);
