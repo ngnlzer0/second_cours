@@ -121,3 +121,16 @@ Animation* Unit_Sprite::getAnimation(const std::string& name) {
     }
     return nullptr;  // Повертаємо nullptr, якщо анімацію не знайдено
 }
+
+sf::FloatRect Unit_Sprite::getGlobalBounds() const {
+    sf::FloatRect localBounds = unit_sprite.getLocalBounds();
+    sf::Vector2f position = unit_sprite.getPosition();
+
+    // Враховуємо поточну позицію, масштаб і точку походження
+    return sf::FloatRect(
+        position.x - unit_sprite.getOrigin().x * unit_sprite.getScale().x,
+        position.y - unit_sprite.getOrigin().y * unit_sprite.getScale().y,
+        localBounds.width * unit_sprite.getScale().x,
+        localBounds.height * unit_sprite.getScale().y
+    );
+}

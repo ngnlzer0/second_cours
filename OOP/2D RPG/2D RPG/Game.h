@@ -6,8 +6,6 @@
 #include "Inventors.h"
 #include "potion.h"
 #include "stamina_pot.h"
-#include "WFC/WFCMapGenerator.h"
-#include "WFC/TileMap.h"
 #include "Hero.h"
 
 class Game {
@@ -19,8 +17,7 @@ private:
     sf::RenderWindow window;
     Main_menu Main_Menu;
 
-    //TileMap tileMap; // Карта тайлів
-    //WFCMapGenerator wfcMapGenerator; // Генератор карти
+
 
     bool main_menu_open = true;
     bool isGameActive = false;

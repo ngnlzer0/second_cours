@@ -1,11 +1,10 @@
-#include"Game.h"
+﻿#include"Game.h"
 #include"Unit.h"
 
 int main()
-{
-	
-	Game game;
-	game.Run();
+{   
+     Game game;
+     game.Run();
 
-	return 0;
+        return 0;
 }
