@@ -52,4 +52,6 @@ public:
     Animation* getAnimation(const std::string& name);
     Animation* getCurrentAnimation() { return currentAnimation; };
 
+    sf::FloatRect getGlobalBounds() const;
+
 };

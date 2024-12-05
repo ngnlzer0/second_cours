@@ -1,8 +1,8 @@
 ﻿#include "Animation.h"
 #include<iostream>
 
-Animation::Animation(const std::string& textureFile, int frameCount, sf::IntRect frameSize, const std::string& animName)
-    : name_texture(textureFile), currentFrame(0), duration(1.0f), elapsedTime(0.0f), frameCount(frameCount), name(animName)
+Animation::Animation(const std::string& textureFile, int frameCount, sf::IntRect frameSize, const std::string& animName, bool looping)
+    : name_texture(textureFile), currentFrame(0), duration(1.0f), elapsedTime(0.0f), frameCount(frameCount), name(animName),isLooping(looping)
 {
     if (!texture.loadFromFile(name_texture)) {
         throw std::runtime_error("Failed to load texture from file: " + textureFile);
@@ -50,14 +50,21 @@ Animation& Animation::operator=(const Animation& other)
 }
 
 void Animation::update(float deltaTime) {
-    if (frameCount <= 1) return; // Якщо кадрів немає або лише один, оновлення не потрібно
-
     elapsedTime += deltaTime;
-    if (elapsedTime >= duration / frameCount) {
-        elapsedTime -= duration / frameCount; // Віднімаємо час кадру
-        currentFrame = (currentFrame + 1) % frameCount; // Переходимо до наступного кадру (циклічно)
+    if (elapsedTime >= duration / frames.size()) {
+        elapsedTime = 0;
+        currentFrame++;
+        if (currentFrame >= frames.size()) {
+            if (isLooping) {
+                currentFrame = 0; // Зациклюємо анімацію
+            }
+            else {
+                currentFrame = frames.size() - 1; // Залишаємо на останньому кадрі
+            }
+        }
     }
 }
+
 
 void Animation::reset() {
     currentFrame = 0;
@@ -75,9 +82,3 @@ sf::Texture* Animation::getTexture() {
     return &texture;
 }
 
-bool Animation::isFinished() const {
-    if (frameCount == 0) {
-        return true;  // Якщо кадри відсутні, анімація завершена
-    }
-    return currentFrame == frameCount - 1 && elapsedTime >= duration / frameCount;
-}

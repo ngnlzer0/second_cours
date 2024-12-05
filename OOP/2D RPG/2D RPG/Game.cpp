@@ -92,8 +92,6 @@ void Game::Render() {
         Main_Menu.draw(window, sf::RenderStates::Default);
     }
     else if (isGameActive) {
-        // Малювання ігрових елементів
-         
         // Малювання інвентаря
         inventory.draw(window);
         // tileMap.draw(window); // Якщо використовується карта

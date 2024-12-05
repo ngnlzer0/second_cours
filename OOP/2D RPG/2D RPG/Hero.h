@@ -11,7 +11,7 @@ class Hero : public Unit
 private:
 
     Unit_Sprite hero_sprite;
-    static std::map<std::string, Animation> hero_animations;
+    std::map<std::string, Animation> hero_animations;
     float speed;
     bool isMoving;
     sf::Vector2f direction;

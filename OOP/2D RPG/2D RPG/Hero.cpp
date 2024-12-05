@@ -9,19 +9,19 @@ Hero::Hero()
     sf::IntRect SIZE{ 0, 0, 120, 80 };
     std::cout << "Adding animation: attack" << std::endl;
     hero_sprite.addAnimation("attack", Animation("C:/Git.repos/second_cours/OOP/2D RPG/2D RPG/assets/FreeKnight_v1/Colour1/Outline/120x80_PNGSheets/_Attack.png",
-        4, SIZE, "attack"));
+        4, SIZE, "attack",false));
     std::cout << "Adding animation: running" << std::endl;
     hero_sprite.addAnimation("running", Animation("C:/Git.repos/second_cours/OOP/2D RPG/2D RPG/assets/FreeKnight_v1/Colour1/Outline/120x80_PNGSheets/_Run.png",
-        10, SIZE, "running"));
+        10, SIZE, "running",true));
     std::cout << "Adding animation: attack_combo" << std::endl;
     hero_sprite.addAnimation("attack_combo", Animation("C:/Git.repos/second_cours/OOP/2D RPG/2D RPG/assets/FreeKnight_v1/Colour1/Outline/120x80_PNGSheets/_AttackCombo2hit.png",
-        10, SIZE, "attack_combo"));
+        10, SIZE, "attack_combo",false));
     std::cout << "Adding animation: idle" << std::endl;
-    hero_sprite.addAnimation("idle", Animation("C:/Git.repos/second_cours/OOP/2D RPG/2D RPG/assets/FreeKnight_v1/Comparison2x.png",
-        1, SIZE, "idle"));
+    hero_sprite.addAnimation("idle", Animation("C:/Git.repos/second_cours/OOP/2D RPG/2D RPG/assets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Idle.png",
+        10, SIZE, "idle",true));
     hero_sprite.setPosition({ WIDHT_WINDOW / 2 , HIGHT_WINDOW / 2});
 
-    initialScale_h = hero_sprite.getScale();
+    initialScale_h = { 2,2 };
 }
 
 void Hero::move(sf::Vector2f offset)
@@ -50,7 +50,6 @@ void Hero::startAnimation(const std::string& animationName)
     }
 }
 
-
 void Hero::handleInput(const sf::Event& event, const sf::RenderWindow& window)
 {
     if (event.type == sf::Event::KeyPressed) {
@@ -68,11 +67,17 @@ void Hero::handleInput(const sf::Event& event, const sf::RenderWindow& window)
             direction = sf::Vector2f(-1, 0);
             isMoving = true;
             state = HeroState::Running;
+
+            // Розвертаємо героя ліворуч
+            hero_sprite.setScale(-std::abs(initialScale_h.x), initialScale_h.y);
         }
         else if (event.key.code == sf::Keyboard::D) {
             direction = sf::Vector2f(1, 0);
             isMoving = true;
             state = HeroState::Running;
+
+            // Розвертаємо героя праворуч
+            hero_sprite.setScale(std::abs(initialScale_h.x), initialScale_h.y);
         }
         else if (event.key.code == sf::Keyboard::Enter && state != HeroState::Attacking) {
             isMoving = false;
@@ -92,11 +97,32 @@ void Hero::handleInput(const sf::Event& event, const sf::RenderWindow& window)
 }
 
 
-void Hero::processMovement(float deltaTime,const sf::RenderWindow& window)
+
+
+void Hero::processMovement(float deltaTime, const sf::RenderWindow& window)
 {
     if (isMoving) {
-        // Переміщаємо героя відповідно до напрямку
-        hero_sprite.move({ direction.x * speed * deltaTime, direction.y * speed * deltaTime });
+        sf::Vector2f newPosition = hero_sprite.getPosition() + sf::Vector2f(direction.x * speed * deltaTime, direction.y * speed * deltaTime);
+
+        sf::Vector2u windowSize = window.getSize();
+        sf::FloatRect heroBounds = hero_sprite.getGlobalBounds();
+
+        // Перевіряємо, чи не виходить за межі екрану
+        if (newPosition.x - heroBounds.width / 2 < 0) {
+            newPosition.x = heroBounds.width / 2;
+        }
+        else if (newPosition.x + heroBounds.width / 2 > windowSize.x) {
+            newPosition.x = windowSize.x - heroBounds.width / 2;
+        }
+
+        if (newPosition.y - heroBounds.height / 2 < 0) {
+            newPosition.y = heroBounds.height / 2;
+        }
+        else if (newPosition.y + heroBounds.height / 2 > windowSize.y) {
+            newPosition.y = windowSize.y - heroBounds.height / 2;
+        }
+
+        hero_sprite.setPosition(newPosition);
     }
 }
 
@@ -104,27 +130,41 @@ void Hero::updateAnimation()
 {
     auto* currentAnim = hero_sprite.getCurrentAnimation();
 
+    // Якщо герой атакує, пріоритет атаки
     if (state == HeroState::Attacking) {
         if (currentAnim && currentAnim->isFinished()) {
+            // Повертаємось до стану "Idle" після завершення атаки
             state = HeroState::Idle;
             hero_sprite.startAnimation("idle");
-            hero_sprite.setScale(initialScale_h.x, initialScale_h.y);  // Повертаємо масштаб після атаки
+            hero_sprite.setScale(2, 2); // Відновлення масштабу після атаки
         }
+        else if (!currentAnim || currentAnim->getName() != "attack") {
+            // Запуск анімації атаки тільки якщо вона не активна
+            hero_sprite.startAnimation("attack");
+        }
+        return; // Атака має найвищий пріоритет
     }
-    else if (state == HeroState::Running) {
+
+    // Якщо герой біжить
+    if (state == HeroState::Running) {
+        // Перевірка, чи вже виконується анімація "running"
         if (!currentAnim || currentAnim->getName() != "running") {
+            // Запускаємо анімацію бігу тільки якщо вона не активна
             hero_sprite.startAnimation("running");
-            hero_sprite.setScale(initialScale_h.x, initialScale_h.y);  // Повертаємо стандартний масштаб
+            hero_sprite.setScale(2, 2); // Відновлення масштабу
         }
+        return; // Якщо біжимо, то анімація "running" не має змінюватися
     }
-    else if (state == HeroState::Idle) {
+
+    // Якщо герой стоїть нерухомо
+    if (state == HeroState::Idle) {
         if (!currentAnim || currentAnim->getName() != "idle") {
+            // Запуск анімації "Idle" тільки якщо вона не активна
             hero_sprite.startAnimation("idle");
-            hero_sprite.setScale(initialScale_h.x, initialScale_h.y);  // Повертаємо стандартний масштаб
+            hero_sprite.setScale(2, 2); // Відновлення масштабу
         }
     }
 }
-
 
 void Hero::updateSpriteOrientation(float scaleX) {
     // Не змінюємо масштаб тут, якщо не потрібно
