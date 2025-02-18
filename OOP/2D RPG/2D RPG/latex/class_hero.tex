@@ -1,0 +1,109 @@
+\doxysection{Hero Class Reference}
+\hypertarget{class_hero}{}\label{class_hero}\index{Hero@{Hero}}
+
+
+Inheritance diagram for Hero\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_hero__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Hero\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_hero__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_hero_aeed21c06efd87bbe8a63db1c751136b5}\label{class_hero_aeed21c06efd87bbe8a63db1c751136b5} 
+void {\bfseries move} (sf\+::\+Vector2f offset)
+\item 
+\Hypertarget{class_hero_aef7a4e3600ded40bde307dd8e47b8046}\label{class_hero_aef7a4e3600ded40bde307dd8e47b8046} 
+void {\bfseries update} (float delta\+Time)
+\item 
+\Hypertarget{class_hero_a5d5ce7f6261f8b6cf5c0131d25820b25}\label{class_hero_a5d5ce7f6261f8b6cf5c0131d25820b25} 
+void {\bfseries handle\+Input} (const sf\+::\+Event \&event, const sf\+::\+Render\+Window \&window)
+\item 
+\Hypertarget{class_hero_a88f22dbe35461adb3f5b4c5ca2340e7c}\label{class_hero_a88f22dbe35461adb3f5b4c5ca2340e7c} 
+void {\bfseries process\+Movement} (float delta\+Time, const sf\+::\+Render\+Window \&window)
+\item 
+\Hypertarget{class_hero_ac5927da81d2677ae835d7b7407f937db}\label{class_hero_ac5927da81d2677ae835d7b7407f937db} 
+void {\bfseries update\+Animation} ()
+\item 
+\Hypertarget{class_hero_a3985b299d8381ee6d55e54106ca14291}\label{class_hero_a3985b299d8381ee6d55e54106ca14291} 
+void {\bfseries start\+Animation} (const std\+::string \&animation\+Name)
+\item 
+\Hypertarget{class_hero_a6bd09b6817a1929b55002ddb5683ea81}\label{class_hero_a6bd09b6817a1929b55002ddb5683ea81} 
+void {\bfseries update\+Sprite\+Orientation} (float scaleX)
+\item 
+\Hypertarget{class_hero_a2920b0f077ff5beac2887b540fe53237}\label{class_hero_a2920b0f077ff5beac2887b540fe53237} 
+Unit\+\_\+\+Sprite \texorpdfstring{$\ast$}{*} {\bfseries Get\+\_\+sprite} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_unit}{Unit}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Unit} (const std\+::string texture\+\_\+file="{}"{}, sf\+::\+Vector2f pos=\{\}, sf\+::\+Vector2f size=\{\}, bool chois\+\_\+rect=false, sf\+::\+Int\+Rect Pos\+\_\+texture=\{0, 0, 0, 0\}, int X=0, int Y=0, const double max\+\_\+weight=50, const double g\+\_\+max\+\_\+hp=150, const int g\+\_\+max\+\_\+stamina=100, int g\+\_\+speed=50, double g\+\_\+block=40, double g\+\_\+miss=25)
+\item 
+const double {\bfseries Get\+\_\+max\+\_\+\+HP} ()
+\item 
+const int {\bfseries Get\+\_\+max\+\_\+stamina} ()
+\item 
+double {\bfseries Get\+\_\+\+HP} ()
+\item 
+int {\bfseries Get\+\_\+stamina} ()
+\item 
+int {\bfseries Get\+\_\+speed} ()
+\item 
+double {\bfseries Get\+\_\+block} ()
+\item 
+double {\bfseries Get\+\_\+miss} ()
+\item 
+void {\bfseries Set\+\_\+new\+\_\+\+HP} (double new\+\_\+\+HP)
+\item 
+void {\bfseries Set\+\_\+new\+\_\+stamina} (int new\+\_\+stamina)
+\item 
+void {\bfseries received\+\_\+damage} (double minus\+\_\+damage)
+\item 
+void {\bfseries attack\+\_\+enemi} (\mbox{\hyperlink{class_unit}{Unit}} \texorpdfstring{$\ast$}{*}enemi)
+\item 
+\mbox{\hyperlink{classweapon}{weapon}} \texorpdfstring{$\ast$}{*} {\bfseries Get\+\_\+weapon} ()
+\item 
+\mbox{\hyperlink{class_armor}{Armor}} \texorpdfstring{$\ast$}{*} {\bfseries Get\+\_\+armor} ()
+\item 
+void {\bfseries Set\+\_\+new\+\_\+weapon} (\mbox{\hyperlink{classweapon}{weapon}} \texorpdfstring{$\ast$}{*}new\+\_\+weapon)
+\item 
+void {\bfseries Set\+\_\+new\+\_\+armor} (\mbox{\hyperlink{class_armor}{Armor}} \texorpdfstring{$\ast$}{*}new\+\_\+armor)
+\item 
+void {\bfseries update\+Bars} ()
+\item 
+void {\bfseries draw\+Bars} (sf\+::\+Render\+Target \&target) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classposition}{position}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries position} (int new\+\_\+x, int new\+\_\+y)
+\item 
+{\bfseries position} (sf\+::\+Vector2i vec)
+\item 
+int {\bfseries Get\+\_\+X} ()
+\item 
+int {\bfseries Get\+\_\+Y} ()
+\item 
+void {\bfseries Set\+\_\+new\+\_\+X} (int num)
+\item 
+void {\bfseries Set\+\_\+new\+\_\+Y} (int num)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Hero.\+h\item 
+Hero.\+cpp\end{DoxyCompactItemize}
