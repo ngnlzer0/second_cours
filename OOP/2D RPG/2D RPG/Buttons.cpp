@@ -14,6 +14,7 @@ Buttons::Buttons(const sf::Vector2f& position, const sf::Vector2f& size,
     Background.setSize(size);
 
     // Завантаження текстури
+    std::cout << "Loading texture from: " << name_textuer_file << std::endl;
     if (!texture.loadFromFile(name_textuer_file, useSubRect ? textureRect : sf::IntRect())) {
        throw std::runtime_error("Failed to load texture from file: " + name_textuer_file);
     }

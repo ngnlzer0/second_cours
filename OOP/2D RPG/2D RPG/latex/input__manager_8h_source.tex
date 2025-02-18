@@ -1,0 +1,33 @@
+\doxysection{input\+\_\+manager.\+h}
+\hypertarget{input__manager_8h_source}{}\label{input__manager_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <SFML/Window/Keyboard.hpp>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <SFML/Window/Joystick.hpp>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }input\_manager}
+\DoxyCodeLine{00008\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ \ \ \ \ input\_manager();}
+\DoxyCodeLine{00011\ \ \ \ \ \string~input\_manager();}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{classinput__manager_ac0a487369081f5671594f7524bc15d6a}{Input}}}
+\DoxyCodeLine{00014\ \ \ \ \ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ Left\ =\ 0,}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ Right,}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ Up,}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ Down,}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ LoadMap,}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classinput__manager_ac0a487369081f5671594f7524bc15d6aa8a356235310778ea4822c865add66939}{KeyCount}}\ \ \ \ \ \ }
+\DoxyCodeLine{00022\ \ \ \ \ \};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ sf::Keyboard::Key\ KeyboardConfiguration(\mbox{\hyperlink{classinput__manager_ac0a487369081f5671594f7524bc15d6a}{Input}}\ key);}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{bool}\ IsKeyBoardPressed(sf::Keyboard::Key);}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{bool}\ IsPressed(\mbox{\hyperlink{classinput__manager_ac0a487369081f5671594f7524bc15d6a}{Input}}\ key,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ joystick\ =\ 0);}
+\DoxyCodeLine{00027\ \};}
+\DoxyCodeLine{00028\ }
+
+\end{DoxyCode}

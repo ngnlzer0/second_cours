@@ -1,0 +1,98 @@
+\doxysection{weapon Class Reference}
+\hypertarget{classweapon}{}\label{classweapon}\index{weapon@{weapon}}
+
+
+Inheritance diagram for weapon\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classweapon__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for weapon\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classweapon__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classweapon_a6071f954b9d6d4a30a4cbd2befd10909}\label{classweapon_a6071f954b9d6d4a30a4cbd2befd10909} 
+{\bfseries weapon} (int pos\+\_\+x=0, int pos\+\_\+y=0, double g\+\_\+damage=0.\+0, double g\+\_\+weight=0.\+0, double g\+\_\+block=0.\+0, double g\+\_\+missing=0.\+0, int g\+\_\+durability=0, weapon\+\_\+type g\+\_\+\+Type=Sword, bool random=1)
+\item 
+\Hypertarget{classweapon_a082ce6444089c653ab2ea43de50ab88f}\label{classweapon_a082ce6444089c653ab2ea43de50ab88f} 
+\mbox{\hyperlink{classweapon}{weapon}} \texorpdfstring{$\ast$}{*} {\bfseries operator\texorpdfstring{$\ast$}{*}} ()
+\item 
+\Hypertarget{classweapon_a9ddc0e0eeededc13a9356484546c7705}\label{classweapon_a9ddc0e0eeededc13a9356484546c7705} 
+double {\bfseries Get\+\_\+damage} ()
+\item 
+\Hypertarget{classweapon_a894ec1e604a131a7d73bdd6e05741508}\label{classweapon_a894ec1e604a131a7d73bdd6e05741508} 
+double {\bfseries Get\+\_\+weight} ()
+\item 
+\Hypertarget{classweapon_a361b94fcc5e2aff7d4c3f18c2572441a}\label{classweapon_a361b94fcc5e2aff7d4c3f18c2572441a} 
+double {\bfseries Get\+\_\+block} ()
+\item 
+\Hypertarget{classweapon_a25b9e9c1b5862b66dee9da4bdd495cb5}\label{classweapon_a25b9e9c1b5862b66dee9da4bdd495cb5} 
+double {\bfseries Get\+\_\+missing} ()
+\item 
+\Hypertarget{classweapon_a3bac54dce6a73026754020a3c09fc958}\label{classweapon_a3bac54dce6a73026754020a3c09fc958} 
+int {\bfseries Get\+\_\+durability} ()
+\item 
+\Hypertarget{classweapon_a5769ca1028f75425d9487eb20b648b8d}\label{classweapon_a5769ca1028f75425d9487eb20b648b8d} 
+double {\bfseries Set\+\_\+damage} (double g\+\_\+damage)
+\item 
+\Hypertarget{classweapon_a34f1a6a9537b7690ea248b9282ef473a}\label{classweapon_a34f1a6a9537b7690ea248b9282ef473a} 
+double {\bfseries Set\+\_\+weight} (double g\+\_\+weight)
+\item 
+\Hypertarget{classweapon_ab18e8a76fdcf2c5f7948913903a60fa1}\label{classweapon_ab18e8a76fdcf2c5f7948913903a60fa1} 
+double {\bfseries Set\+\_\+block} (double g\+\_\+block)
+\item 
+\Hypertarget{classweapon_a7abdaeb73a75ecd2604da059dc808865}\label{classweapon_a7abdaeb73a75ecd2604da059dc808865} 
+double {\bfseries Set\+\_\+missing} (double g\+\_\+missing)
+\item 
+\Hypertarget{classweapon_af2bbdc98a0f56fcb77f27bf9883615b2}\label{classweapon_af2bbdc98a0f56fcb77f27bf9883615b2} 
+int {\bfseries Set\+\_\+durability} (int g\+\_\+durability)
+\item 
+\Hypertarget{classweapon_a8b2406ada9dffad210cfe33a25fe591a}\label{classweapon_a8b2406ada9dffad210cfe33a25fe591a} 
+weapon\+\_\+type {\bfseries Get\+\_\+type\+\_\+weapon} ()
+\item 
+\Hypertarget{classweapon_afefc19c3fadf5462eae274a8950215d6}\label{classweapon_afefc19c3fadf5462eae274a8950215d6} 
+\mbox{\hyperlink{class_buttons}{Buttons}} \& {\bfseries Get\+\_\+\+Buttons} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_base_item}{Base\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Base\+Item} (const std\+::string \&texture\+Path, double weight, bool rect=false, sf\+::\+Int\+Rect size\+\_\+t=\{0, 0, 0, 0\})
+\item 
+sf\+::\+Sprite \texorpdfstring{$\ast$}{*} {\bfseries get\+Sprite} ()
+\item 
+double {\bfseries get\+Weight} () const
+\item 
+void {\bfseries set\+\_\+\+Weight\+\_\+i} (double new\+Weight)
+\item 
+void {\bfseries set\+New\+Texture} (const std\+::string \&texture\+Path, bool rect=false, sf\+::\+Int\+Rect size\+\_\+t=\{ 0, 0, 0, 0 \})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_base_item}{Base\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries name\+\_\+text}
+\item 
+sf\+::\+Texture {\bfseries texture}
+\item 
+sf\+::\+Sprite {\bfseries sprite}
+\item 
+double {\bfseries weight\+\_\+i}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+weapon.\+h\item 
+weapon.\+cpp\end{DoxyCompactItemize}

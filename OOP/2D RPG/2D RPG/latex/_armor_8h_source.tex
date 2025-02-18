@@ -1,0 +1,54 @@
+\doxysection{Armor.\+h}
+\hypertarget{_armor_8h_source}{}\label{_armor_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}Buttons.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}BaseItem.h"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{enum}\ Armor\_type\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ helmet,}
+\DoxyCodeLine{00009\ \ \ \ \ jacket,}
+\DoxyCodeLine{00010\ \ \ \ \ gloves,}
+\DoxyCodeLine{00011\ \ \ \ \ ring,}
+\DoxyCodeLine{00012\ \ \ \ \ shoes,}
+\DoxyCodeLine{00013\ \};}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }Armor\ :\ \textcolor{keyword}{public}\ sf::Drawable,\ \textcolor{keyword}{public}\ BaseItem\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_buttons}{Buttons}}*\ armor\_button;}
+\DoxyCodeLine{00018\ \ \ \ \ Armor\_type\ type;}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{double}\ weight;}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{double}\ block;}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{double}\ miss;}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{int}\ durability;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ std::unordered\_map<Armor\_type,\ std::string>\ armorTexturePaths;}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{comment}{//\ Метод\ draw,\ щоб\ намалювати\ armor\_button\ на\ екрані}}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ draw(sf::RenderTarget\&\ target,\ sf::RenderStates\ states)\textcolor{keyword}{\ const\ override\ }\{}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ armor\_button-\/>draw(target,\ states);}
+\DoxyCodeLine{00030\ \ \ \ \ \}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00033\ \ \ \ \ Armor(\textcolor{keywordtype}{int}\ pos\_x\ =\ 0,\ \textcolor{keywordtype}{int}\ pos\_y\ =\ 0,}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ g\_weight\ =\ 0.0,\ \textcolor{keywordtype}{double}\ g\_block\ =\ 0.0,\ \textcolor{keywordtype}{double}\ g\_missing\ =\ 0.0,\ \textcolor{keywordtype}{int}\ g\_durability\ =\ 0,\ Armor\_type\ g\_type\ =\ helmet,\ \textcolor{keywordtype}{bool}\ random\ =\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{comment}{//\ Гетери\ та\ сетери}}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{double}\ Get\_weight()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ weight;\ \}}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{double}\ Get\_block()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ block;\ \}}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{double}\ Get\_missing()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ miss;\ \}}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{int}\ Get\_durability()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ durability;\ \}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{double}\ Set\_weight(\textcolor{keywordtype}{double}\ g\_weight)\ \{\ \textcolor{keywordflow}{return}\ (g\_weight\ >\ 0.0\ ?\ weight\ =\ g\_weight\ :\ weight\ =\ 0.0);\ \}}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{double}\ Set\_block(\textcolor{keywordtype}{double}\ g\_block)\ \{\ \textcolor{keywordflow}{return}\ (block\ =\ g\_block);\ \}}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{double}\ Set\_missing(\textcolor{keywordtype}{double}\ g\_missing)\ \{\ \textcolor{keywordflow}{return}\ (miss\ =\ g\_missing);\ \}}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{int}\ Set\_durability(\textcolor{keywordtype}{int}\ g\_durability)\ \{\ \textcolor{keywordflow}{return}\ (g\_durability\ >\ 0\ ?\ durability\ =\ g\_durability\ :\ durability\ =\ 0);\ \}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{class_buttons}{Buttons}}\&\ Get\_buttons()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ *armor\_button;\ \}}
+\DoxyCodeLine{00048\ \};}
+\DoxyCodeLine{00049\ }
+
+\end{DoxyCode}

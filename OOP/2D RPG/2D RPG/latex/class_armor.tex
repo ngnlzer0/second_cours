@@ -1,0 +1,92 @@
+\doxysection{Armor Class Reference}
+\hypertarget{class_armor}{}\label{class_armor}\index{Armor@{Armor}}
+
+
+Inheritance diagram for Armor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{class_armor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Armor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{class_armor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_armor_ad43a29d76fb670ac099a5cc1ac948f4b}\label{class_armor_ad43a29d76fb670ac099a5cc1ac948f4b} 
+{\bfseries Armor} (int pos\+\_\+x=0, int pos\+\_\+y=0, double g\+\_\+weight=0.\+0, double g\+\_\+block=0.\+0, double g\+\_\+missing=0.\+0, int g\+\_\+durability=0, Armor\+\_\+type g\+\_\+type=helmet, bool random=true)
+\item 
+\Hypertarget{class_armor_ab52c5d0e7f54eb9236a5118a054f1839}\label{class_armor_ab52c5d0e7f54eb9236a5118a054f1839} 
+double {\bfseries Get\+\_\+weight} () const
+\item 
+\Hypertarget{class_armor_ad83930ffa7876ffe4982cd4d757820d2}\label{class_armor_ad83930ffa7876ffe4982cd4d757820d2} 
+double {\bfseries Get\+\_\+block} () const
+\item 
+\Hypertarget{class_armor_ab2d9039bd59a3c8a8d907b80e2ddf863}\label{class_armor_ab2d9039bd59a3c8a8d907b80e2ddf863} 
+double {\bfseries Get\+\_\+missing} () const
+\item 
+\Hypertarget{class_armor_a062ba9af2bb839859b02e6b788241edb}\label{class_armor_a062ba9af2bb839859b02e6b788241edb} 
+int {\bfseries Get\+\_\+durability} () const
+\item 
+\Hypertarget{class_armor_a8c4ce57aee947c338013d213b34034a2}\label{class_armor_a8c4ce57aee947c338013d213b34034a2} 
+double {\bfseries Set\+\_\+weight} (double g\+\_\+weight)
+\item 
+\Hypertarget{class_armor_a73a44e36e8ed3592bcb6cc9c20627fb3}\label{class_armor_a73a44e36e8ed3592bcb6cc9c20627fb3} 
+double {\bfseries Set\+\_\+block} (double g\+\_\+block)
+\item 
+\Hypertarget{class_armor_a4d74acba8ece68c7d0eb089b6e7c6ea6}\label{class_armor_a4d74acba8ece68c7d0eb089b6e7c6ea6} 
+double {\bfseries Set\+\_\+missing} (double g\+\_\+missing)
+\item 
+\Hypertarget{class_armor_a1225a36a3a8a116c620e9ece7354bf66}\label{class_armor_a1225a36a3a8a116c620e9ece7354bf66} 
+int {\bfseries Set\+\_\+durability} (int g\+\_\+durability)
+\item 
+\Hypertarget{class_armor_a56e4c56f9527260f4ec78bb27862735a}\label{class_armor_a56e4c56f9527260f4ec78bb27862735a} 
+\mbox{\hyperlink{class_buttons}{Buttons}} \& {\bfseries Get\+\_\+buttons} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_base_item}{Base\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Base\+Item} (const std\+::string \&texture\+Path, double weight, bool rect=false, sf\+::\+Int\+Rect size\+\_\+t=\{0, 0, 0, 0\})
+\item 
+sf\+::\+Sprite \texorpdfstring{$\ast$}{*} {\bfseries get\+Sprite} ()
+\item 
+double {\bfseries get\+Weight} () const
+\item 
+void {\bfseries set\+\_\+\+Weight\+\_\+i} (double new\+Weight)
+\item 
+void {\bfseries set\+New\+Texture} (const std\+::string \&texture\+Path, bool rect=false, sf\+::\+Int\+Rect size\+\_\+t=\{ 0, 0, 0, 0 \})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_armor_a1ff3dd6582ea961ebe393150b7d9292e}\label{class_armor_a1ff3dd6582ea961ebe393150b7d9292e} 
+virtual void {\bfseries draw} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_base_item}{Base\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries name\+\_\+text}
+\item 
+sf\+::\+Texture {\bfseries texture}
+\item 
+sf\+::\+Sprite {\bfseries sprite}
+\item 
+double {\bfseries weight\+\_\+i}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Armor.\+h\item 
+Armor.\+cpp\end{DoxyCompactItemize}
