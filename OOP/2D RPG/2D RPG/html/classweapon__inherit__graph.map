@@ -1,5 +1,0 @@
-<map id="weapon" name="weapon">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,293,142,640"/>
-<area shape="rect" id="Node000002" href="$class_base_item.html" title=" " alt="" coords="14,5,134,245"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,260,76,293,71,293,71,260"/>
-</map>

@@ -1,3 +1,0 @@
-﻿  WFC.cpp
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\WFC\WFC.cpp(105,59): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
-  2D RPG.vcxproj -> C:\Git.repos\second_cours\OOP\2D RPG\Binary\x64\Debug\2D RPG.exe
