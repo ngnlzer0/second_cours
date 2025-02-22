@@ -2,38 +2,132 @@
 \hypertarget{class_main__menu}{}\label{class_main__menu}\index{Main\_menu@{Main\_menu}}
 
 
+{\ttfamily \#include $<$Main\+\_\+menu.\+h$>$}
+
+
+
 Collaboration diagram for Main\+\_\+menu\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=184pt]{class_main__menu__coll__graph}
+\includegraphics[height=550pt]{class_main__menu__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_main__menu_aa38273bc85e975965531ec67e2bd2639}\label{class_main__menu_aa38273bc85e975965531ec67e2bd2639} 
-{\bfseries Main\+\_\+menu} (const sf\+::\+Vector2u \&window\+Size)
+\mbox{\hyperlink{class_main__menu_aa38273bc85e975965531ec67e2bd2639}{Main\+\_\+menu}} (const sf\+::\+Vector2u \&window\+Size)
 \item 
-\Hypertarget{class_main__menu_a5e64b3f27608d4ca71913991d2e134e6}\label{class_main__menu_a5e64b3f27608d4ca71913991d2e134e6} 
-void {\bfseries Update\+Selection} (const sf\+::\+Vector2i \&mouse\+Pos)
+\mbox{\hyperlink{class_main__menu_a88abf6a91b68fd25e181f4592121c71a}{Main\+\_\+menu}} ()=default
 \item 
-\Hypertarget{class_main__menu_a451e416d2c34bb518ec53207fba18912}\label{class_main__menu_a451e416d2c34bb518ec53207fba18912} 
-\mbox{\hyperlink{class_buttons}{Buttons}} \& {\bfseries Get\+\_\+\+Play\+Button} ()
+void \mbox{\hyperlink{class_main__menu_a5e64b3f27608d4ca71913991d2e134e6}{Update\+Selection}} (const sf\+::\+Vector2i \&mouse\+Pos)
 \item 
-\Hypertarget{class_main__menu_a36cca2f47fe6540e8f437f26eafb7aad}\label{class_main__menu_a36cca2f47fe6540e8f437f26eafb7aad} 
-\mbox{\hyperlink{class_buttons}{Buttons}} \& {\bfseries Get\+\_\+\+Setting\+Button} ()
+\mbox{\hyperlink{class_buttons}{Buttons}} \& \mbox{\hyperlink{class_main__menu_a451e416d2c34bb518ec53207fba18912}{Get\+\_\+\+Play\+Button}} ()
 \item 
-\Hypertarget{class_main__menu_a35c5bbd3b3c9f52bc265a8fa35645314}\label{class_main__menu_a35c5bbd3b3c9f52bc265a8fa35645314} 
-\mbox{\hyperlink{class_buttons}{Buttons}} \& {\bfseries Get\+\_\+\+Exit\+Button} ()
+\mbox{\hyperlink{class_buttons}{Buttons}} \& \mbox{\hyperlink{class_main__menu_a36cca2f47fe6540e8f437f26eafb7aad}{Get\+\_\+\+Setting\+Button}} ()
 \item 
-\Hypertarget{class_main__menu_ad978f4c383e4aa1145112f5f958580e6}\label{class_main__menu_ad978f4c383e4aa1145112f5f958580e6} 
-void {\bfseries draw} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\mbox{\hyperlink{class_buttons}{Buttons}} \& \mbox{\hyperlink{class_main__menu_a35c5bbd3b3c9f52bc265a8fa35645314}{Get\+\_\+\+Exit\+Button}} ()
+\item 
+void \mbox{\hyperlink{class_main__menu_ad978f4c383e4aa1145112f5f958580e6}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
 \end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Rectangle\+Shape \mbox{\hyperlink{class_main__menu_a7b0b1ef95a62b70928a2538ae1a1fb20}{Back\+\_\+fon}}
+\item 
+sf\+::\+Texture \mbox{\hyperlink{class_main__menu_afc4b53cbba5ad3ea22213d1ea98f2b77}{texture\+\_\+back\+\_\+fon}}
+\item 
+\mbox{\hyperlink{class_buttons}{Buttons}} \mbox{\hyperlink{class_main__menu_a2fec1fbeeed5a28fd12468594398b6cd}{Play\+Button}}
+\item 
+\mbox{\hyperlink{class_buttons}{Buttons}} \mbox{\hyperlink{class_main__menu_aed8654a91af441d4c12afb53068c86ab}{Setting\+Button}}
+\item 
+\mbox{\hyperlink{class_buttons}{Buttons}} \mbox{\hyperlink{class_main__menu_a436019713679d5d7a267efc45dc6c9be}{Exit\+Button}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_main__menu_aa38273bc85e975965531ec67e2bd2639}\index{Main\_menu@{Main\_menu}!Main\_menu@{Main\_menu}}
+\index{Main\_menu@{Main\_menu}!Main\_menu@{Main\_menu}}
+\doxysubsubsection{\texorpdfstring{Main\_menu()}{Main\_menu()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_main__menu_aa38273bc85e975965531ec67e2bd2639} 
+Main\+\_\+menu\+::\+Main\+\_\+menu (\begin{DoxyParamCaption}\item[{const sf\+::\+Vector2u \&}]{window\+Size}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_main__menu_a88abf6a91b68fd25e181f4592121c71a}\index{Main\_menu@{Main\_menu}!Main\_menu@{Main\_menu}}
+\index{Main\_menu@{Main\_menu}!Main\_menu@{Main\_menu}}
+\doxysubsubsection{\texorpdfstring{Main\_menu()}{Main\_menu()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_main__menu_a88abf6a91b68fd25e181f4592121c71a} 
+Main\+\_\+menu\+::\+Main\+\_\+menu (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_main__menu_ad978f4c383e4aa1145112f5f958580e6}\index{Main\_menu@{Main\_menu}!draw@{draw}}
+\index{draw@{draw}!Main\_menu@{Main\_menu}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{class_main__menu_ad978f4c383e4aa1145112f5f958580e6} 
+void Main\+\_\+menu\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target}{, }\item[{sf\+::\+Render\+States}]{states}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_main__menu_a35c5bbd3b3c9f52bc265a8fa35645314}\index{Main\_menu@{Main\_menu}!Get\_ExitButton@{Get\_ExitButton}}
+\index{Get\_ExitButton@{Get\_ExitButton}!Main\_menu@{Main\_menu}}
+\doxysubsubsection{\texorpdfstring{Get\_ExitButton()}{Get\_ExitButton()}}
+{\footnotesize\ttfamily \label{class_main__menu_a35c5bbd3b3c9f52bc265a8fa35645314} 
+\mbox{\hyperlink{class_buttons}{Buttons}} \& Main\+\_\+menu\+::\+Get\+\_\+\+Exit\+Button (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_main__menu_a451e416d2c34bb518ec53207fba18912}\index{Main\_menu@{Main\_menu}!Get\_PlayButton@{Get\_PlayButton}}
+\index{Get\_PlayButton@{Get\_PlayButton}!Main\_menu@{Main\_menu}}
+\doxysubsubsection{\texorpdfstring{Get\_PlayButton()}{Get\_PlayButton()}}
+{\footnotesize\ttfamily \label{class_main__menu_a451e416d2c34bb518ec53207fba18912} 
+\mbox{\hyperlink{class_buttons}{Buttons}} \& Main\+\_\+menu\+::\+Get\+\_\+\+Play\+Button (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_main__menu_a36cca2f47fe6540e8f437f26eafb7aad}\index{Main\_menu@{Main\_menu}!Get\_SettingButton@{Get\_SettingButton}}
+\index{Get\_SettingButton@{Get\_SettingButton}!Main\_menu@{Main\_menu}}
+\doxysubsubsection{\texorpdfstring{Get\_SettingButton()}{Get\_SettingButton()}}
+{\footnotesize\ttfamily \label{class_main__menu_a36cca2f47fe6540e8f437f26eafb7aad} 
+\mbox{\hyperlink{class_buttons}{Buttons}} \& Main\+\_\+menu\+::\+Get\+\_\+\+Setting\+Button (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_main__menu_a5e64b3f27608d4ca71913991d2e134e6}\index{Main\_menu@{Main\_menu}!UpdateSelection@{UpdateSelection}}
+\index{UpdateSelection@{UpdateSelection}!Main\_menu@{Main\_menu}}
+\doxysubsubsection{\texorpdfstring{UpdateSelection()}{UpdateSelection()}}
+{\footnotesize\ttfamily \label{class_main__menu_a5e64b3f27608d4ca71913991d2e134e6} 
+void Main\+\_\+menu\+::\+Update\+Selection (\begin{DoxyParamCaption}\item[{const sf\+::\+Vector2i \&}]{mouse\+Pos}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_main__menu_a7b0b1ef95a62b70928a2538ae1a1fb20}\index{Main\_menu@{Main\_menu}!Back\_fon@{Back\_fon}}
+\index{Back\_fon@{Back\_fon}!Main\_menu@{Main\_menu}}
+\doxysubsubsection{\texorpdfstring{Back\_fon}{Back\_fon}}
+{\footnotesize\ttfamily \label{class_main__menu_a7b0b1ef95a62b70928a2538ae1a1fb20} 
+sf\+::\+Rectangle\+Shape Main\+\_\+menu\+::\+Back\+\_\+fon\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_main__menu_a436019713679d5d7a267efc45dc6c9be}\index{Main\_menu@{Main\_menu}!ExitButton@{ExitButton}}
+\index{ExitButton@{ExitButton}!Main\_menu@{Main\_menu}}
+\doxysubsubsection{\texorpdfstring{ExitButton}{ExitButton}}
+{\footnotesize\ttfamily \label{class_main__menu_a436019713679d5d7a267efc45dc6c9be} 
+\mbox{\hyperlink{class_buttons}{Buttons}} Main\+\_\+menu\+::\+Exit\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_main__menu_a2fec1fbeeed5a28fd12468594398b6cd}\index{Main\_menu@{Main\_menu}!PlayButton@{PlayButton}}
+\index{PlayButton@{PlayButton}!Main\_menu@{Main\_menu}}
+\doxysubsubsection{\texorpdfstring{PlayButton}{PlayButton}}
+{\footnotesize\ttfamily \label{class_main__menu_a2fec1fbeeed5a28fd12468594398b6cd} 
+\mbox{\hyperlink{class_buttons}{Buttons}} Main\+\_\+menu\+::\+Play\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_main__menu_aed8654a91af441d4c12afb53068c86ab}\index{Main\_menu@{Main\_menu}!SettingButton@{SettingButton}}
+\index{SettingButton@{SettingButton}!Main\_menu@{Main\_menu}}
+\doxysubsubsection{\texorpdfstring{SettingButton}{SettingButton}}
+{\footnotesize\ttfamily \label{class_main__menu_aed8654a91af441d4c12afb53068c86ab} 
+\mbox{\hyperlink{class_buttons}{Buttons}} Main\+\_\+menu\+::\+Setting\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_main__menu_afc4b53cbba5ad3ea22213d1ea98f2b77}\index{Main\_menu@{Main\_menu}!texture\_back\_fon@{texture\_back\_fon}}
+\index{texture\_back\_fon@{texture\_back\_fon}!Main\_menu@{Main\_menu}}
+\doxysubsubsection{\texorpdfstring{texture\_back\_fon}{texture\_back\_fon}}
+{\footnotesize\ttfamily \label{class_main__menu_afc4b53cbba5ad3ea22213d1ea98f2b77} 
+sf\+::\+Texture Main\+\_\+menu\+::texture\+\_\+back\+\_\+fon\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Main\+\_\+menu.\+h\item 
-Main\+\_\+menu.\+cpp\end{DoxyCompactItemize}
+\mbox{\hyperlink{_main__menu_8h}{Main\+\_\+menu.\+h}}\item 
+\mbox{\hyperlink{_main__menu_8cpp}{Main\+\_\+menu.\+cpp}}\end{DoxyCompactItemize}

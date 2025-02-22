@@ -1,0 +1,53 @@
+<map id="BaseItem.h" name="BaseItem.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="425,5,513,32"/>
+<area shape="rect" id="Node000002" href="$_armor_8h.html" title=" " alt="" coords="284,80,352,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="430,41,346,82,343,77,428,37"/>
+<area shape="rect" id="Node000013" href="$_base_item_8cpp.html" title=" " alt="" coords="703,80,805,107"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="529,32,705,77,703,82,527,38"/>
+<area shape="rect" id="Node000014" href="$_inventors_8h.html" title=" " alt="" coords="134,80,220,107"/>
+<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="410,37,221,84,220,79,409,32"/>
+<area shape="rect" id="Node000016" href="$potion_8h.html" title=" " alt="" coords="484,80,552,107"/>
+<area shape="poly" id="edge19_Node000001_Node000016" title=" " alt="" coords="488,44,512,78,507,81,484,47"/>
+<area shape="rect" id="Node000018" href="$stamina__pot_8h.html" title=" " alt="" coords="576,80,679,107"/>
+<area shape="poly" id="edge23_Node000001_Node000018" title=" " alt="" coords="511,36,601,77,599,82,509,41"/>
+<area shape="rect" id="Node000020" href="$weapon_8h.html" title=" " alt="" coords="378,80,456,107"/>
+<area shape="poly" id="edge27_Node000001_Node000020" title=" " alt="" coords="453,46,428,81,424,78,449,43"/>
+<area shape="rect" id="Node000003" href="$_armor_8cpp.html" title=" " alt="" coords="262,155,343,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="315,123,308,155,302,154,309,122"/>
+<area shape="rect" id="Node000004" href="$_unit_8h.html" title=" " alt="" coords="181,155,237,181"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="288,118,229,156,227,152,285,113"/>
+<area shape="rect" id="Node000011" href="$cheast_8h.html" title=" " alt="" coords="482,155,554,181"/>
+<area shape="poly" id="edge12_Node000002_Node000011" title=" " alt="" coords="367,109,484,152,482,157,365,114"/>
+<area shape="rect" id="Node000005" href="$_game_8h.html" title=" " alt="" coords="306,304,373,331"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="253,180,310,201,334,214,350,228,357,248,357,269,348,304,343,303,352,268,352,248,345,231,331,219,308,206,251,185"/>
+<area shape="rect" id="Node000007" href="$_main_8cpp.html" title=" " alt="" coords="145,379,219,405"/>
+<area shape="poly" id="edge10_Node000004_Node000007" title=" " alt="" coords="191,195,171,230,160,279,165,330,179,377,174,379,160,331,155,279,166,228,186,192"/>
+<area shape="rect" id="Node000008" href="$_hero_8h.html" title=" " alt="" coords="181,229,242,256"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="213,197,214,229,208,229,207,197"/>
+<area shape="rect" id="Node000010" href="$_unit_8cpp.html" title=" " alt="" coords="266,229,336,256"/>
+<area shape="poly" id="edge11_Node000004_Node000010" title=" " alt="" coords="238,189,287,227,283,231,235,193"/>
+<area shape="rect" id="Node000006" href="$_game_8cpp.html" title=" " alt="" coords="299,379,380,405"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="342,346,342,378,337,378,337,346"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="299,340,211,380,209,376,297,335"/>
+<area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="248,262,318,301,316,306,246,266"/>
+<area shape="rect" id="Node000009" href="$_hero_8cpp.html" title=" " alt="" coords="174,304,249,331"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="214,272,214,304,209,304,209,272"/>
+<area shape="rect" id="Node000012" href="$cheast_8cpp.html" title=" " alt="" coords="469,229,554,256"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="518,197,515,229,510,229,513,197"/>
+<area shape="poly" id="edge18_Node000014_Node000004" title=" " alt="" coords="191,120,206,153,201,155,186,122"/>
+<area shape="poly" id="edge16_Node000014_Node000005" title=" " alt="" coords="169,122,160,152,155,187,157,222,171,254,192,270,227,285,306,306,305,311,225,290,189,275,167,258,152,224,150,186,155,151,164,121"/>
+<area shape="rect" id="Node000015" href="$_inventors_8cpp.html" title=" " alt="" coords="5,155,106,181"/>
+<area shape="poly" id="edge17_Node000014_Node000015" title=" " alt="" coords="144,117,78,156,75,152,141,113"/>
+<area shape="poly" id="edge20_Node000016_Node000005" title=" " alt="" coords="545,116,558,134,569,154,579,183,585,208,582,232,568,258,555,269,535,279,483,295,374,315,373,309,482,290,533,274,552,265,564,254,577,230,579,208,574,184,564,156,554,137,541,120"/>
+<area shape="poly" id="edge21_Node000016_Node000011" title=" " alt="" coords="521,122,521,154,516,154,516,122"/>
+<area shape="rect" id="Node000017" href="$potion_8cpp.html" title=" " alt="" coords="630,155,711,181"/>
+<area shape="poly" id="edge22_Node000016_Node000017" title=" " alt="" coords="559,111,645,152,642,156,557,116"/>
+<area shape="poly" id="edge24_Node000018_Node000005" title=" " alt="" coords="677,111,700,125,720,141,730,160,730,171,726,183,693,225,651,257,603,281,552,298,501,309,452,316,373,320,373,314,451,311,500,304,551,293,601,276,648,252,689,221,721,180,725,171,725,162,715,145,697,129,674,116"/>
+<area shape="poly" id="edge25_Node000018_Node000011" title=" " alt="" coords="597,118,539,156,536,152,594,113"/>
+<area shape="rect" id="Node000019" href="$stamina__pot_8cpp.html" title=" " alt="" coords="786,155,904,181"/>
+<area shape="poly" id="edge26_Node000018_Node000019" title=" " alt="" coords="680,109,808,151,806,157,679,114"/>
+<area shape="poly" id="edge28_Node000020_Node000004" title=" " alt="" coords="367,115,238,159,236,154,366,110"/>
+<area shape="poly" id="edge29_Node000020_Node000011" title=" " alt="" coords="448,114,502,152,499,156,445,118"/>
+<area shape="rect" id="Node000021" href="$weapon_8cpp.html" title=" " alt="" coords="367,155,458,181"/>
+<area shape="poly" id="edge30_Node000020_Node000021" title=" " alt="" coords="418,123,416,154,411,154,413,122"/>
+</map>

@@ -1,59 +1,59 @@
 \doxysection{Inventors.\+h}
-\hypertarget{_inventors_8h_source}{}\label{_inventors_8h_source}
+\hypertarget{_inventors_8h_source}{}\label{_inventors_8h_source}\mbox{\hyperlink{_inventors_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
 \DoxyCodeLine{00002\ }
 \DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <vector>}}
 \DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <memory>}}
 \DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
-\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}BaseItem.h"{}}}
-\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include"{}Includer.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_base_item_8h}{BaseItem.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_includer_8h}{Includer.h}}"{}}}
 \DoxyCodeLine{00008\ }
-\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }Inventors\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_inventors_aa79bfb02414447d1a629b3ef8b262533}{Inventors}}\ \{}
 \DoxyCodeLine{00010\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{double}\ maxWeight;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Максимальна\ вага}}
-\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{double}\ currentWeight;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Поточна\ вага}}
-\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ size;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Кількість\ клітинок\ інвентаря}}
-\DoxyCodeLine{00014\ \ \ \ \ sf::Sprite\ background;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Фон\ інвентаря}}
-\DoxyCodeLine{00015\ \ \ \ \ sf::Texture\ backgroundTexture;\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Текстура\ для\ фону}}
-\DoxyCodeLine{00016\ \ \ \ \ std::vector<std::shared\_ptr<BaseItem>>\ slots;\ \textcolor{comment}{//\ Слоти\ для\ предметів\ (може\ бути\ порожнім)}}
-\DoxyCodeLine{00017\ \ \ \ \ std::vector<sf::RectangleShape>\ cells;\ \ \ \ \textcolor{comment}{//\ Клітинки\ інвентаря}}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_inventors_ad70ed3a05198714ae6e3126c10ae41a6}{maxWeight}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Максимальна\ вага}}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_inventors_a3dde819eebd7db75c3e3292b335c93e7}{currentWeight}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Поточна\ вага}}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_inventors_aff7772dddeadd29345d3676d1970a87f}{size}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Кількість\ клітинок\ інвентаря}}
+\DoxyCodeLine{00014\ \ \ \ \ sf::Sprite\ \mbox{\hyperlink{class_inventors_aa2e9b70515c92ac9e2575c52587b9a67}{background}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Фон\ інвентаря}}
+\DoxyCodeLine{00015\ \ \ \ \ sf::Texture\ \mbox{\hyperlink{class_inventors_a843edd01bcad9c0581f18af986e9b03e}{backgroundTexture}};\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Текстура\ для\ фону}}
+\DoxyCodeLine{00016\ \ \ \ \ std::vector<std::shared\_ptr<BaseItem>>\ \mbox{\hyperlink{class_inventors_ab1ad8c09f754ac4bbb5212e2d6a6ca68}{slots}};\ \textcolor{comment}{//\ Слоти\ для\ предметів\ (може\ бути\ порожнім)}}
+\DoxyCodeLine{00017\ \ \ \ \ std::vector<sf::RectangleShape>\ \mbox{\hyperlink{class_inventors_a795888350d9a12410e4306a1eba8fceb}{cells}};\ \ \ \ \textcolor{comment}{//\ Клітинки\ інвентаря}}
 \DoxyCodeLine{00018\ }
-\DoxyCodeLine{00019\ \ \ \ \ std::shared\_ptr<BaseItem>\ draggedItem;\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Предмет,\ який\ ми\ переміщуємо}}
-\DoxyCodeLine{00020\ \ \ \ \ sf::Vector2f\ originalPosition;\ \ \textcolor{comment}{//\ Початкова\ позиція\ спрайта\ захопленого\ предмета}}
-\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{int}\ originalSlotIndex;\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Індекс\ клітинки,\ з\ якої\ взяли\ предмет}}
-\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{bool}\ isDragging;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Флаг\ для\ визначення,\ чи\ виконується\ перетягування}}
+\DoxyCodeLine{00019\ \ \ \ \ std::shared\_ptr<BaseItem>\ \mbox{\hyperlink{class_inventors_a35f0ce071e3707d3a3d7b04313c8f1ef}{draggedItem}};\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Предмет,\ який\ ми\ переміщуємо}}
+\DoxyCodeLine{00020\ \ \ \ \ sf::Vector2f\ \mbox{\hyperlink{class_inventors_a0f7d75311c7ff154fcc963d357be8a68}{originalPosition}};\ \ \textcolor{comment}{//\ Початкова\ позиція\ спрайта\ захопленого\ предмета}}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_inventors_ab2df24336aa4a1375ba2fa1a00ee8671}{originalSlotIndex}};\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Індекс\ клітинки,\ з\ якої\ взяли\ предмет}}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_inventors_a659627a548e49236586f86cc1ad4acec}{isDragging}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Флаг\ для\ визначення,\ чи\ виконується\ перетягування}}
 \DoxyCodeLine{00023\ }
 \DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
 \DoxyCodeLine{00025\ \ \ \ \ \textcolor{comment}{//\ Конструктор}}
-\DoxyCodeLine{00026\ \ \ \ \ Inventors(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ size,\ \textcolor{keywordtype}{double}\ maxWeight,\ \textcolor{keyword}{const}\ std::string\&\ bgTexturePath);}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_inventors_aa79bfb02414447d1a629b3ef8b262533}{Inventors}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_inventors_aff7772dddeadd29345d3676d1970a87f}{size}},\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_inventors_ad70ed3a05198714ae6e3126c10ae41a6}{maxWeight}},\ \textcolor{keyword}{const}\ std::string\&\ bgTexturePath);}
 \DoxyCodeLine{00027\ }
 \DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{//\ Деструктор}}
-\DoxyCodeLine{00029\ \ \ \ \ \string~Inventors()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_inventors_ab5e83656bb3412225b817f6b04d0ff4f}{\string~Inventors}}()\ =\ \textcolor{keywordflow}{default};}
 \DoxyCodeLine{00030\ }
 \DoxyCodeLine{00031\ \ \ \ \ \textcolor{comment}{//\ Додати\ предмет\ в\ інвентар}}
-\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{bool}\ addItem(\textcolor{keyword}{const}\ std::shared\_ptr<BaseItem>\&\ item);}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_inventors_a584abb03b1932762d2a7e44e18a7755a}{addItem}}(\textcolor{keyword}{const}\ std::shared\_ptr<BaseItem>\&\ item);}
 \DoxyCodeLine{00033\ }
 \DoxyCodeLine{00034\ \ \ \ \ \textcolor{comment}{//\ Видалити\ предмет\ зі\ слоту}}
-\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{bool}\ removeItem(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ index);}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_inventors_a1c6895f36036316b51953d655387e71c}{removeItem}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ index);}
 \DoxyCodeLine{00036\ }
 \DoxyCodeLine{00037\ \ \ \ \ \textcolor{comment}{//\ Отримати\ предмет\ зі\ слоту}}
-\DoxyCodeLine{00038\ \ \ \ \ std::shared\_ptr<BaseItem>\ getItem(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ index)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00038\ \ \ \ \ std::shared\_ptr<BaseItem>\ \mbox{\hyperlink{class_inventors_a3c3fe074276efd547e3ce5d29b7a1192}{getItem}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ index)\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00039\ }
 \DoxyCodeLine{00040\ \ \ \ \ \textcolor{comment}{//\ Отримати\ поточну\ вагу}}
-\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{double}\ getCurrentWeight()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_inventors_ab1a343ab557df5f9506a2bab79bdab7e}{getCurrentWeight}}()\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00042\ }
 \DoxyCodeLine{00043\ \ \ \ \ \textcolor{comment}{//\ Отримати\ максимальну\ вагу}}
-\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{double}\ getMaxWeight()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_inventors_a04b11322ad64f9d621c6d1cdb407742a}{getMaxWeight}}()\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00045\ }
 \DoxyCodeLine{00046\ \ \ \ \ \textcolor{comment}{//\ Відобразити\ інвентар}}
-\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ draw(sf::RenderWindow\&\ window)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inventors_a73b7f2d47c68b14b52a912e4932f91b8}{draw}}(sf::RenderWindow\&\ window)\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00048\ }
 \DoxyCodeLine{00049\ \ \ \ \ \textcolor{comment}{//\ Ініціалізувати\ клітинки}}
-\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ initializeCells(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ columns,\ \textcolor{keywordtype}{float}\ slotSize,\ \textcolor{keywordtype}{float}\ padding);}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inventors_a4898233c93b92bb21672e19e614f754f}{initializeCells}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ columns,\ \textcolor{keywordtype}{float}\ slotSize,\ \textcolor{keywordtype}{float}\ padding);}
 \DoxyCodeLine{00051\ }
-\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ update(\textcolor{keyword}{const}\ sf::RenderWindow\&\ window);}
-\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ handleInput(sf::Event\&\ event,\ \textcolor{keyword}{const}\ sf::RenderWindow\&\ window);}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inventors_aa67ed6626b93d7f946e167943bb588fe}{update}}(\textcolor{keyword}{const}\ sf::RenderWindow\&\ window);}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inventors_a2120b069c14cec82aaecb721ba7d0242}{handleInput}}(sf::Event\&\ event,\ \textcolor{keyword}{const}\ sf::RenderWindow\&\ window);}
 \DoxyCodeLine{00054\ \};}
 \DoxyCodeLine{00055\ }
 

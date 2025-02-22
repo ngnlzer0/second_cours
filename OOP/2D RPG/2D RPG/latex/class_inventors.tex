@@ -2,50 +2,228 @@
 \hypertarget{class_inventors}{}\label{class_inventors}\index{Inventors@{Inventors}}
 
 
+{\ttfamily \#include $<$Inventors.\+h$>$}
+
+
+
 Collaboration diagram for Inventors\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=180pt]{class_inventors__coll__graph}
+\includegraphics[width=181pt]{class_inventors__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_inventors_aa79bfb02414447d1a629b3ef8b262533}\label{class_inventors_aa79bfb02414447d1a629b3ef8b262533} 
-{\bfseries Inventors} (unsigned int size, double max\+Weight, const std\+::string \&bg\+Texture\+Path)
+\mbox{\hyperlink{class_inventors_aa79bfb02414447d1a629b3ef8b262533}{Inventors}} (unsigned int \mbox{\hyperlink{class_inventors_aff7772dddeadd29345d3676d1970a87f}{size}}, double \mbox{\hyperlink{class_inventors_ad70ed3a05198714ae6e3126c10ae41a6}{max\+Weight}}, const std\+::string \&bg\+Texture\+Path)
 \item 
-\Hypertarget{class_inventors_a584abb03b1932762d2a7e44e18a7755a}\label{class_inventors_a584abb03b1932762d2a7e44e18a7755a} 
-bool {\bfseries add\+Item} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_base_item}{Base\+Item}} $>$ \&item)
+\mbox{\hyperlink{class_inventors_ab5e83656bb3412225b817f6b04d0ff4f}{\texorpdfstring{$\sim$}{\string~}\+Inventors}} ()=default
 \item 
-\Hypertarget{class_inventors_a1c6895f36036316b51953d655387e71c}\label{class_inventors_a1c6895f36036316b51953d655387e71c} 
-bool {\bfseries remove\+Item} (unsigned int index)
+bool \mbox{\hyperlink{class_inventors_a584abb03b1932762d2a7e44e18a7755a}{add\+Item}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_base_item}{Base\+Item}} $>$ \&item)
 \item 
-\Hypertarget{class_inventors_a3c3fe074276efd547e3ce5d29b7a1192}\label{class_inventors_a3c3fe074276efd547e3ce5d29b7a1192} 
-std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_base_item}{Base\+Item}} $>$ {\bfseries get\+Item} (unsigned int index) const
+bool \mbox{\hyperlink{class_inventors_a1c6895f36036316b51953d655387e71c}{remove\+Item}} (unsigned int index)
 \item 
-\Hypertarget{class_inventors_ab1a343ab557df5f9506a2bab79bdab7e}\label{class_inventors_ab1a343ab557df5f9506a2bab79bdab7e} 
-double {\bfseries get\+Current\+Weight} () const
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_base_item}{Base\+Item}} $>$ \mbox{\hyperlink{class_inventors_a3c3fe074276efd547e3ce5d29b7a1192}{get\+Item}} (unsigned int index) const
 \item 
-\Hypertarget{class_inventors_a04b11322ad64f9d621c6d1cdb407742a}\label{class_inventors_a04b11322ad64f9d621c6d1cdb407742a} 
-double {\bfseries get\+Max\+Weight} () const
+double \mbox{\hyperlink{class_inventors_ab1a343ab557df5f9506a2bab79bdab7e}{get\+Current\+Weight}} () const
 \item 
-\Hypertarget{class_inventors_a73b7f2d47c68b14b52a912e4932f91b8}\label{class_inventors_a73b7f2d47c68b14b52a912e4932f91b8} 
-void {\bfseries draw} (sf\+::\+Render\+Window \&window) const
+double \mbox{\hyperlink{class_inventors_a04b11322ad64f9d621c6d1cdb407742a}{get\+Max\+Weight}} () const
 \item 
-\Hypertarget{class_inventors_a4898233c93b92bb21672e19e614f754f}\label{class_inventors_a4898233c93b92bb21672e19e614f754f} 
-void {\bfseries initialize\+Cells} (unsigned int columns, float slot\+Size, float padding)
+void \mbox{\hyperlink{class_inventors_a73b7f2d47c68b14b52a912e4932f91b8}{draw}} (sf\+::\+Render\+Window \&window) const
 \item 
-\Hypertarget{class_inventors_aa67ed6626b93d7f946e167943bb588fe}\label{class_inventors_aa67ed6626b93d7f946e167943bb588fe} 
-void {\bfseries update} (const sf\+::\+Render\+Window \&window)
+void \mbox{\hyperlink{class_inventors_a4898233c93b92bb21672e19e614f754f}{initialize\+Cells}} (unsigned int columns, float slot\+Size, float padding)
 \item 
-\Hypertarget{class_inventors_a2120b069c14cec82aaecb721ba7d0242}\label{class_inventors_a2120b069c14cec82aaecb721ba7d0242} 
-void {\bfseries handle\+Input} (sf\+::\+Event \&event, const sf\+::\+Render\+Window \&window)
+void \mbox{\hyperlink{class_inventors_aa67ed6626b93d7f946e167943bb588fe}{update}} (const sf\+::\+Render\+Window \&window)
+\item 
+void \mbox{\hyperlink{class_inventors_a2120b069c14cec82aaecb721ba7d0242}{handle\+Input}} (sf\+::\+Event \&event, const sf\+::\+Render\+Window \&window)
 \end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_inventors_ad70ed3a05198714ae6e3126c10ae41a6}{max\+Weight}}
+\item 
+double \mbox{\hyperlink{class_inventors_a3dde819eebd7db75c3e3292b335c93e7}{current\+Weight}}
+\item 
+unsigned int \mbox{\hyperlink{class_inventors_aff7772dddeadd29345d3676d1970a87f}{size}}
+\item 
+sf\+::\+Sprite \mbox{\hyperlink{class_inventors_aa2e9b70515c92ac9e2575c52587b9a67}{background}}
+\item 
+sf\+::\+Texture \mbox{\hyperlink{class_inventors_a843edd01bcad9c0581f18af986e9b03e}{background\+Texture}}
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_base_item}{Base\+Item}} $>$ $>$ \mbox{\hyperlink{class_inventors_ab1ad8c09f754ac4bbb5212e2d6a6ca68}{slots}}
+\item 
+std\+::vector$<$ sf\+::\+Rectangle\+Shape $>$ \mbox{\hyperlink{class_inventors_a795888350d9a12410e4306a1eba8fceb}{cells}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_base_item}{Base\+Item}} $>$ \mbox{\hyperlink{class_inventors_a35f0ce071e3707d3a3d7b04313c8f1ef}{dragged\+Item}}
+\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_inventors_a0f7d75311c7ff154fcc963d357be8a68}{original\+Position}}
+\item 
+int \mbox{\hyperlink{class_inventors_ab2df24336aa4a1375ba2fa1a00ee8671}{original\+Slot\+Index}}
+\item 
+bool \mbox{\hyperlink{class_inventors_a659627a548e49236586f86cc1ad4acec}{is\+Dragging}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_inventors_aa79bfb02414447d1a629b3ef8b262533}\index{Inventors@{Inventors}!Inventors@{Inventors}}
+\index{Inventors@{Inventors}!Inventors@{Inventors}}
+\doxysubsubsection{\texorpdfstring{Inventors()}{Inventors()}}
+{\footnotesize\ttfamily \label{class_inventors_aa79bfb02414447d1a629b3ef8b262533} 
+Inventors\+::\+Inventors (\begin{DoxyParamCaption}\item[{unsigned int}]{size}{, }\item[{double}]{max\+Weight}{, }\item[{const std\+::string \&}]{bg\+Texture\+Path}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{class_inventors_aa79bfb02414447d1a629b3ef8b262533_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_inventors_ab5e83656bb3412225b817f6b04d0ff4f}\index{Inventors@{Inventors}!````~Inventors@{\texorpdfstring{$\sim$}{\string~}Inventors}}
+\index{````~Inventors@{\texorpdfstring{$\sim$}{\string~}Inventors}!Inventors@{Inventors}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Inventors()}{\string~Inventors()}}
+{\footnotesize\ttfamily \label{class_inventors_ab5e83656bb3412225b817f6b04d0ff4f} 
+Inventors\+::\texorpdfstring{$\sim$}{\string~}\+Inventors (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_inventors_a584abb03b1932762d2a7e44e18a7755a}\index{Inventors@{Inventors}!addItem@{addItem}}
+\index{addItem@{addItem}!Inventors@{Inventors}}
+\doxysubsubsection{\texorpdfstring{addItem()}{addItem()}}
+{\footnotesize\ttfamily \label{class_inventors_a584abb03b1932762d2a7e44e18a7755a} 
+bool Inventors\+::add\+Item (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_base_item}{Base\+Item}} $>$ \&}]{item}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_inventors_a73b7f2d47c68b14b52a912e4932f91b8}\index{Inventors@{Inventors}!draw@{draw}}
+\index{draw@{draw}!Inventors@{Inventors}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{class_inventors_a73b7f2d47c68b14b52a912e4932f91b8} 
+void Inventors\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_inventors_ab1a343ab557df5f9506a2bab79bdab7e}\index{Inventors@{Inventors}!getCurrentWeight@{getCurrentWeight}}
+\index{getCurrentWeight@{getCurrentWeight}!Inventors@{Inventors}}
+\doxysubsubsection{\texorpdfstring{getCurrentWeight()}{getCurrentWeight()}}
+{\footnotesize\ttfamily \label{class_inventors_ab1a343ab557df5f9506a2bab79bdab7e} 
+double Inventors\+::get\+Current\+Weight (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_inventors_a3c3fe074276efd547e3ce5d29b7a1192}\index{Inventors@{Inventors}!getItem@{getItem}}
+\index{getItem@{getItem}!Inventors@{Inventors}}
+\doxysubsubsection{\texorpdfstring{getItem()}{getItem()}}
+{\footnotesize\ttfamily \label{class_inventors_a3c3fe074276efd547e3ce5d29b7a1192} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_base_item}{Base\+Item}} $>$ Inventors\+::get\+Item (\begin{DoxyParamCaption}\item[{unsigned int}]{index}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_inventors_a04b11322ad64f9d621c6d1cdb407742a}\index{Inventors@{Inventors}!getMaxWeight@{getMaxWeight}}
+\index{getMaxWeight@{getMaxWeight}!Inventors@{Inventors}}
+\doxysubsubsection{\texorpdfstring{getMaxWeight()}{getMaxWeight()}}
+{\footnotesize\ttfamily \label{class_inventors_a04b11322ad64f9d621c6d1cdb407742a} 
+double Inventors\+::get\+Max\+Weight (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_inventors_a2120b069c14cec82aaecb721ba7d0242}\index{Inventors@{Inventors}!handleInput@{handleInput}}
+\index{handleInput@{handleInput}!Inventors@{Inventors}}
+\doxysubsubsection{\texorpdfstring{handleInput()}{handleInput()}}
+{\footnotesize\ttfamily \label{class_inventors_a2120b069c14cec82aaecb721ba7d0242} 
+void Inventors\+::handle\+Input (\begin{DoxyParamCaption}\item[{sf\+::\+Event \&}]{event}{, }\item[{const sf\+::\+Render\+Window \&}]{window}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_inventors_a4898233c93b92bb21672e19e614f754f}\index{Inventors@{Inventors}!initializeCells@{initializeCells}}
+\index{initializeCells@{initializeCells}!Inventors@{Inventors}}
+\doxysubsubsection{\texorpdfstring{initializeCells()}{initializeCells()}}
+{\footnotesize\ttfamily \label{class_inventors_a4898233c93b92bb21672e19e614f754f} 
+void Inventors\+::initialize\+Cells (\begin{DoxyParamCaption}\item[{unsigned int}]{columns}{, }\item[{float}]{slot\+Size}{, }\item[{float}]{padding}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{class_inventors_a4898233c93b92bb21672e19e614f754f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_inventors_a1c6895f36036316b51953d655387e71c}\index{Inventors@{Inventors}!removeItem@{removeItem}}
+\index{removeItem@{removeItem}!Inventors@{Inventors}}
+\doxysubsubsection{\texorpdfstring{removeItem()}{removeItem()}}
+{\footnotesize\ttfamily \label{class_inventors_a1c6895f36036316b51953d655387e71c} 
+bool Inventors\+::remove\+Item (\begin{DoxyParamCaption}\item[{unsigned int}]{index}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_inventors_aa67ed6626b93d7f946e167943bb588fe}\index{Inventors@{Inventors}!update@{update}}
+\index{update@{update}!Inventors@{Inventors}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{class_inventors_aa67ed6626b93d7f946e167943bb588fe} 
+void Inventors\+::update (\begin{DoxyParamCaption}\item[{const sf\+::\+Render\+Window \&}]{window}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_inventors_aa2e9b70515c92ac9e2575c52587b9a67}\index{Inventors@{Inventors}!background@{background}}
+\index{background@{background}!Inventors@{Inventors}}
+\doxysubsubsection{\texorpdfstring{background}{background}}
+{\footnotesize\ttfamily \label{class_inventors_aa2e9b70515c92ac9e2575c52587b9a67} 
+sf\+::\+Sprite Inventors\+::background\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_inventors_a843edd01bcad9c0581f18af986e9b03e}\index{Inventors@{Inventors}!backgroundTexture@{backgroundTexture}}
+\index{backgroundTexture@{backgroundTexture}!Inventors@{Inventors}}
+\doxysubsubsection{\texorpdfstring{backgroundTexture}{backgroundTexture}}
+{\footnotesize\ttfamily \label{class_inventors_a843edd01bcad9c0581f18af986e9b03e} 
+sf\+::\+Texture Inventors\+::background\+Texture\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_inventors_a795888350d9a12410e4306a1eba8fceb}\index{Inventors@{Inventors}!cells@{cells}}
+\index{cells@{cells}!Inventors@{Inventors}}
+\doxysubsubsection{\texorpdfstring{cells}{cells}}
+{\footnotesize\ttfamily \label{class_inventors_a795888350d9a12410e4306a1eba8fceb} 
+std\+::vector$<$sf\+::\+Rectangle\+Shape$>$ Inventors\+::cells\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_inventors_a3dde819eebd7db75c3e3292b335c93e7}\index{Inventors@{Inventors}!currentWeight@{currentWeight}}
+\index{currentWeight@{currentWeight}!Inventors@{Inventors}}
+\doxysubsubsection{\texorpdfstring{currentWeight}{currentWeight}}
+{\footnotesize\ttfamily \label{class_inventors_a3dde819eebd7db75c3e3292b335c93e7} 
+double Inventors\+::current\+Weight\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_inventors_a35f0ce071e3707d3a3d7b04313c8f1ef}\index{Inventors@{Inventors}!draggedItem@{draggedItem}}
+\index{draggedItem@{draggedItem}!Inventors@{Inventors}}
+\doxysubsubsection{\texorpdfstring{draggedItem}{draggedItem}}
+{\footnotesize\ttfamily \label{class_inventors_a35f0ce071e3707d3a3d7b04313c8f1ef} 
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_base_item}{Base\+Item}}$>$ Inventors\+::dragged\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_inventors_a659627a548e49236586f86cc1ad4acec}\index{Inventors@{Inventors}!isDragging@{isDragging}}
+\index{isDragging@{isDragging}!Inventors@{Inventors}}
+\doxysubsubsection{\texorpdfstring{isDragging}{isDragging}}
+{\footnotesize\ttfamily \label{class_inventors_a659627a548e49236586f86cc1ad4acec} 
+bool Inventors\+::is\+Dragging\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_inventors_ad70ed3a05198714ae6e3126c10ae41a6}\index{Inventors@{Inventors}!maxWeight@{maxWeight}}
+\index{maxWeight@{maxWeight}!Inventors@{Inventors}}
+\doxysubsubsection{\texorpdfstring{maxWeight}{maxWeight}}
+{\footnotesize\ttfamily \label{class_inventors_ad70ed3a05198714ae6e3126c10ae41a6} 
+double Inventors\+::max\+Weight\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_inventors_a0f7d75311c7ff154fcc963d357be8a68}\index{Inventors@{Inventors}!originalPosition@{originalPosition}}
+\index{originalPosition@{originalPosition}!Inventors@{Inventors}}
+\doxysubsubsection{\texorpdfstring{originalPosition}{originalPosition}}
+{\footnotesize\ttfamily \label{class_inventors_a0f7d75311c7ff154fcc963d357be8a68} 
+sf\+::\+Vector2f Inventors\+::original\+Position\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_inventors_ab2df24336aa4a1375ba2fa1a00ee8671}\index{Inventors@{Inventors}!originalSlotIndex@{originalSlotIndex}}
+\index{originalSlotIndex@{originalSlotIndex}!Inventors@{Inventors}}
+\doxysubsubsection{\texorpdfstring{originalSlotIndex}{originalSlotIndex}}
+{\footnotesize\ttfamily \label{class_inventors_ab2df24336aa4a1375ba2fa1a00ee8671} 
+int Inventors\+::original\+Slot\+Index\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_inventors_aff7772dddeadd29345d3676d1970a87f}\index{Inventors@{Inventors}!size@{size}}
+\index{size@{size}!Inventors@{Inventors}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily \label{class_inventors_aff7772dddeadd29345d3676d1970a87f} 
+unsigned int Inventors\+::size\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_inventors_ab1ad8c09f754ac4bbb5212e2d6a6ca68}\index{Inventors@{Inventors}!slots@{slots}}
+\index{slots@{slots}!Inventors@{Inventors}}
+\doxysubsubsection{\texorpdfstring{slots}{slots}}
+{\footnotesize\ttfamily \label{class_inventors_ab1ad8c09f754ac4bbb5212e2d6a6ca68} 
+std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_base_item}{Base\+Item}}$>$ $>$ Inventors\+::slots\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Inventors.\+h\item 
-Inventors.\+cpp\end{DoxyCompactItemize}
+\mbox{\hyperlink{_inventors_8h}{Inventors.\+h}}\item 
+\mbox{\hyperlink{_inventors_8cpp}{Inventors.\+cpp}}\end{DoxyCompactItemize}

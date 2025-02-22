@@ -1,7 +1,7 @@
 <map id="Unit" name="Unit">
-<area shape="rect" id="Node000001" title=" " alt="" coords="20,251,158,533"/>
-<area shape="rect" id="Node000003" href="$class_hero.html" title=" " alt="" coords="5,581,173,821"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="92,548,92,581,87,581,87,548"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="20,251,158,747"/>
+<area shape="rect" id="Node000003" href="$class_hero.html" title=" " alt="" coords="5,795,173,1205"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="92,762,92,795,87,795,87,762"/>
 <area shape="rect" id="Node000002" href="$classposition.html" title=" " alt="" coords="40,5,139,203"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,218,92,251,87,251,87,218"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,217,92,251,87,251,87,217"/>
 </map>

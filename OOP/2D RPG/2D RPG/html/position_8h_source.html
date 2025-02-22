@@ -105,37 +105,46 @@ $(function(){initNavTree('position_8h_source.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">position.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<a href="position_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include&lt;SFML/System/Vector2.hpp&gt;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">const</span> <span class="keywordtype">int</span> MAX_X = 1920;</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">const</span> <span class="keywordtype">int</span> MAX_Y = 1080;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="position_8h.html#a0c83c007cb84afc390feef5197e1e772">    5</a></span><span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="position_8h.html#a0c83c007cb84afc390feef5197e1e772">MAX_X</a> = 1920;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="position_8h.html#a3d568eb994147e9003c8def870db3d15">    6</a></span><span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="position_8h.html#a3d568eb994147e9003c8def870db3d15">MAX_Y</a> = 1080;</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="classposition.html">    8</a></span><span class="keyword">class </span>position</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="classposition.html">    8</a></span><span class="keyword">class </span><a class="code hl_function" href="classposition.html#af9f48b2b4141782e7e9d5ffcb1fc50d3">position</a></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    sf::Vector2i Position;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classposition.html#afb24ffd41a0e930a765efc16d1387686">   11</a></span>    sf::Vector2i <a class="code hl_variable" href="classposition.html#afb24ffd41a0e930a765efc16d1387686">Position</a>;</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    position(<span class="keywordtype">int</span> new_x, <span class="keywordtype">int</span> new_y);</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    position(sf::Vector2i vec);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    position() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <a class="code hl_function" href="classposition.html#ad6134ec9b44af19bcccd92bb4cbf0449">position</a>(<span class="keywordtype">int</span> new_x, <span class="keywordtype">int</span> new_y);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_function" href="classposition.html#ad6134ec9b44af19bcccd92bb4cbf0449">position</a>(sf::Vector2i vec);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classposition.html#ad6134ec9b44af19bcccd92bb4cbf0449">   15</a></span>    <a class="code hl_function" href="classposition.html#ad6134ec9b44af19bcccd92bb4cbf0449">position</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">int</span> Get_X() { <span class="keywordflow">return</span> Position.x; }</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">int</span> Get_Y() { <span class="keywordflow">return</span> Position.y; }</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classposition.html#a3611c58f847ae0ffd7f0f8f7b68bc85d">   17</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classposition.html#a3611c58f847ae0ffd7f0f8f7b68bc85d">Get_X</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="classposition.html#afb24ffd41a0e930a765efc16d1387686">Position</a>.x; }</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classposition.html#a3cb122eb1f0455f3e0c1884f1928d125">   18</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classposition.html#a3cb122eb1f0455f3e0c1884f1928d125">Get_Y</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="classposition.html#afb24ffd41a0e930a765efc16d1387686">Position</a>.y; }</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">void</span> Set_new_X(<span class="keywordtype">int</span> num);</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">void</span> Set_new_Y(<span class="keywordtype">int</span> num);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classposition.html#a29563b0bfd61a2143a22ce842825c69a">Set_new_X</a>(<span class="keywordtype">int</span> num);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classposition.html#a6e8dc0e6d1a4e7db75912e0ec3cf9060">Set_new_Y</a>(<span class="keywordtype">int</span> num);</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>};</div>
 </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="ttc" id="aclassposition_html_a29563b0bfd61a2143a22ce842825c69a"><div class="ttname"><a href="classposition.html#a29563b0bfd61a2143a22ce842825c69a">position::Set_new_X</a></div><div class="ttdeci">void Set_new_X(int num)</div><div class="ttdef"><b>Definition</b> position.cpp:14</div></div>
+<div class="ttc" id="aclassposition_html_a3611c58f847ae0ffd7f0f8f7b68bc85d"><div class="ttname"><a href="classposition.html#a3611c58f847ae0ffd7f0f8f7b68bc85d">position::Get_X</a></div><div class="ttdeci">int Get_X()</div><div class="ttdef"><b>Definition</b> position.h:17</div></div>
+<div class="ttc" id="aclassposition_html_a3cb122eb1f0455f3e0c1884f1928d125"><div class="ttname"><a href="classposition.html#a3cb122eb1f0455f3e0c1884f1928d125">position::Get_Y</a></div><div class="ttdeci">int Get_Y()</div><div class="ttdef"><b>Definition</b> position.h:18</div></div>
+<div class="ttc" id="aclassposition_html_a6e8dc0e6d1a4e7db75912e0ec3cf9060"><div class="ttname"><a href="classposition.html#a6e8dc0e6d1a4e7db75912e0ec3cf9060">position::Set_new_Y</a></div><div class="ttdeci">void Set_new_Y(int num)</div><div class="ttdef"><b>Definition</b> position.cpp:24</div></div>
+<div class="ttc" id="aclassposition_html_ad6134ec9b44af19bcccd92bb4cbf0449"><div class="ttname"><a href="classposition.html#ad6134ec9b44af19bcccd92bb4cbf0449">position::position</a></div><div class="ttdeci">position()=default</div></div>
+<div class="ttc" id="aclassposition_html_af9f48b2b4141782e7e9d5ffcb1fc50d3"><div class="ttname"><a href="classposition.html#af9f48b2b4141782e7e9d5ffcb1fc50d3">position::position</a></div><div class="ttdeci">position(int new_x, int new_y)</div><div class="ttdef"><b>Definition</b> position.cpp:3</div></div>
+<div class="ttc" id="aclassposition_html_afb24ffd41a0e930a765efc16d1387686"><div class="ttname"><a href="classposition.html#afb24ffd41a0e930a765efc16d1387686">position::Position</a></div><div class="ttdeci">sf::Vector2i Position</div><div class="ttdef"><b>Definition</b> position.h:11</div></div>
+<div class="ttc" id="aposition_8h_html_a0c83c007cb84afc390feef5197e1e772"><div class="ttname"><a href="position_8h.html#a0c83c007cb84afc390feef5197e1e772">MAX_X</a></div><div class="ttdeci">const int MAX_X</div><div class="ttdef"><b>Definition</b> position.h:5</div></div>
+<div class="ttc" id="aposition_8h_html_a3d568eb994147e9003c8def870db3d15"><div class="ttname"><a href="position_8h.html#a3d568eb994147e9003c8def870db3d15">MAX_Y</a></div><div class="ttdeci">const int MAX_Y</div><div class="ttdef"><b>Definition</b> position.h:6</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>position.h</b></li>
+    <li class="navelem"><a class="el" href="position_8h.html">position.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>

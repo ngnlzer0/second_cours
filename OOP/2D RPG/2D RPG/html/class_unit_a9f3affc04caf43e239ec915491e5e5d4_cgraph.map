@@ -1,0 +1,9 @@
+<map id="Unit::received_damage" name="Unit::received_damage">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,43,161,69"/>
+<area shape="rect" id="Node000002" href="$_randomaizer_8h.html#a4aad6a7d858c65cd346aaeae709eb2a7" title=" " alt="" coords="209,5,354,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,42,193,37,194,42,161,47"/>
+<area shape="rect" id="Node000004" href="$class_unit.html#a9bf9e67d65046504311b165c8802fd17" title=" " alt="" coords="239,72,324,99"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="161,65,224,74,223,79,161,70"/>
+<area shape="rect" id="Node000003" href="$_randomaizer_8h.html#aff565f8d139ee75fb0601ce3d512e622" title=" " alt="" coords="402,13,477,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="355,24,386,24,386,29,355,29"/>
+</map>

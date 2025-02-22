@@ -1,0 +1,9 @@
+<map id="BaseItem::set_Weight_i" name="BaseItem::set_Weight_i">
+<area shape="rect" id="Node000001" title=" " alt="" coords="347,31,507,57"/>
+<area shape="rect" id="Node000002" href="$class_armor.html#ad43a29d76fb670ac099a5cc1ac948f4b" title=" " alt="" coords="190,5,289,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="331,34,289,28,290,23,332,28"/>
+<area shape="rect" id="Node000003" href="$classweapon.html#a6071f954b9d6d4a30a4cbd2befd10909" title=" " alt="" coords="180,56,299,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="332,60,300,64,299,59,331,54"/>
+<area shape="rect" id="Node000004" href="$classweapon.html#a082ce6444089c653ab2ea43de50ab88f" title=" " alt="" coords="5,56,132,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="164,72,132,72,132,67,164,67"/>
+</map>

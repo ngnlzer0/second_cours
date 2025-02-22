@@ -2,6 +2,10 @@
 \hypertarget{class_hero}{}\label{class_hero}\index{Hero@{Hero}}
 
 
+{\ttfamily \#include $<$Hero.\+h$>$}
+
+
+
 Inheritance diagram for Hero\+:
 \nopagebreak
 \begin{figure}[H]
@@ -23,87 +27,278 @@ Collaboration diagram for Hero\+:
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_hero_aeed21c06efd87bbe8a63db1c751136b5}\label{class_hero_aeed21c06efd87bbe8a63db1c751136b5} 
-void {\bfseries move} (sf\+::\+Vector2f offset)
+\mbox{\hyperlink{class_hero_ab5920677a4b5cb59d6f513922d037dca}{Hero}} ()
 \item 
-\Hypertarget{class_hero_aef7a4e3600ded40bde307dd8e47b8046}\label{class_hero_aef7a4e3600ded40bde307dd8e47b8046} 
-void {\bfseries update} (float delta\+Time)
+void \mbox{\hyperlink{class_hero_aeed21c06efd87bbe8a63db1c751136b5}{move}} (sf\+::\+Vector2f offset)
 \item 
-\Hypertarget{class_hero_a5d5ce7f6261f8b6cf5c0131d25820b25}\label{class_hero_a5d5ce7f6261f8b6cf5c0131d25820b25} 
-void {\bfseries handle\+Input} (const sf\+::\+Event \&event, const sf\+::\+Render\+Window \&window)
+void \mbox{\hyperlink{class_hero_aef7a4e3600ded40bde307dd8e47b8046}{update}} (float delta\+Time)
 \item 
-\Hypertarget{class_hero_a88f22dbe35461adb3f5b4c5ca2340e7c}\label{class_hero_a88f22dbe35461adb3f5b4c5ca2340e7c} 
-void {\bfseries process\+Movement} (float delta\+Time, const sf\+::\+Render\+Window \&window)
+void \mbox{\hyperlink{class_hero_a5d5ce7f6261f8b6cf5c0131d25820b25}{handle\+Input}} (const sf\+::\+Event \&event, const sf\+::\+Render\+Window \&window)
 \item 
-\Hypertarget{class_hero_ac5927da81d2677ae835d7b7407f937db}\label{class_hero_ac5927da81d2677ae835d7b7407f937db} 
-void {\bfseries update\+Animation} ()
+void \mbox{\hyperlink{class_hero_a88f22dbe35461adb3f5b4c5ca2340e7c}{process\+Movement}} (float delta\+Time, const sf\+::\+Render\+Window \&window)
 \item 
-\Hypertarget{class_hero_a3985b299d8381ee6d55e54106ca14291}\label{class_hero_a3985b299d8381ee6d55e54106ca14291} 
-void {\bfseries start\+Animation} (const std\+::string \&animation\+Name)
+void \mbox{\hyperlink{class_hero_ac5927da81d2677ae835d7b7407f937db}{update\+Animation}} ()
 \item 
-\Hypertarget{class_hero_a6bd09b6817a1929b55002ddb5683ea81}\label{class_hero_a6bd09b6817a1929b55002ddb5683ea81} 
-void {\bfseries update\+Sprite\+Orientation} (float scaleX)
+void \mbox{\hyperlink{class_hero_a3985b299d8381ee6d55e54106ca14291}{start\+Animation}} (const std\+::string \&animation\+Name)
 \item 
-\Hypertarget{class_hero_a2920b0f077ff5beac2887b540fe53237}\label{class_hero_a2920b0f077ff5beac2887b540fe53237} 
-Unit\+\_\+\+Sprite \texorpdfstring{$\ast$}{*} {\bfseries Get\+\_\+sprite} ()
+void \mbox{\hyperlink{class_hero_a6bd09b6817a1929b55002ddb5683ea81}{update\+Sprite\+Orientation}} (float scaleX)
+\item 
+Unit\+\_\+\+Sprite \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_hero_a2920b0f077ff5beac2887b540fe53237}{Get\+\_\+sprite}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_unit}{Unit}}}
 \begin{DoxyCompactItemize}
 \item 
-{\bfseries Unit} (const std\+::string texture\+\_\+file="{}"{}, sf\+::\+Vector2f pos=\{\}, sf\+::\+Vector2f size=\{\}, bool chois\+\_\+rect=false, sf\+::\+Int\+Rect Pos\+\_\+texture=\{0, 0, 0, 0\}, int X=0, int Y=0, const double max\+\_\+weight=50, const double g\+\_\+max\+\_\+hp=150, const int g\+\_\+max\+\_\+stamina=100, int g\+\_\+speed=50, double g\+\_\+block=40, double g\+\_\+miss=25)
+\mbox{\hyperlink{class_unit_aee68587b605d2e20a3fc007f5d50dcb8}{Unit}} (const std\+::string texture\+\_\+file="{}"{}, sf\+::\+Vector2f pos=\{\}, sf\+::\+Vector2f size=\{\}, bool chois\+\_\+rect=false, sf\+::\+Int\+Rect Pos\+\_\+texture=\{0, 0, 0, 0\}, int X=0, int Y=0, const double \mbox{\hyperlink{class_unit_a9cc8a1e5d517bb42243697ce7ef125c9}{max\+\_\+weight}}=50, const double g\+\_\+max\+\_\+hp=150, const int g\+\_\+max\+\_\+stamina=100, int g\+\_\+speed=50, double g\+\_\+block=40, double g\+\_\+miss=25)
 \item 
-const double {\bfseries Get\+\_\+max\+\_\+\+HP} ()
+\mbox{\hyperlink{class_unit_a9bf9e67d65046504311b165c8802fd17}{\texorpdfstring{$\sim$}{\string~}\+Unit}} ()=default
 \item 
-const int {\bfseries Get\+\_\+max\+\_\+stamina} ()
+const double \mbox{\hyperlink{class_unit_ab570b8d55eca9810b4ddbeb0c69ea32c}{Get\+\_\+max\+\_\+\+HP}} ()
 \item 
-double {\bfseries Get\+\_\+\+HP} ()
+const int \mbox{\hyperlink{class_unit_adc06767b9b4b6d7e42a06ebd6f16f53e}{Get\+\_\+max\+\_\+stamina}} ()
 \item 
-int {\bfseries Get\+\_\+stamina} ()
+double \mbox{\hyperlink{class_unit_aee53e2191408294af177fe4a2b4758ec}{Get\+\_\+\+HP}} ()
 \item 
-int {\bfseries Get\+\_\+speed} ()
+int \mbox{\hyperlink{class_unit_a51dc4386539464e91f2f58d1b023c637}{Get\+\_\+stamina}} ()
 \item 
-double {\bfseries Get\+\_\+block} ()
+int \mbox{\hyperlink{class_unit_ac7c12824edf7c99bc6dc5faa7f54609b}{Get\+\_\+speed}} ()
 \item 
-double {\bfseries Get\+\_\+miss} ()
+double \mbox{\hyperlink{class_unit_a344d3a88f49188138b67c3049f2a83f5}{Get\+\_\+block}} ()
 \item 
-void {\bfseries Set\+\_\+new\+\_\+\+HP} (double new\+\_\+\+HP)
+double \mbox{\hyperlink{class_unit_a682e51c5741c81dff47ade459fb810f8}{Get\+\_\+miss}} ()
 \item 
-void {\bfseries Set\+\_\+new\+\_\+stamina} (int new\+\_\+stamina)
+void \mbox{\hyperlink{class_unit_aafb272f6506c464d75df21273f877f7d}{Set\+\_\+new\+\_\+\+HP}} (double new\+\_\+\+HP)
 \item 
-void {\bfseries received\+\_\+damage} (double minus\+\_\+damage)
+void \mbox{\hyperlink{class_unit_ad93936be30169ebf3adc18997c95e231}{Set\+\_\+new\+\_\+stamina}} (int new\+\_\+stamina)
 \item 
-void {\bfseries attack\+\_\+enemi} (\mbox{\hyperlink{class_unit}{Unit}} \texorpdfstring{$\ast$}{*}enemi)
+void \mbox{\hyperlink{class_unit_a9f3affc04caf43e239ec915491e5e5d4}{received\+\_\+damage}} (double minus\+\_\+damage)
 \item 
-\mbox{\hyperlink{classweapon}{weapon}} \texorpdfstring{$\ast$}{*} {\bfseries Get\+\_\+weapon} ()
+void \mbox{\hyperlink{class_unit_aa69b9af4dc95296db7576ce22ea62ee2}{attack\+\_\+enemi}} (\mbox{\hyperlink{class_unit}{Unit}} \texorpdfstring{$\ast$}{*}enemi)
 \item 
-\mbox{\hyperlink{class_armor}{Armor}} \texorpdfstring{$\ast$}{*} {\bfseries Get\+\_\+armor} ()
+\mbox{\hyperlink{classweapon}{weapon}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_unit_ae6d763419924f841183909824782ef7c}{Get\+\_\+weapon}} ()
 \item 
-void {\bfseries Set\+\_\+new\+\_\+weapon} (\mbox{\hyperlink{classweapon}{weapon}} \texorpdfstring{$\ast$}{*}new\+\_\+weapon)
+\mbox{\hyperlink{class_armor}{Armor}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_unit_a7f244cc924b698542d8f908e64774c22}{Get\+\_\+armor}} ()
 \item 
-void {\bfseries Set\+\_\+new\+\_\+armor} (\mbox{\hyperlink{class_armor}{Armor}} \texorpdfstring{$\ast$}{*}new\+\_\+armor)
+void \mbox{\hyperlink{class_unit_a21f47917580fddc62fc1feeda2094865}{Set\+\_\+new\+\_\+weapon}} (\mbox{\hyperlink{classweapon}{weapon}} \texorpdfstring{$\ast$}{*}new\+\_\+weapon)
 \item 
-void {\bfseries update\+Bars} ()
+void \mbox{\hyperlink{class_unit_a7a1ee5b01c55c4cb534718023886fe99}{Set\+\_\+new\+\_\+armor}} (\mbox{\hyperlink{class_armor}{Armor}} \texorpdfstring{$\ast$}{*}new\+\_\+armor)
 \item 
-void {\bfseries draw\+Bars} (sf\+::\+Render\+Target \&target) const
+void \mbox{\hyperlink{class_unit_ada3ef8fb97f1f681b1e9f91d0f34fc75}{update\+Bars}} ()
+\item 
+void \mbox{\hyperlink{class_unit_a17c39b51244182a771320c1a91e66366}{draw\+Bars}} (sf\+::\+Render\+Target \&target) const
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classposition}{position}}}
 \begin{DoxyCompactItemize}
 \item 
-{\bfseries position} (int new\+\_\+x, int new\+\_\+y)
+\mbox{\hyperlink{classposition_af9f48b2b4141782e7e9d5ffcb1fc50d3}{position}} (int new\+\_\+x, int new\+\_\+y)
 \item 
-{\bfseries position} (sf\+::\+Vector2i vec)
+\mbox{\hyperlink{classposition_a38b9603ffd267e3666fa6417475bb329}{position}} (sf\+::\+Vector2i vec)
 \item 
-int {\bfseries Get\+\_\+X} ()
+\mbox{\hyperlink{classposition_ad6134ec9b44af19bcccd92bb4cbf0449}{position}} ()=default
 \item 
-int {\bfseries Get\+\_\+Y} ()
+int \mbox{\hyperlink{classposition_a3611c58f847ae0ffd7f0f8f7b68bc85d}{Get\+\_\+X}} ()
 \item 
-void {\bfseries Set\+\_\+new\+\_\+X} (int num)
+int \mbox{\hyperlink{classposition_a3cb122eb1f0455f3e0c1884f1928d125}{Get\+\_\+Y}} ()
 \item 
-void {\bfseries Set\+\_\+new\+\_\+Y} (int num)
+void \mbox{\hyperlink{classposition_a29563b0bfd61a2143a22ce842825c69a}{Set\+\_\+new\+\_\+X}} (int num)
+\item 
+void \mbox{\hyperlink{classposition_a6e8dc0e6d1a4e7db75912e0ec3cf9060}{Set\+\_\+new\+\_\+Y}} (int num)
 \end{DoxyCompactItemize}
+\doxysubsubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{class_hero_aa7d85757dff9e028506b5d2ec28a558e}{Hero\+State}} \{ \mbox{\hyperlink{class_hero_aa7d85757dff9e028506b5d2ec28a558eae599161956d626eda4cb0a5ffb85271c}{Idle}}
+, \mbox{\hyperlink{class_hero_aa7d85757dff9e028506b5d2ec28a558ea5bda814c4aedb126839228f1a3d92f09}{Running}}
+, \mbox{\hyperlink{class_hero_aa7d85757dff9e028506b5d2ec28a558ea8abd002ea36128383f3269de7e74039b}{Attacking}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Unit\+\_\+\+Sprite \mbox{\hyperlink{class_hero_a3275a7e80dcaa909d3a309fe1f743de2}{hero\+\_\+sprite}}
+\item 
+std\+::map$<$ std\+::string, Animation $>$ \mbox{\hyperlink{class_hero_ab55f38fac0e28f9ae6b37658408d4b25}{hero\+\_\+animations}}
+\item 
+float \mbox{\hyperlink{class_hero_a509636293aebb329b80d8d2a8d9c1d22}{speed}}
+\item 
+bool \mbox{\hyperlink{class_hero_ae70dbde15c88ebb6a8c840db752a74a2}{is\+Moving}}
+\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_hero_a2c2ec8bcbde71df75a0014d594f91835}{direction}}
+\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_hero_acc2323faedca1474ca8c617d7d76fe4e}{movement}}
+\item 
+enum \mbox{\hyperlink{class_hero_aa7d85757dff9e028506b5d2ec28a558e}{Hero\+::\+Hero\+State}} \mbox{\hyperlink{class_hero_a9244a09fb6bc260cec1f04d94114fdf5}{state}}
+\item 
+Animation \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_hero_a013a5611409e06b7d927f188532a9803}{current\+Anim}}
+\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_hero_aa79c9b9141c06ade2dd580cf37b10f29}{initial\+Scale\+\_\+h}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{class_hero_aa7d85757dff9e028506b5d2ec28a558e}\index{Hero@{Hero}!HeroState@{HeroState}}
+\index{HeroState@{HeroState}!Hero@{Hero}}
+\doxysubsubsection{\texorpdfstring{HeroState}{HeroState}}
+{\footnotesize\ttfamily \label{class_hero_aa7d85757dff9e028506b5d2ec28a558e} 
+enum class \mbox{\hyperlink{class_hero_aa7d85757dff9e028506b5d2ec28a558e}{Hero\+::\+Hero\+State}}\hspace{0.3cm}{\ttfamily [strong]}, {\ttfamily [private]}}
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Idle@{Idle}!Hero@{Hero}}\index{Hero@{Hero}!Idle@{Idle}}}\Hypertarget{class_hero_aa7d85757dff9e028506b5d2ec28a558eae599161956d626eda4cb0a5ffb85271c}\label{class_hero_aa7d85757dff9e028506b5d2ec28a558eae599161956d626eda4cb0a5ffb85271c} 
+Idle&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Running@{Running}!Hero@{Hero}}\index{Hero@{Hero}!Running@{Running}}}\Hypertarget{class_hero_aa7d85757dff9e028506b5d2ec28a558ea5bda814c4aedb126839228f1a3d92f09}\label{class_hero_aa7d85757dff9e028506b5d2ec28a558ea5bda814c4aedb126839228f1a3d92f09} 
+Running&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Attacking@{Attacking}!Hero@{Hero}}\index{Hero@{Hero}!Attacking@{Attacking}}}\Hypertarget{class_hero_aa7d85757dff9e028506b5d2ec28a558ea8abd002ea36128383f3269de7e74039b}\label{class_hero_aa7d85757dff9e028506b5d2ec28a558ea8abd002ea36128383f3269de7e74039b} 
+Attacking&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_hero_ab5920677a4b5cb59d6f513922d037dca}\index{Hero@{Hero}!Hero@{Hero}}
+\index{Hero@{Hero}!Hero@{Hero}}
+\doxysubsubsection{\texorpdfstring{Hero()}{Hero()}}
+{\footnotesize\ttfamily \label{class_hero_ab5920677a4b5cb59d6f513922d037dca} 
+Hero\+::\+Hero (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_hero_a2920b0f077ff5beac2887b540fe53237}\index{Hero@{Hero}!Get\_sprite@{Get\_sprite}}
+\index{Get\_sprite@{Get\_sprite}!Hero@{Hero}}
+\doxysubsubsection{\texorpdfstring{Get\_sprite()}{Get\_sprite()}}
+{\footnotesize\ttfamily \label{class_hero_a2920b0f077ff5beac2887b540fe53237} 
+Unit\+\_\+\+Sprite \texorpdfstring{$\ast$}{*} Hero\+::\+Get\+\_\+sprite (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_hero_a5d5ce7f6261f8b6cf5c0131d25820b25}\index{Hero@{Hero}!handleInput@{handleInput}}
+\index{handleInput@{handleInput}!Hero@{Hero}}
+\doxysubsubsection{\texorpdfstring{handleInput()}{handleInput()}}
+{\footnotesize\ttfamily \label{class_hero_a5d5ce7f6261f8b6cf5c0131d25820b25} 
+void Hero\+::handle\+Input (\begin{DoxyParamCaption}\item[{const sf\+::\+Event \&}]{event}{, }\item[{const sf\+::\+Render\+Window \&}]{window}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{class_hero_a5d5ce7f6261f8b6cf5c0131d25820b25_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_hero_aeed21c06efd87bbe8a63db1c751136b5}\index{Hero@{Hero}!move@{move}}
+\index{move@{move}!Hero@{Hero}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily \label{class_hero_aeed21c06efd87bbe8a63db1c751136b5} 
+void Hero\+::move (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{offset}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_hero_a88f22dbe35461adb3f5b4c5ca2340e7c}\index{Hero@{Hero}!processMovement@{processMovement}}
+\index{processMovement@{processMovement}!Hero@{Hero}}
+\doxysubsubsection{\texorpdfstring{processMovement()}{processMovement()}}
+{\footnotesize\ttfamily \label{class_hero_a88f22dbe35461adb3f5b4c5ca2340e7c} 
+void Hero\+::process\+Movement (\begin{DoxyParamCaption}\item[{float}]{delta\+Time}{, }\item[{const sf\+::\+Render\+Window \&}]{window}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_hero_a3985b299d8381ee6d55e54106ca14291}\index{Hero@{Hero}!startAnimation@{startAnimation}}
+\index{startAnimation@{startAnimation}!Hero@{Hero}}
+\doxysubsubsection{\texorpdfstring{startAnimation()}{startAnimation()}}
+{\footnotesize\ttfamily \label{class_hero_a3985b299d8381ee6d55e54106ca14291} 
+void Hero\+::start\+Animation (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{animation\+Name}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{class_hero_a3985b299d8381ee6d55e54106ca14291_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_hero_aef7a4e3600ded40bde307dd8e47b8046}\index{Hero@{Hero}!update@{update}}
+\index{update@{update}!Hero@{Hero}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{class_hero_aef7a4e3600ded40bde307dd8e47b8046} 
+void Hero\+::update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_hero_ac5927da81d2677ae835d7b7407f937db}\index{Hero@{Hero}!updateAnimation@{updateAnimation}}
+\index{updateAnimation@{updateAnimation}!Hero@{Hero}}
+\doxysubsubsection{\texorpdfstring{updateAnimation()}{updateAnimation()}}
+{\footnotesize\ttfamily \label{class_hero_ac5927da81d2677ae835d7b7407f937db} 
+void Hero\+::update\+Animation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{class_hero_ac5927da81d2677ae835d7b7407f937db_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_hero_a6bd09b6817a1929b55002ddb5683ea81}\index{Hero@{Hero}!updateSpriteOrientation@{updateSpriteOrientation}}
+\index{updateSpriteOrientation@{updateSpriteOrientation}!Hero@{Hero}}
+\doxysubsubsection{\texorpdfstring{updateSpriteOrientation()}{updateSpriteOrientation()}}
+{\footnotesize\ttfamily \label{class_hero_a6bd09b6817a1929b55002ddb5683ea81} 
+void Hero\+::update\+Sprite\+Orientation (\begin{DoxyParamCaption}\item[{float}]{scaleX}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_hero_a013a5611409e06b7d927f188532a9803}\index{Hero@{Hero}!currentAnim@{currentAnim}}
+\index{currentAnim@{currentAnim}!Hero@{Hero}}
+\doxysubsubsection{\texorpdfstring{currentAnim}{currentAnim}}
+{\footnotesize\ttfamily \label{class_hero_a013a5611409e06b7d927f188532a9803} 
+Animation\texorpdfstring{$\ast$}{*} Hero\+::current\+Anim\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_hero_a2c2ec8bcbde71df75a0014d594f91835}\index{Hero@{Hero}!direction@{direction}}
+\index{direction@{direction}!Hero@{Hero}}
+\doxysubsubsection{\texorpdfstring{direction}{direction}}
+{\footnotesize\ttfamily \label{class_hero_a2c2ec8bcbde71df75a0014d594f91835} 
+sf\+::\+Vector2f Hero\+::direction\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_hero_ab55f38fac0e28f9ae6b37658408d4b25}\index{Hero@{Hero}!hero\_animations@{hero\_animations}}
+\index{hero\_animations@{hero\_animations}!Hero@{Hero}}
+\doxysubsubsection{\texorpdfstring{hero\_animations}{hero\_animations}}
+{\footnotesize\ttfamily \label{class_hero_ab55f38fac0e28f9ae6b37658408d4b25} 
+std\+::map$<$std\+::string, Animation$>$ Hero\+::hero\+\_\+animations\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_hero_a3275a7e80dcaa909d3a309fe1f743de2}\index{Hero@{Hero}!hero\_sprite@{hero\_sprite}}
+\index{hero\_sprite@{hero\_sprite}!Hero@{Hero}}
+\doxysubsubsection{\texorpdfstring{hero\_sprite}{hero\_sprite}}
+{\footnotesize\ttfamily \label{class_hero_a3275a7e80dcaa909d3a309fe1f743de2} 
+Unit\+\_\+\+Sprite Hero\+::hero\+\_\+sprite\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_hero_aa79c9b9141c06ade2dd580cf37b10f29}\index{Hero@{Hero}!initialScale\_h@{initialScale\_h}}
+\index{initialScale\_h@{initialScale\_h}!Hero@{Hero}}
+\doxysubsubsection{\texorpdfstring{initialScale\_h}{initialScale\_h}}
+{\footnotesize\ttfamily \label{class_hero_aa79c9b9141c06ade2dd580cf37b10f29} 
+sf\+::\+Vector2f Hero\+::initial\+Scale\+\_\+h\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_hero_ae70dbde15c88ebb6a8c840db752a74a2}\index{Hero@{Hero}!isMoving@{isMoving}}
+\index{isMoving@{isMoving}!Hero@{Hero}}
+\doxysubsubsection{\texorpdfstring{isMoving}{isMoving}}
+{\footnotesize\ttfamily \label{class_hero_ae70dbde15c88ebb6a8c840db752a74a2} 
+bool Hero\+::is\+Moving\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_hero_acc2323faedca1474ca8c617d7d76fe4e}\index{Hero@{Hero}!movement@{movement}}
+\index{movement@{movement}!Hero@{Hero}}
+\doxysubsubsection{\texorpdfstring{movement}{movement}}
+{\footnotesize\ttfamily \label{class_hero_acc2323faedca1474ca8c617d7d76fe4e} 
+sf\+::\+Vector2f Hero\+::movement\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_hero_a509636293aebb329b80d8d2a8d9c1d22}\index{Hero@{Hero}!speed@{speed}}
+\index{speed@{speed}!Hero@{Hero}}
+\doxysubsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily \label{class_hero_a509636293aebb329b80d8d2a8d9c1d22} 
+float Hero\+::speed\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_hero_a9244a09fb6bc260cec1f04d94114fdf5}\index{Hero@{Hero}!state@{state}}
+\index{state@{state}!Hero@{Hero}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily \label{class_hero_a9244a09fb6bc260cec1f04d94114fdf5} 
+enum \mbox{\hyperlink{class_hero_aa7d85757dff9e028506b5d2ec28a558e}{Hero\+::\+Hero\+State}} Hero\+::state\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Hero.\+h\item 
-Hero.\+cpp\end{DoxyCompactItemize}
+\mbox{\hyperlink{_hero_8h}{Hero.\+h}}\item 
+\mbox{\hyperlink{_hero_8cpp}{Hero.\+cpp}}\end{DoxyCompactItemize}

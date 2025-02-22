@@ -1,48 +1,48 @@
 \doxysection{Game.\+h}
-\hypertarget{_game_8h_source}{}\label{_game_8h_source}
+\hypertarget{_game_8h_source}{}\label{_game_8h_source}\mbox{\hyperlink{_game_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
 \DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <list>}}
-\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}Main\_menu.h"{}}}
-\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Includer.h"{}}}
-\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}Unit.h"{}}}
-\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}Inventors.h"{}}}
-\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}potion.h"{}}}
-\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}stamina\_pot.h"{}}}
-\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}Hero.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_main__menu_8h}{Main\_menu.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_includer_8h}{Includer.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_unit_8h}{Unit.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_inventors_8h}{Inventors.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{potion_8h}{potion.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{stamina__pot_8h}{stamina\_pot.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_hero_8h}{Hero.h}}"{}}}
 \DoxyCodeLine{00010\ }
-\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }Game\ \{}
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_game_ad59df6562a58a614fda24622d3715b65}{Game}}\ \{}
 \DoxyCodeLine{00012\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00013\ \ \ \ \ sf::Image\ window\_icon;}
-\DoxyCodeLine{00014\ \ \ \ \ sf::VideoMode\ windowSize\ =\ \{\ WIDHT\_WINDOW,\ HIGHT\_WINDOW\ \};}
-\DoxyCodeLine{00015\ \ \ \ \ sf::String\ windowTitle\ =\ \textcolor{stringliteral}{"{}2D\ RPG\ game"{}};}
+\DoxyCodeLine{00013\ \ \ \ \ sf::Image\ \mbox{\hyperlink{class_game_ac9e963f648ccda834433dfb08d8c4fd2}{window\_icon}};}
+\DoxyCodeLine{00014\ \ \ \ \ sf::VideoMode\ \mbox{\hyperlink{class_game_a3850db8512f954e5b3c47c1fe21afd91}{windowSize}}\ =\ \{\ \mbox{\hyperlink{_includer_8h_aab70325ac279eb2a023817cb66414e01}{WIDHT\_WINDOW}},\ \mbox{\hyperlink{_includer_8h_a8f90a6aa6105816c10360b558e8b1cb7}{HIGHT\_WINDOW}}\ \};}
+\DoxyCodeLine{00015\ \ \ \ \ sf::String\ \mbox{\hyperlink{class_game_aee1de965e5c6535e10bd3e06cb1f7448}{windowTitle}}\ =\ \textcolor{stringliteral}{"{}2D\ RPG\ game"{}};}
 \DoxyCodeLine{00016\ }
-\DoxyCodeLine{00017\ \ \ \ \ sf::RenderWindow\ window;}
-\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_main__menu}{Main\_menu}}\ Main\_Menu;}
+\DoxyCodeLine{00017\ \ \ \ \ sf::RenderWindow\ \mbox{\hyperlink{class_game_a223de215aeb661cd423ac145756cc730}{window}};}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_main__menu}{Main\_menu}}\ \mbox{\hyperlink{class_game_ace4b787cc7fde56f9b66162b0e7763b2}{Main\_Menu}};}
 \DoxyCodeLine{00019\ }
 \DoxyCodeLine{00020\ }
 \DoxyCodeLine{00021\ }
-\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{bool}\ main\_menu\_open\ =\ \textcolor{keyword}{true};}
-\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{bool}\ isGameActive\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_game_a30ba75f808458e877e61125444fa16a1}{main\_menu\_open}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_game_a4abab1764a9c1336c12c9d89b2c1c4cf}{isGameActive}}\ =\ \textcolor{keyword}{false};}
 \DoxyCodeLine{00024\ }
-\DoxyCodeLine{00025\ \ \ \ \ sf::Font\ Mfont;}
+\DoxyCodeLine{00025\ \ \ \ \ sf::Font\ \mbox{\hyperlink{class_game_a0f2b25a8f4bfb008083d6359588317ab}{Mfont}};}
 \DoxyCodeLine{00026\ }
-\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_armor}{Armor}}*\ head;}
-\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{classweapon}{weapon}}*\ sword;}
-\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{classstamina__pot}{stamina\_pot}}*\ stamina;}
-\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{classpotion}{potion}}*\ healt;}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_armor}{Armor}}*\ \mbox{\hyperlink{class_game_ab166ba66a6f22f69b6d11b6b63196c93}{head}};}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{classweapon}{weapon}}*\ \mbox{\hyperlink{class_game_acf27f0b195c9b89bb09d67d82773f81a}{sword}};}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{classstamina__pot}{stamina\_pot}}*\ \mbox{\hyperlink{class_game_a195e9c2c44cc7dab4f2e9199b610cdf6}{stamina}};}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{classpotion}{potion}}*\ \mbox{\hyperlink{class_game_acee6c1dc803837a9d91cda80cfc8101f}{healt}};}
 \DoxyCodeLine{00031\ }
-\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{class_hero}{Hero}}\ hero\ =\ \mbox{\hyperlink{class_hero}{Hero}}();}
-\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_inventors}{Inventors}}\ inventory;\ \textcolor{comment}{//\ Інвентар\ гравця}}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{class_hero}{Hero}}\ \mbox{\hyperlink{class_game_a0d632e048dcf19421ffd199db3ba854f}{hero}}\ =\ \mbox{\hyperlink{class_hero}{Hero}}();}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_inventors}{Inventors}}\ \mbox{\hyperlink{class_game_a384dbb7f3739c236e4515c5129209f0c}{inventory}};\ \textcolor{comment}{//\ Інвентар\ гравця}}
 \DoxyCodeLine{00034\ }
-\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ HandleInput();}
-\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ Update(\textcolor{keywordtype}{float}\ delta\_Time);}
-\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ Render();}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_a6cb82eaece4e30724f3fe4e0d4bde5fc}{HandleInput}}();}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_ace6c52c2fb8f23d8917f18fb61ed3547}{Update}}(\textcolor{keywordtype}{float}\ delta\_Time);}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_a0897730fc9fed789f6c0f11d21a0c14a}{Render}}();}
 \DoxyCodeLine{00038\ }
 \DoxyCodeLine{00039\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00040\ \ \ \ \ Game();}
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{class_game_ad59df6562a58a614fda24622d3715b65}{Game}}();}
 \DoxyCodeLine{00041\ }
-\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ Run();}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_a96341ca5b54d90adc3ecb3bf0bcd2312}{Run}}();}
 \DoxyCodeLine{00043\ \};}
 \DoxyCodeLine{00044\ }
 \DoxyCodeLine{00045\ }

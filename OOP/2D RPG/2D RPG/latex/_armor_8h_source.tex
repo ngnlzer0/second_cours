@@ -1,53 +1,53 @@
 \doxysection{Armor.\+h}
-\hypertarget{_armor_8h_source}{}\label{_armor_8h_source}
+\hypertarget{_armor_8h_source}{}\label{_armor_8h_source}\mbox{\hyperlink{_armor_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
 \DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
-\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}Buttons.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_buttons_8h}{Buttons.h}}"{}}}
 \DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
-\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}BaseItem.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_base_item_8h}{BaseItem.h}}"{}}}
 \DoxyCodeLine{00006\ }
-\DoxyCodeLine{00007\ \textcolor{keyword}{enum}\ Armor\_type\ \{}
-\DoxyCodeLine{00008\ \ \ \ \ helmet,}
-\DoxyCodeLine{00009\ \ \ \ \ jacket,}
-\DoxyCodeLine{00010\ \ \ \ \ gloves,}
-\DoxyCodeLine{00011\ \ \ \ \ ring,}
-\DoxyCodeLine{00012\ \ \ \ \ shoes,}
+\DoxyCodeLine{00007\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{_armor_8h_a3b25071636377947f022a1e33a911e4d}{Armor\_type}}\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ \mbox{\hyperlink{_armor_8h_a3b25071636377947f022a1e33a911e4da5de25d49e11c56a0929deadf02adfb8e}{helmet}},}
+\DoxyCodeLine{00009\ \ \ \ \ \mbox{\hyperlink{_armor_8h_a3b25071636377947f022a1e33a911e4da89cfff23311fd18cb6a44df66b5db5b4}{jacket}},}
+\DoxyCodeLine{00010\ \ \ \ \ \mbox{\hyperlink{_armor_8h_a3b25071636377947f022a1e33a911e4da75b29f5666a52fa2cd0d13bdc3e80690}{gloves}},}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{_armor_8h_a3b25071636377947f022a1e33a911e4da03386d6d452dc4c17b6aab4333f32d3c}{ring}},}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{_armor_8h_a3b25071636377947f022a1e33a911e4da03ddc81dd34187651df2c43801df0df1}{shoes}},}
 \DoxyCodeLine{00013\ \};}
 \DoxyCodeLine{00014\ }
-\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }Armor\ :\ \textcolor{keyword}{public}\ sf::Drawable,\ \textcolor{keyword}{public}\ BaseItem\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_armor_ad43a29d76fb670ac099a5cc1ac948f4b}{Armor}}\ :\ \textcolor{keyword}{public}\ sf::Drawable,\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_base_item_a4d65b4520f8914c9645b9c688eb54ec0}{BaseItem}}\ \{}
 \DoxyCodeLine{00016\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_buttons}{Buttons}}*\ armor\_button;}
-\DoxyCodeLine{00018\ \ \ \ \ Armor\_type\ type;}
-\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{double}\ weight;}
-\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{double}\ block;}
-\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{double}\ miss;}
-\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{int}\ durability;}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_buttons}{Buttons}}*\ \mbox{\hyperlink{class_armor_a51d57abf3dfd1cfe9766e6271a9341ee}{armor\_button}};}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{_armor_8h_a3b25071636377947f022a1e33a911e4d}{Armor\_type}}\ \mbox{\hyperlink{class_armor_a156e8b4f423278b655faece9d96b79a0}{type}};}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_armor_a5ecb0295821e2ee40d2d08f8be5dccb6}{weight}};}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_armor_a35f559610bec5884ae6d530df4b670b0}{block}};}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_armor_af94de8d1c309e3550999afb8b1d2fa7f}{miss}};}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_armor_af24bb1abf6fc25e38c6867b43e509b36}{durability}};}
 \DoxyCodeLine{00023\ }
-\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ std::unordered\_map<Armor\_type,\ std::string>\ armorTexturePaths;}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ std::unordered\_map<Armor\_type,\ std::string>\ \mbox{\hyperlink{class_armor_aec13d28ffd4acb23b745ba07c5ffd191}{armorTexturePaths}};}
 \DoxyCodeLine{00025\ }
 \DoxyCodeLine{00026\ \textcolor{keyword}{protected}:}
 \DoxyCodeLine{00027\ \ \ \ \ \textcolor{comment}{//\ Метод\ draw,\ щоб\ намалювати\ armor\_button\ на\ екрані}}
-\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ draw(sf::RenderTarget\&\ target,\ sf::RenderStates\ states)\textcolor{keyword}{\ const\ override\ }\{}
-\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ armor\_button-\/>draw(target,\ states);}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_armor_a1ff3dd6582ea961ebe393150b7d9292e}{draw}}(sf::RenderTarget\&\ target,\ sf::RenderStates\ states)\textcolor{keyword}{\ const\ override\ }\{}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_armor_a51d57abf3dfd1cfe9766e6271a9341ee}{armor\_button}}-\/>draw(target,\ states);}
 \DoxyCodeLine{00030\ \ \ \ \ \}}
 \DoxyCodeLine{00031\ }
 \DoxyCodeLine{00032\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00033\ \ \ \ \ Armor(\textcolor{keywordtype}{int}\ pos\_x\ =\ 0,\ \textcolor{keywordtype}{int}\ pos\_y\ =\ 0,}
-\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ g\_weight\ =\ 0.0,\ \textcolor{keywordtype}{double}\ g\_block\ =\ 0.0,\ \textcolor{keywordtype}{double}\ g\_missing\ =\ 0.0,\ \textcolor{keywordtype}{int}\ g\_durability\ =\ 0,\ Armor\_type\ g\_type\ =\ helmet,\ \textcolor{keywordtype}{bool}\ random\ =\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_armor_ad43a29d76fb670ac099a5cc1ac948f4b}{Armor}}(\textcolor{keywordtype}{int}\ pos\_x\ =\ 0,\ \textcolor{keywordtype}{int}\ pos\_y\ =\ 0,}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ g\_weight\ =\ 0.0,\ \textcolor{keywordtype}{double}\ g\_block\ =\ 0.0,\ \textcolor{keywordtype}{double}\ g\_missing\ =\ 0.0,\ \textcolor{keywordtype}{int}\ g\_durability\ =\ 0,\ \mbox{\hyperlink{_armor_8h_a3b25071636377947f022a1e33a911e4d}{Armor\_type}}\ g\_type\ =\ \mbox{\hyperlink{_armor_8h_a3b25071636377947f022a1e33a911e4da5de25d49e11c56a0929deadf02adfb8e}{helmet}},\ \textcolor{keywordtype}{bool}\ random\ =\ \textcolor{keyword}{true});}
 \DoxyCodeLine{00035\ }
 \DoxyCodeLine{00036\ \ \ \ \ \textcolor{comment}{//\ Гетери\ та\ сетери}}
-\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{double}\ Get\_weight()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ weight;\ \}}
-\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{double}\ Get\_block()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ block;\ \}}
-\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{double}\ Get\_missing()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ miss;\ \}}
-\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{int}\ Get\_durability()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ durability;\ \}}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_armor_ab52c5d0e7f54eb9236a5118a054f1839}{Get\_weight}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_armor_a5ecb0295821e2ee40d2d08f8be5dccb6}{weight}};\ \}}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_armor_ad83930ffa7876ffe4982cd4d757820d2}{Get\_block}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_armor_a35f559610bec5884ae6d530df4b670b0}{block}};\ \}}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_armor_ab2d9039bd59a3c8a8d907b80e2ddf863}{Get\_missing}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_armor_af94de8d1c309e3550999afb8b1d2fa7f}{miss}};\ \}}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_armor_a062ba9af2bb839859b02e6b788241edb}{Get\_durability}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_armor_af24bb1abf6fc25e38c6867b43e509b36}{durability}};\ \}}
 \DoxyCodeLine{00041\ }
-\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{double}\ Set\_weight(\textcolor{keywordtype}{double}\ g\_weight)\ \{\ \textcolor{keywordflow}{return}\ (g\_weight\ >\ 0.0\ ?\ weight\ =\ g\_weight\ :\ weight\ =\ 0.0);\ \}}
-\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{double}\ Set\_block(\textcolor{keywordtype}{double}\ g\_block)\ \{\ \textcolor{keywordflow}{return}\ (block\ =\ g\_block);\ \}}
-\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{double}\ Set\_missing(\textcolor{keywordtype}{double}\ g\_missing)\ \{\ \textcolor{keywordflow}{return}\ (miss\ =\ g\_missing);\ \}}
-\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{int}\ Set\_durability(\textcolor{keywordtype}{int}\ g\_durability)\ \{\ \textcolor{keywordflow}{return}\ (g\_durability\ >\ 0\ ?\ durability\ =\ g\_durability\ :\ durability\ =\ 0);\ \}}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_armor_a8c4ce57aee947c338013d213b34034a2}{Set\_weight}}(\textcolor{keywordtype}{double}\ g\_weight)\ \{\ \textcolor{keywordflow}{return}\ (g\_weight\ >\ 0.0\ ?\ \mbox{\hyperlink{class_armor_a5ecb0295821e2ee40d2d08f8be5dccb6}{weight}}\ =\ g\_weight\ :\ \mbox{\hyperlink{class_armor_a5ecb0295821e2ee40d2d08f8be5dccb6}{weight}}\ =\ 0.0);\ \}}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_armor_a73a44e36e8ed3592bcb6cc9c20627fb3}{Set\_block}}(\textcolor{keywordtype}{double}\ g\_block)\ \{\ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{class_armor_a35f559610bec5884ae6d530df4b670b0}{block}}\ =\ g\_block);\ \}}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_armor_a4d74acba8ece68c7d0eb089b6e7c6ea6}{Set\_missing}}(\textcolor{keywordtype}{double}\ g\_missing)\ \{\ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{class_armor_af94de8d1c309e3550999afb8b1d2fa7f}{miss}}\ =\ g\_missing);\ \}}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_armor_a1225a36a3a8a116c620e9ece7354bf66}{Set\_durability}}(\textcolor{keywordtype}{int}\ g\_durability)\ \{\ \textcolor{keywordflow}{return}\ (g\_durability\ >\ 0\ ?\ \mbox{\hyperlink{class_armor_af24bb1abf6fc25e38c6867b43e509b36}{durability}}\ =\ g\_durability\ :\ \mbox{\hyperlink{class_armor_af24bb1abf6fc25e38c6867b43e509b36}{durability}}\ =\ 0);\ \}}
 \DoxyCodeLine{00046\ }
-\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{class_buttons}{Buttons}}\&\ Get\_buttons()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ *armor\_button;\ \}}
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{class_buttons}{Buttons}}\&\ \mbox{\hyperlink{class_armor_a56e4c56f9527260f4ec78bb27862735a}{Get\_buttons}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ *\mbox{\hyperlink{class_armor_a51d57abf3dfd1cfe9766e6271a9341ee}{armor\_button}};\ \}}
 \DoxyCodeLine{00048\ \};}
 \DoxyCodeLine{00049\ }
 

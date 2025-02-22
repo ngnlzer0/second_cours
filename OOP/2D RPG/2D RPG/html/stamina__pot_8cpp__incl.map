@@ -1,0 +1,21 @@
+<map id="stamina_pot.cpp" name="stamina_pot.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="166,5,284,32"/>
+<area shape="rect" id="Node000002" href="$stamina__pot_8h.html" title=" " alt="" coords="173,80,276,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,33,228,64,222,64,222,33"/>
+<area shape="rect" id="Node000003" href="$_includer_8h.html" title=" " alt="" coords="148,155,227,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="221,108,203,142,198,140,216,106"/>
+<area shape="rect" id="Node000008" href="$_base_item_8h.html" title=" " alt="" coords="238,229,326,256"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="232,106,274,214,269,216,227,108"/>
+<area shape="rect" id="Node000004" href="$_buttons_8h.html" title=" " alt="" coords="134,229,212,256"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="188,182,181,215,176,214,182,181"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="98,304,235,331"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="174,257,171,289,166,288,169,256"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="260,304,313,331"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="194,254,255,293,252,298,191,259"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="5,304,74,331"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="151,259,77,299,75,294,148,254"/>
+<area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="263,259,201,298,198,293,261,254"/>
+<area shape="poly" id="edge9_Node000008_Node000006" title=" " alt="" coords="286,256,287,288,282,289,280,257"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="337,304,408,331"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="300,254,347,292,344,296,296,259"/>
+</map>

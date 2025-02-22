@@ -1,0 +1,13 @@
+<map id="potion::add_potion" name="potion::add_potion">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,147,133,173"/>
+<area shape="rect" id="Node000002" href="$classpotion.html#a24b220e4a617077a2a9431bb83146796" title=" " alt="" coords="187,5,340,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,144,122,103,179,58,187,53,190,58,182,62,126,107,85,148"/>
+<area shape="rect" id="Node000003" href="$classpotion.html#a8b4f7b0cf5681314ddc003817eb308c1" title=" " alt="" coords="196,72,331,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="110,144,184,118,185,123,111,149"/>
+<area shape="rect" id="Node000004" href="$classpotion.html#a45f4a0d937ff55200f2c458835612eda" title=" " alt="" coords="198,139,328,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="133,157,183,157,183,163,133,163"/>
+<area shape="rect" id="Node000005" href="$classpotion.html#af11564a6d405c3871793020909780500" title=" " alt="" coords="195,205,332,248"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="111,171,185,197,184,202,110,176"/>
+<area shape="rect" id="Node000006" href="$classpotion.html#ab29124543c9fe54d4cb707fe36cc7c9c" title=" " alt="" coords="181,272,346,315"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="85,172,126,213,182,258,190,262,187,267,179,262,122,217,81,176"/>
+</map>

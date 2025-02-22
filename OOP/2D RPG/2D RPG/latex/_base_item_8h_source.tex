@@ -1,67 +1,67 @@
 \doxysection{Base\+Item.\+h}
-\hypertarget{_base_item_8h_source}{}\label{_base_item_8h_source}
+\hypertarget{_base_item_8h_source}{}\label{_base_item_8h_source}\mbox{\hyperlink{_base_item_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
 \DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
 \DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <string>}}
 \DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include<iostream>}}
 \DoxyCodeLine{00005\ }
-\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }BaseItem\ \{}
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_base_item_a4d65b4520f8914c9645b9c688eb54ec0}{BaseItem}}\ \{}
 \DoxyCodeLine{00007\ \textcolor{keyword}{protected}:}
-\DoxyCodeLine{00008\ \ \ \ \ std::string\ name\_text;}
-\DoxyCodeLine{00009\ \ \ \ \ sf::Texture\ texture;\ \ \textcolor{comment}{//\ Текстура\ предмета}}
-\DoxyCodeLine{00010\ \ \ \ \ sf::Sprite\ sprite;\ \ \ \ \textcolor{comment}{//\ Спрайт\ предмета}}
-\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{double}\ weight\_i;\ \ \ \ \ \ \ \ \textcolor{comment}{//\ Вага\ предмета}}
+\DoxyCodeLine{00008\ \ \ \ \ std::string\ \mbox{\hyperlink{class_base_item_af724d34f05ff298901d03f2831c7a24a}{name\_text}};}
+\DoxyCodeLine{00009\ \ \ \ \ sf::Texture\ \mbox{\hyperlink{class_base_item_a7733efa4b199f5459b2e6cef0aa124cc}{texture}};\ \ \textcolor{comment}{//\ Текстура\ предмета}}
+\DoxyCodeLine{00010\ \ \ \ \ sf::Sprite\ \mbox{\hyperlink{class_base_item_ae8ad5e14bea24f1cdd39f5f07715ca65}{sprite}};\ \ \ \ \textcolor{comment}{//\ Спрайт\ предмета}}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_base_item_a1463bdb5567b7a401d73b4797a63851d}{weight\_i}};\ \ \ \ \ \ \ \ \textcolor{comment}{//\ Вага\ предмета}}
 \DoxyCodeLine{00012\ }
 \DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00014\ \ \ \ \ BaseItem(\textcolor{keyword}{const}\ std::string\&\ texturePath,\ \textcolor{keywordtype}{double}\ weight,\ \textcolor{keywordtype}{bool}\ rect\ =\ \textcolor{keyword}{false},\ sf::IntRect\ \textcolor{keywordtype}{size\_t}\ =\{0,0,0,0\}\ )}
-\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ :\ texture(),\ sprite(),\ weight\_i(weight)\ }
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{class_base_item_a4d65b4520f8914c9645b9c688eb54ec0}{BaseItem}}(\textcolor{keyword}{const}\ std::string\&\ texturePath,\ \textcolor{keywordtype}{double}\ weight,\ \textcolor{keywordtype}{bool}\ rect\ =\ \textcolor{keyword}{false},\ sf::IntRect\ \textcolor{keywordtype}{size\_t}\ =\{0,0,0,0\}\ )}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_base_item_a7733efa4b199f5459b2e6cef0aa124cc}{texture}}(),\ \mbox{\hyperlink{class_base_item_ae8ad5e14bea24f1cdd39f5f07715ca65}{sprite}}(),\ \mbox{\hyperlink{class_base_item_a1463bdb5567b7a401d73b4797a63851d}{weight\_i}}(weight)\ }
 \DoxyCodeLine{00016\ \ \ \ \ \{}
 \DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (rect)}
 \DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!texture.loadFromFile(texturePath,\textcolor{keywordtype}{size\_t})\ \&\&\ texturePath\ !=\ \textcolor{stringliteral}{"{}"{}})\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_base_item_a7733efa4b199f5459b2e6cef0aa124cc}{texture}}.loadFromFile(texturePath,\textcolor{keywordtype}{size\_t})\ \&\&\ texturePath\ !=\ \textcolor{stringliteral}{"{}"{}})\ \{}
 \DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cerr\ <<\ \textcolor{stringliteral}{"{}Error\ loading\ texture\ from\ path:\ "{}}\ <<\ texturePath\ <<\ std::endl;}
 \DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::runtime\_error(\textcolor{stringliteral}{"{}Failed\ to\ load\ texture:\ "{}}\ +\ texturePath);}
 \DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
 \DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (!texture.loadFromFile(texturePath)\ \&\&\ texturePath\ !=\ \textcolor{stringliteral}{"{}"{}})\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_base_item_a7733efa4b199f5459b2e6cef0aa124cc}{texture}}.loadFromFile(texturePath)\ \&\&\ texturePath\ !=\ \textcolor{stringliteral}{"{}"{}})\ \{}
 \DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ std::cerr\ <<\ \textcolor{stringliteral}{"{}Error\ loading\ texture\ from\ path:\ "{}}\ <<\ texturePath\ <<\ std::endl;}
-\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::runtime\_error(\textcolor{stringliteral}{"{}Failed\ to\ load\ texture:\ "{}}\ +\ texturePath);}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ throw\ std::runtime\_error(\textcolor{stringliteral}{"{}Failed\ to\ load\ texture:\ "{}}\ +\ texturePath);}
 \DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \}}
 \DoxyCodeLine{00028\ \ \ \ \ \}}
 \DoxyCodeLine{00029\ \ \ \ \ \textcolor{comment}{//\ Отримати\ спрайт\ предмета}}
-\DoxyCodeLine{00030\ \ \ \ \ sf::Sprite*\ getSprite()\ \{}
-\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \&sprite;}
+\DoxyCodeLine{00030\ \ \ \ \ sf::Sprite*\ \mbox{\hyperlink{class_base_item_a8adb3bcffb31b6aa5b5025e8a1a28820}{getSprite}}()\ \{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \&\mbox{\hyperlink{class_base_item_ae8ad5e14bea24f1cdd39f5f07715ca65}{sprite}};}
 \DoxyCodeLine{00032\ \ \ \ \ \}}
 \DoxyCodeLine{00033\ }
 \DoxyCodeLine{00034\ \ \ \ \ \textcolor{comment}{//\ Отримати\ вагу\ предмета}}
-\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{double}\ getWeight()\textcolor{keyword}{\ const\ }\{}
-\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ weight\_i;}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_base_item_a04d8cafaded3202cc88ba9c087d7d223}{getWeight}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_base_item_a1463bdb5567b7a401d73b4797a63851d}{weight\_i}};}
 \DoxyCodeLine{00037\ \ \ \ \ \}}
 \DoxyCodeLine{00038\ }
 \DoxyCodeLine{00039\ \ \ \ \ \textcolor{comment}{//\ Встановити\ нову\ вагу}}
-\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ set\_Weight\_i(\textcolor{keywordtype}{double}\ newWeight)\ \{}
-\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ weight\_i\ =\ newWeight;}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_base_item_a32fbaee5702cbdf657e55abd0127ce22}{set\_Weight\_i}}(\textcolor{keywordtype}{double}\ newWeight)\ \{}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_base_item_a1463bdb5567b7a401d73b4797a63851d}{weight\_i}}\ =\ newWeight;}
 \DoxyCodeLine{00042\ \ \ \ \ \}}
 \DoxyCodeLine{00043\ }
-\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ setNewTexture(\textcolor{keyword}{const}\ std::string\&\ texturePath,\ \textcolor{keywordtype}{bool}\ rect\ =\ \textcolor{keyword}{false},\ sf::IntRect\ \textcolor{keywordtype}{size\_t}\ =\ \{\ 0,0,0,0\ \})}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_base_item_a8f66c47046775c8ccd180d1197bba121}{setNewTexture}}(\textcolor{keyword}{const}\ std::string\&\ texturePath,\ \textcolor{keywordtype}{bool}\ rect\ =\ \textcolor{keyword}{false},\ sf::IntRect\ \textcolor{keywordtype}{size\_t}\ =\ \{\ 0,0,0,0\ \})}
 \DoxyCodeLine{00045\ \ \ \ \ \{}
-\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ name\_text\ =\ texturePath;}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_base_item_af724d34f05ff298901d03f2831c7a24a}{name\_text}}\ =\ texturePath;}
 \DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (rect)}
 \DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!texture.loadFromFile(texturePath,\ \textcolor{keywordtype}{size\_t})\ \&\&\ texturePath\ !=\ \textcolor{stringliteral}{"{}"{}})\ \{}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_base_item_a7733efa4b199f5459b2e6cef0aa124cc}{texture}}.loadFromFile(texturePath,\ \textcolor{keywordtype}{size\_t})\ \&\&\ texturePath\ !=\ \textcolor{stringliteral}{"{}"{}})\ \{}
 \DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cerr\ <<\ \textcolor{stringliteral}{"{}Error\ loading\ texture\ from\ path:\ "{}}\ <<\ texturePath\ <<\ std::endl;}
 \DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::runtime\_error(\textcolor{stringliteral}{"{}Failed\ to\ load\ texture:\ "{}}\ +\ texturePath);}
 \DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
 \DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(!texture.loadFromFile(texturePath))\ \{}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(!\mbox{\hyperlink{class_base_item_a7733efa4b199f5459b2e6cef0aa124cc}{texture}}.loadFromFile(texturePath))\ \{}
 \DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ std::cerr\ <<\ \textcolor{stringliteral}{"{}Error\ loading\ texture\ from\ path:\ "{}}\ <<\ texturePath\ <<\ std::endl;}
 \DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::runtime\_error(\textcolor{stringliteral}{"{}Failed\ to\ load\ texture:\ "{}}\ +\ texturePath);}
 \DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ sprite.setTexture(texture);\ \ \textcolor{comment}{//\ Оновлюємо\ спрайт\ із\ новою\ текстурою}}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_base_item_ae8ad5e14bea24f1cdd39f5f07715ca65}{sprite}}.setTexture(\mbox{\hyperlink{class_base_item_a7733efa4b199f5459b2e6cef0aa124cc}{texture}});\ \ \textcolor{comment}{//\ Оновлюємо\ спрайт\ із\ новою\ текстурою}}
 \DoxyCodeLine{00059\ \ \ \ \ \}}
 \DoxyCodeLine{00060\ }
-\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{virtual}\ \string~BaseItem()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_base_item_a24cfd4b27148fbe85d4c9e7754228b66}{\string~BaseItem}}()\ =\ \textcolor{keywordflow}{default};}
 \DoxyCodeLine{00062\ \};}
 
 \end{DoxyCode}

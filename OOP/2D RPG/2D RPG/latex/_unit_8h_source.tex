@@ -1,74 +1,74 @@
 \doxysection{Unit.\+h}
-\hypertarget{_unit_8h_source}{}\label{_unit_8h_source}
+\hypertarget{_unit_8h_source}{}\label{_unit_8h_source}\mbox{\hyperlink{_unit_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
-\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include"{}weapon.h"{}}}
-\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include"{}Armor.h"{}}}
-\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include"{}Inventors.h"{}}}
-\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include"{}position.h"{}}}
-\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include"{}Randomaizer.h"{}}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{weapon_8h}{weapon.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_armor_8h}{Armor.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_inventors_8h}{Inventors.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{position_8h}{position.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_randomaizer_8h}{Randomaizer.h}}"{}}}
 \DoxyCodeLine{00007\ }
-\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }Unit\ :\ \textcolor{keyword}{virtual}\ \textcolor{keyword}{public}\ position}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_unit_aee68587b605d2e20a3fc007f5d50dcb8}{Unit}}\ :\ \textcolor{keyword}{virtual}\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classposition_af9f48b2b4141782e7e9d5ffcb1fc50d3}{position}}}
 \DoxyCodeLine{00009\ \{}
 \DoxyCodeLine{00010\ \textcolor{keyword}{private}:}
 \DoxyCodeLine{00011\ }
-\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{classweapon}{weapon}}*\ c\_weapon;}
-\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{class_armor}{Armor}}*\ c\_armor;}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{classweapon}{weapon}}*\ \mbox{\hyperlink{class_unit_a6bca7992bc9e1d56182be55f9b6f754b}{c\_weapon}};}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{class_armor}{Armor}}*\ \mbox{\hyperlink{class_unit_a1ebbb8cd0610882170b64af225fcebfc}{c\_armor}};}
 \DoxyCodeLine{00014\ }
-\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ max\_HP;}
-\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ max\_stamina;}
-\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{double}\ HP;}
-\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{int}\ stamina;}
-\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{int}\ speed;}
-\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{double}\ block;}
-\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{double}\ miss;}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_unit_a3fc5f3489b7fd901730c34242ed1052f}{max\_HP}};}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_unit_a368f2d72deff13edbe2a1da8c035aa20}{max\_stamina}};}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_unit_ae71fceba94c53e5f55a8a9634b09c581}{HP}};}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_unit_a53c596913a3c96cc692df12c26a3ac7d}{stamina}};}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_unit_ac6bc4edf69c4bf2a9e4126634c4fe3db}{speed}};}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_unit_af29f431f3efd72a9a7df482d6c4ac752}{block}};}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_unit_a856ba3872912d3a4717edd7b8f02eabe}{miss}};}
 \DoxyCodeLine{00022\ }
-\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ max\_weight;}
-\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{double}\ cur\_weight;}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_unit_a9cc8a1e5d517bb42243697ce7ef125c9}{max\_weight}};}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_unit_a19242b7ba040261ab5d60b13e02145c9}{cur\_weight}};}
 \DoxyCodeLine{00025\ }
-\DoxyCodeLine{00026\ \ \ \ \ sf::RectangleShape\ hpBackground;}
-\DoxyCodeLine{00027\ \ \ \ \ sf::RectangleShape\ staminaBackground;}
-\DoxyCodeLine{00028\ \ \ \ \ sf::RectangleShape\ hpBar;}
-\DoxyCodeLine{00029\ \ \ \ \ sf::RectangleShape\ staminaBar;}
+\DoxyCodeLine{00026\ \ \ \ \ sf::RectangleShape\ \mbox{\hyperlink{class_unit_a599659aec7b050fd675f723225c21273}{hpBackground}};}
+\DoxyCodeLine{00027\ \ \ \ \ sf::RectangleShape\ \mbox{\hyperlink{class_unit_a22ca4b300d087e3d987abaffd06c080a}{staminaBackground}};}
+\DoxyCodeLine{00028\ \ \ \ \ sf::RectangleShape\ \mbox{\hyperlink{class_unit_aa8f8d29bf4d54c39a20bbd0f87de33f6}{hpBar}};}
+\DoxyCodeLine{00029\ \ \ \ \ sf::RectangleShape\ \mbox{\hyperlink{class_unit_a05c15e089d19b974941092143bfdd4cc}{staminaBar}};}
 \DoxyCodeLine{00030\ }
-\DoxyCodeLine{00031\ \ \ \ \ sf::Text\ hpText;}
-\DoxyCodeLine{00032\ \ \ \ \ sf::Text\ staminaText;}
-\DoxyCodeLine{00033\ \ \ \ \ sf::Font\ font;\ \ \textcolor{comment}{//\ Шрифт\ для\ тексту}}
+\DoxyCodeLine{00031\ \ \ \ \ sf::Text\ \mbox{\hyperlink{class_unit_a1b4287d557e4a995703434a0d6b64923}{hpText}};}
+\DoxyCodeLine{00032\ \ \ \ \ sf::Text\ \mbox{\hyperlink{class_unit_aa67306afb1c9749ca921cf0e3416676b}{staminaText}};}
+\DoxyCodeLine{00033\ \ \ \ \ sf::Font\ \mbox{\hyperlink{class_unit_a2263836b99858230e2eabe4a280a6642}{font}};\ \ \textcolor{comment}{//\ Шрифт\ для\ тексту}}
 \DoxyCodeLine{00034\ }
 \DoxyCodeLine{00035\ }
 \DoxyCodeLine{00036\ \textcolor{keyword}{public}:}
 \DoxyCodeLine{00037\ }
 \DoxyCodeLine{00038\ }
-\DoxyCodeLine{00039\ \ \ \ \ Unit(\textcolor{keyword}{const}\ std::string\ texture\_file\ =\ \textcolor{stringliteral}{"{}"{}},\ sf::Vector2f\ pos=\{\},\ sf::Vector2f\ size=\{\},\ \textcolor{keywordtype}{bool}\ chois\_rect\ =\ \textcolor{keyword}{false},\ sf::IntRect\ Pos\_texture\ =\ \{0,0,0,0\},}
-\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ X\ =\ 0,\ \textcolor{keywordtype}{int}\ Y\ =\ 0,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ max\_weight\ =\ 50,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ g\_max\_hp\ =\ 150,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ g\_max\_stamina\ =\ 100,}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{class_unit_aee68587b605d2e20a3fc007f5d50dcb8}{Unit}}(\textcolor{keyword}{const}\ std::string\ texture\_file\ =\ \textcolor{stringliteral}{"{}"{}},\ sf::Vector2f\ pos=\{\},\ sf::Vector2f\ size=\{\},\ \textcolor{keywordtype}{bool}\ chois\_rect\ =\ \textcolor{keyword}{false},\ sf::IntRect\ Pos\_texture\ =\ \{0,0,0,0\},}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ X\ =\ 0,\ \textcolor{keywordtype}{int}\ Y\ =\ 0,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_unit_a9cc8a1e5d517bb42243697ce7ef125c9}{max\_weight}}\ =\ 50,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ g\_max\_hp\ =\ 150,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ g\_max\_stamina\ =\ 100,}
 \DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ g\_speed\ =\ 50,\ \textcolor{keywordtype}{double}\ g\_block\ =\ 40,\ \textcolor{keywordtype}{double}\ g\_miss\ =\ 25);}
-\DoxyCodeLine{00042\ \ \ \ \ \string~Unit()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{class_unit_a9bf9e67d65046504311b165c8802fd17}{\string~Unit}}()\ =\ \textcolor{keywordflow}{default};}
 \DoxyCodeLine{00043\ }
-\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ Get\_max\_HP()\ \{\ \textcolor{keywordflow}{return}\ max\_HP;\ \}}
-\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ Get\_max\_stamina()\ \{\ \textcolor{keywordflow}{return}\ max\_stamina;\ \}}
-\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{double}\ Get\_HP()\ \{\ \textcolor{keywordflow}{return}\ HP;\ \}}
-\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{int}\ Get\_stamina()\ \{\ \textcolor{keywordflow}{return}\ stamina;\ \}}
-\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{int}\ Get\_speed()\ \{\ \textcolor{keywordflow}{return}\ speed;\ \}}
-\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{double}\ Get\_block()\ \{\ \textcolor{keywordflow}{return}\ block;\ \}}
-\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{double}\ Get\_miss()\ \{\ \textcolor{keywordflow}{return}\ miss;\ \}}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_unit_ab570b8d55eca9810b4ddbeb0c69ea32c}{Get\_max\_HP}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_unit_a3fc5f3489b7fd901730c34242ed1052f}{max\_HP}};\ \}}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_unit_adc06767b9b4b6d7e42a06ebd6f16f53e}{Get\_max\_stamina}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_unit_a368f2d72deff13edbe2a1da8c035aa20}{max\_stamina}};\ \}}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_unit_aee53e2191408294af177fe4a2b4758ec}{Get\_HP}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_unit_ae71fceba94c53e5f55a8a9634b09c581}{HP}};\ \}}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_unit_a51dc4386539464e91f2f58d1b023c637}{Get\_stamina}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_unit_a53c596913a3c96cc692df12c26a3ac7d}{stamina}};\ \}}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_unit_ac7c12824edf7c99bc6dc5faa7f54609b}{Get\_speed}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_unit_ac6bc4edf69c4bf2a9e4126634c4fe3db}{speed}};\ \}}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_unit_a344d3a88f49188138b67c3049f2a83f5}{Get\_block}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_unit_af29f431f3efd72a9a7df482d6c4ac752}{block}};\ \}}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_unit_a682e51c5741c81dff47ade459fb810f8}{Get\_miss}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_unit_a856ba3872912d3a4717edd7b8f02eabe}{miss}};\ \}}
 \DoxyCodeLine{00051\ }
-\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ Set\_new\_HP(\textcolor{keywordtype}{double}\ new\_HP)\ \{\ new\_HP\ <\ max\_HP\ ?\ HP\ =\ new\_HP\ :\ HP\ =\ max\_HP;\ \}}
-\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ Set\_new\_stamina(\textcolor{keywordtype}{int}\ new\_stamina)\ \{\ new\_stamina\ <\ max\_stamina\ ?\ stamina\ =\ new\_stamina\ :\ stamina\ =\ max\_stamina;\ \}}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_unit_aafb272f6506c464d75df21273f877f7d}{Set\_new\_HP}}(\textcolor{keywordtype}{double}\ new\_HP)\ \{\ new\_HP\ <\ \mbox{\hyperlink{class_unit_a3fc5f3489b7fd901730c34242ed1052f}{max\_HP}}\ ?\ \mbox{\hyperlink{class_unit_ae71fceba94c53e5f55a8a9634b09c581}{HP}}\ =\ new\_HP\ :\ \mbox{\hyperlink{class_unit_ae71fceba94c53e5f55a8a9634b09c581}{HP}}\ =\ \mbox{\hyperlink{class_unit_a3fc5f3489b7fd901730c34242ed1052f}{max\_HP}};\ \}}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_unit_ad93936be30169ebf3adc18997c95e231}{Set\_new\_stamina}}(\textcolor{keywordtype}{int}\ new\_stamina)\ \{\ new\_stamina\ <\ \mbox{\hyperlink{class_unit_a368f2d72deff13edbe2a1da8c035aa20}{max\_stamina}}\ ?\ \mbox{\hyperlink{class_unit_a53c596913a3c96cc692df12c26a3ac7d}{stamina}}\ =\ new\_stamina\ :\ \mbox{\hyperlink{class_unit_a53c596913a3c96cc692df12c26a3ac7d}{stamina}}\ =\ \mbox{\hyperlink{class_unit_a368f2d72deff13edbe2a1da8c035aa20}{max\_stamina}};\ \}}
 \DoxyCodeLine{00054\ \ \ \ \ }
-\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ received\_damage(\textcolor{keywordtype}{double}\ minus\_damage);}
-\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ attack\_enemi(Unit*\ enemi);}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_unit_a9f3affc04caf43e239ec915491e5e5d4}{received\_damage}}(\textcolor{keywordtype}{double}\ minus\_damage);}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_unit_aa69b9af4dc95296db7576ce22ea62ee2}{attack\_enemi}}(\mbox{\hyperlink{class_unit}{Unit}}*\ enemi);}
 \DoxyCodeLine{00057\ }
 \DoxyCodeLine{00058\ \ \ \ \ \textcolor{comment}{//void\ Healt\_self();}}
 \DoxyCodeLine{00059\ \ \ \ \ \textcolor{comment}{//void\ push\_stamina\_self();}}
 \DoxyCodeLine{00060\ }
-\DoxyCodeLine{00061\ \ \ \ \ \mbox{\hyperlink{classweapon}{weapon}}*\ Get\_weapon()\ \{\ \textcolor{keywordflow}{return}\ c\_weapon;\ \}}
-\DoxyCodeLine{00062\ \ \ \ \ \mbox{\hyperlink{class_armor}{Armor}}*\ Get\_armor()\ \{\ \textcolor{keywordflow}{return}\ c\_armor;\ \}}
+\DoxyCodeLine{00061\ \ \ \ \ \mbox{\hyperlink{classweapon}{weapon}}*\ \mbox{\hyperlink{class_unit_ae6d763419924f841183909824782ef7c}{Get\_weapon}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_unit_a6bca7992bc9e1d56182be55f9b6f754b}{c\_weapon}};\ \}}
+\DoxyCodeLine{00062\ \ \ \ \ \mbox{\hyperlink{class_armor}{Armor}}*\ \mbox{\hyperlink{class_unit_a7f244cc924b698542d8f908e64774c22}{Get\_armor}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_unit_a1ebbb8cd0610882170b64af225fcebfc}{c\_armor}};\ \}}
 \DoxyCodeLine{00063\ }
-\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ Set\_new\_weapon(\mbox{\hyperlink{classweapon}{weapon}}*\ new\_weapon)\ \{\ c\_weapon\ =\ new\_weapon;\ \}}
-\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ Set\_new\_armor(\mbox{\hyperlink{class_armor}{Armor}}*\ new\_armor)\ \{\ c\_armor\ =\ new\_armor;\ \}}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_unit_a21f47917580fddc62fc1feeda2094865}{Set\_new\_weapon}}(\mbox{\hyperlink{classweapon}{weapon}}*\ new\_weapon)\ \{\ \mbox{\hyperlink{class_unit_a6bca7992bc9e1d56182be55f9b6f754b}{c\_weapon}}\ =\ new\_weapon;\ \}}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_unit_a7a1ee5b01c55c4cb534718023886fe99}{Set\_new\_armor}}(\mbox{\hyperlink{class_armor}{Armor}}*\ new\_armor)\ \{\ \mbox{\hyperlink{class_unit_a1ebbb8cd0610882170b64af225fcebfc}{c\_armor}}\ =\ new\_armor;\ \}}
 \DoxyCodeLine{00066\ }
-\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ updateBars();}
-\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{void}\ drawBars(sf::RenderTarget\&\ target)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_unit_ada3ef8fb97f1f681b1e9f91d0f34fc75}{updateBars}}();}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_unit_a17c39b51244182a771320c1a91e66366}{drawBars}}(sf::RenderTarget\&\ target)\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00069\ }
 \DoxyCodeLine{00070\ }
 \DoxyCodeLine{00071\ \ \ \ \ \textcolor{comment}{//bool\ aliwe()\ \{\ if\ (this-\/>Get\_HP()\ <=\ 0)\ \{\ delete\ this;\ return\ false;\ \}\ return\ true;\ \}}}

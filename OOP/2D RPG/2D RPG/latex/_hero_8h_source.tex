@@ -1,43 +1,43 @@
 \doxysection{Hero.\+h}
-\hypertarget{_hero_8h_source}{}\label{_hero_8h_source}
+\hypertarget{_hero_8h_source}{}\label{_hero_8h_source}\mbox{\hyperlink{_hero_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
 \DoxyCodeLine{00002\ }
-\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}Unit.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_unit_8h}{Unit.h}}"{}}}
 \DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Unit\_sprite/Unit\_Sprite.h"{}}}
 \DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <map>}}
 \DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}Unit\_sprite/Animation/Animation.h"{}}\ \textcolor{comment}{//\ Додайте\ цей\ заголовок,\ якщо\ він\ потрібен\ для\ використання\ Animation}}
 \DoxyCodeLine{00007\ }
 \DoxyCodeLine{00008\ }
-\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }Hero\ :\ \textcolor{keyword}{public}\ Unit}
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_hero_ab5920677a4b5cb59d6f513922d037dca}{Hero}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_unit_aee68587b605d2e20a3fc007f5d50dcb8}{Unit}}}
 \DoxyCodeLine{00010\ \{}
 \DoxyCodeLine{00011\ \textcolor{keyword}{private}:}
 \DoxyCodeLine{00012\ }
-\DoxyCodeLine{00013\ \ \ \ \ Unit\_Sprite\ hero\_sprite;}
-\DoxyCodeLine{00014\ \ \ \ \ std::map<std::string,\ Animation>\ hero\_animations;}
-\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{float}\ speed;}
-\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{bool}\ isMoving;}
-\DoxyCodeLine{00017\ \ \ \ \ sf::Vector2f\ direction;}
-\DoxyCodeLine{00018\ \ \ \ \ sf::Vector2f\ movement;}
+\DoxyCodeLine{00013\ \ \ \ \ Unit\_Sprite\ \mbox{\hyperlink{class_hero_a3275a7e80dcaa909d3a309fe1f743de2}{hero\_sprite}};}
+\DoxyCodeLine{00014\ \ \ \ \ std::map<std::string,\ Animation>\ \mbox{\hyperlink{class_hero_ab55f38fac0e28f9ae6b37658408d4b25}{hero\_animations}};}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_hero_a509636293aebb329b80d8d2a8d9c1d22}{speed}};}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_hero_ae70dbde15c88ebb6a8c840db752a74a2}{isMoving}};}
+\DoxyCodeLine{00017\ \ \ \ \ sf::Vector2f\ \mbox{\hyperlink{class_hero_a2c2ec8bcbde71df75a0014d594f91835}{direction}};}
+\DoxyCodeLine{00018\ \ \ \ \ sf::Vector2f\ \mbox{\hyperlink{class_hero_acc2323faedca1474ca8c617d7d76fe4e}{movement}};}
 \DoxyCodeLine{00019\ }
-\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{enum\ class}\ HeroState\ \{\ Idle,\ Running,\ Attacking\ \}\ state;}
-\DoxyCodeLine{00021\ \ \ \ \ Animation*\ currentAnim;\ \textcolor{comment}{//\ Додано\ для\ відстеження\ поточної\ анімації}}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{class_hero_aa7d85757dff9e028506b5d2ec28a558e}{HeroState}}\ \{\ \mbox{\hyperlink{class_hero_aa7d85757dff9e028506b5d2ec28a558eae599161956d626eda4cb0a5ffb85271c}{Idle}},\ \mbox{\hyperlink{class_hero_aa7d85757dff9e028506b5d2ec28a558ea5bda814c4aedb126839228f1a3d92f09}{Running}},\ \mbox{\hyperlink{class_hero_aa7d85757dff9e028506b5d2ec28a558ea8abd002ea36128383f3269de7e74039b}{Attacking}}\ \}\ \mbox{\hyperlink{class_hero_a9244a09fb6bc260cec1f04d94114fdf5}{state}};}
+\DoxyCodeLine{00021\ \ \ \ \ Animation*\ \mbox{\hyperlink{class_hero_a013a5611409e06b7d927f188532a9803}{currentAnim}};\ \textcolor{comment}{//\ Додано\ для\ відстеження\ поточної\ анімації}}
 \DoxyCodeLine{00022\ }
-\DoxyCodeLine{00023\ \ \ \ \ sf::Vector2f\ initialScale\_h;}
+\DoxyCodeLine{00023\ \ \ \ \ sf::Vector2f\ \mbox{\hyperlink{class_hero_aa79c9b9141c06ade2dd580cf37b10f29}{initialScale\_h}};}
 \DoxyCodeLine{00024\ }
 \DoxyCodeLine{00025\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00026\ \ \ \ \ Hero();}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_hero_ab5920677a4b5cb59d6f513922d037dca}{Hero}}();}
 \DoxyCodeLine{00027\ }
-\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ move(sf::Vector2f\ offset);}
-\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ update(\textcolor{keywordtype}{float}\ deltaTime);}
-\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ handleInput(\textcolor{keyword}{const}\ sf::Event\&\ event,\ \textcolor{keyword}{const}\ sf::RenderWindow\&\ window);\ \textcolor{comment}{//\ Оновлено}}
-\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ processMovement(\textcolor{keywordtype}{float}\ deltaTime,\ \textcolor{keyword}{const}\ sf::RenderWindow\&\ window);\ \textcolor{comment}{//\ Залежить\ від\ розмірів\ вікна}}
-\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ updateAnimation();}
-\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ startAnimation(\textcolor{keyword}{const}\ std::string\&\ animationName);}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_hero_aeed21c06efd87bbe8a63db1c751136b5}{move}}(sf::Vector2f\ offset);}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_hero_aef7a4e3600ded40bde307dd8e47b8046}{update}}(\textcolor{keywordtype}{float}\ deltaTime);}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_hero_a5d5ce7f6261f8b6cf5c0131d25820b25}{handleInput}}(\textcolor{keyword}{const}\ sf::Event\&\ event,\ \textcolor{keyword}{const}\ sf::RenderWindow\&\ window);\ \textcolor{comment}{//\ Оновлено}}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_hero_a88f22dbe35461adb3f5b4c5ca2340e7c}{processMovement}}(\textcolor{keywordtype}{float}\ deltaTime,\ \textcolor{keyword}{const}\ sf::RenderWindow\&\ window);\ \textcolor{comment}{//\ Залежить\ від\ розмірів\ вікна}}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_hero_ac5927da81d2677ae835d7b7407f937db}{updateAnimation}}();}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_hero_a3985b299d8381ee6d55e54106ca14291}{startAnimation}}(\textcolor{keyword}{const}\ std::string\&\ animationName);}
 \DoxyCodeLine{00034\ }
-\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ updateSpriteOrientation(\textcolor{keywordtype}{float}\ scaleX);}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_hero_a6bd09b6817a1929b55002ddb5683ea81}{updateSpriteOrientation}}(\textcolor{keywordtype}{float}\ scaleX);}
 \DoxyCodeLine{00036\ }
-\DoxyCodeLine{00037\ \ \ \ \ Unit\_Sprite*\ Get\_sprite()\ \{\ \textcolor{keywordflow}{return}\ \&hero\_sprite;\ \}}
+\DoxyCodeLine{00037\ \ \ \ \ Unit\_Sprite*\ \mbox{\hyperlink{class_hero_a2920b0f077ff5beac2887b540fe53237}{Get\_sprite}}()\ \{\ \textcolor{keywordflow}{return}\ \&\mbox{\hyperlink{class_hero_a3275a7e80dcaa909d3a309fe1f743de2}{hero\_sprite}};\ \}}
 \DoxyCodeLine{00038\ }
 \DoxyCodeLine{00039\ \};}
 

@@ -1,5 +1,11 @@
 <map id="potion" name="potion">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,293,180,571"/>
-<area shape="rect" id="Node000002" href="$class_base_item.html" title=" " alt="" coords="33,5,153,245"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,260,96,293,90,293,90,260"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="26,471,201,812"/>
+<area shape="rect" id="Node000002" href="$class_base_item.html" title=" " alt="" coords="5,145,125,385"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,400,94,471,89,471,80,401"/>
+<area shape="rect" id="Node000003" href="$class_buttons.html" title=" " alt="" coords="149,124,283,407"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="180,407,167,455,162,454,175,406"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="112,5,197,75"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="170,88,180,123,175,125,165,89"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="221,5,334,75"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="267,89,257,125,252,123,262,88"/>
 </map>

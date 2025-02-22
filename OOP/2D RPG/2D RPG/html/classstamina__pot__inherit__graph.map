@@ -1,5 +1,5 @@
 <map id="stamina_pot" name="stamina_pot">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,293,189,635"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,293,189,720"/>
 <area shape="rect" id="Node000002" href="$class_base_item.html" title=" " alt="" coords="37,5,157,245"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,260,100,293,95,293,95,260"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,260,100,294,95,294,95,260"/>
 </map>

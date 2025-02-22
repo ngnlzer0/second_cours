@@ -1,22 +1,22 @@
 \doxysection{Randomaizer.\+h}
-\hypertarget{_randomaizer_8h_source}{}\label{_randomaizer_8h_source}
+\hypertarget{_randomaizer_8h_source}{}\label{_randomaizer_8h_source}\mbox{\hyperlink{_randomaizer_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
 \DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include<random>}}
 \DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include<time.h>}}
 \DoxyCodeLine{00004\ }
-\DoxyCodeLine{00005\ \textcolor{keyword}{static}\ std::mt19937\ generator(\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\textcolor{keyword}{>}(std::time(\textcolor{keyword}{nullptr})));}
+\DoxyCodeLine{00005\ \textcolor{keyword}{static}\ std::mt19937\ \mbox{\hyperlink{_randomaizer_8h_aff565f8d139ee75fb0601ce3d512e622}{generator}}(\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\textcolor{keyword}{>}(std::time(\textcolor{keyword}{nullptr})));}
 \DoxyCodeLine{00006\ }
-\DoxyCodeLine{00007\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ Genereta\_int\_random\_number()}
+\DoxyCodeLine{00007\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_randomaizer_8h_a4aad6a7d858c65cd346aaeae709eb2a7}{Genereta\_int\_random\_number}}()}
 \DoxyCodeLine{00008\ \{\ }
 \DoxyCodeLine{00009\ \ \ \ \ std::uniform\_int\_distribution<int>\ intDistribution;}
-\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordflow}{return}\ intDistribution(generator);}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordflow}{return}\ intDistribution(\mbox{\hyperlink{_randomaizer_8h_aff565f8d139ee75fb0601ce3d512e622}{generator}});}
 \DoxyCodeLine{00011\ \}}
 \DoxyCodeLine{00012\ }
-\DoxyCodeLine{00013\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{double}\ Genereta\_double\_random\_number()}
+\DoxyCodeLine{00013\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{_randomaizer_8h_a8579fa0311cd530296041ac143a9ee9e}{Genereta\_double\_random\_number}}()}
 \DoxyCodeLine{00014\ \{}
 \DoxyCodeLine{00015\ \ \ \ \ std::uniform\_real\_distribution<double>\ doubleDistribution;}
-\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordflow}{return}\ doubleDistribution(generator);}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordflow}{return}\ doubleDistribution(\mbox{\hyperlink{_randomaizer_8h_aff565f8d139ee75fb0601ce3d512e622}{generator}});}
 \DoxyCodeLine{00017\ \}}
 
 \end{DoxyCode}

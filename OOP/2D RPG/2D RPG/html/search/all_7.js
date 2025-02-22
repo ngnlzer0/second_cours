@@ -1,4 +1,20 @@
 var searchData=
 [
-  ['main_5fmenu_0',['Main_menu',['../class_main__menu.html',1,'']]]
+  ['handleinput_0',['HandleInput',['../class_game.html#a6cb82eaece4e30724f3fe4e0d4bde5fc',1,'Game']]],
+  ['handleinput_1',['handleInput',['../class_hero.html#a5d5ce7f6261f8b6cf5c0131d25820b25',1,'Hero::handleInput()'],['../class_inventors.html#a2120b069c14cec82aaecb721ba7d0242',1,'Inventors::handleInput()']]],
+  ['head_2',['head',['../class_game.html#ab166ba66a6f22f69b6d11b6b63196c93',1,'Game']]],
+  ['healt_3',['healt',['../class_game.html#acee6c1dc803837a9d91cda80cfc8101f',1,'Game']]],
+  ['helmet_4',['helmet',['../_armor_8h.html#a3b25071636377947f022a1e33a911e4da5de25d49e11c56a0929deadf02adfb8e',1,'Armor.h']]],
+  ['hero_5',['Hero',['../class_hero.html',1,'Hero'],['../class_hero.html#ab5920677a4b5cb59d6f513922d037dca',1,'Hero::Hero()']]],
+  ['hero_6',['hero',['../class_game.html#a0d632e048dcf19421ffd199db3ba854f',1,'Game']]],
+  ['hero_2ecpp_7',['Hero.cpp',['../_hero_8cpp.html',1,'']]],
+  ['hero_2eh_8',['Hero.h',['../_hero_8h.html',1,'']]],
+  ['hero_5fanimations_9',['hero_animations',['../class_hero.html#ab55f38fac0e28f9ae6b37658408d4b25',1,'Hero']]],
+  ['hero_5fsprite_10',['hero_sprite',['../class_hero.html#a3275a7e80dcaa909d3a309fe1f743de2',1,'Hero']]],
+  ['herostate_11',['HeroState',['../class_hero.html#aa7d85757dff9e028506b5d2ec28a558e',1,'Hero']]],
+  ['hight_5fwindow_12',['HIGHT_WINDOW',['../_includer_8h.html#a8f90a6aa6105816c10360b558e8b1cb7',1,'Includer.h']]],
+  ['hp_13',['HP',['../class_unit.html#ae71fceba94c53e5f55a8a9634b09c581',1,'Unit']]],
+  ['hpbackground_14',['hpBackground',['../class_unit.html#a599659aec7b050fd675f723225c21273',1,'Unit']]],
+  ['hpbar_15',['hpBar',['../class_unit.html#aa8f8d29bf4d54c39a20bbd0f87de33f6',1,'Unit']]],
+  ['hptext_16',['hpText',['../class_unit.html#a1b4287d557e4a995703434a0d6b64923',1,'Unit']]]
 ];

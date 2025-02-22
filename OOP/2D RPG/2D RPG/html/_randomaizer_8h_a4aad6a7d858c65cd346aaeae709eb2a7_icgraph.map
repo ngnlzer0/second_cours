@@ -1,0 +1,14 @@
+<map id="Genereta_int_random_number" name="Genereta_int_random_number">
+<area shape="rect" id="Node000001" title=" " alt="" coords="388,73,533,116"/>
+<area shape="rect" id="Node000002" href="$class_armor.html#ad43a29d76fb670ac099a5cc1ac948f4b" title=" " alt="" coords="213,5,312,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="388,70,298,35,300,30,390,65"/>
+<area shape="rect" id="Node000003" href="$class_unit.html#aa69b9af4dc95296db7576ce22ea62ee2" title=" " alt="" coords="5,81,137,108"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="372,97,137,97,137,92,372,92"/>
+<area shape="rect" id="Node000004" href="$class_unit.html#a9f3affc04caf43e239ec915491e5e5d4" title=" " alt="" coords="185,107,340,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="373,109,340,113,340,107,372,103"/>
+<area shape="rect" id="Node000005" href="$classweapon.html#a6071f954b9d6d4a30a4cbd2befd10909" title=" " alt="" coords="203,157,322,184"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="397,125,341,148,309,159,307,154,339,143,395,120"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="169,110,137,106,137,101,170,105"/>
+<area shape="rect" id="Node000006" href="$classweapon.html#a082ce6444089c653ab2ea43de50ab88f" title=" " alt="" coords="8,157,134,184"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="187,173,134,173,134,168,187,168"/>
+</map>

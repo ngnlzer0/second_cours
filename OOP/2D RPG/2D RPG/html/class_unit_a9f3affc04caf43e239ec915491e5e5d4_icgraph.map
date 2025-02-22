@@ -1,0 +1,5 @@
+<map id="Unit::received_damage" name="Unit::received_damage">
+<area shape="rect" id="Node000001" title=" " alt="" coords="185,5,340,32"/>
+<area shape="rect" id="Node000002" href="$class_unit.html#aa69b9af4dc95296db7576ce22ea62ee2" title=" " alt="" coords="5,5,137,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,21,137,21,137,16,169,16"/>
+</map>

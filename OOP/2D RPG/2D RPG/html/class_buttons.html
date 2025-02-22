@@ -104,21 +104,24 @@ $(function(){initNavTree('class_buttons.html',''); initResizable(true); });
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_buttons-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Buttons Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_buttons_8h_source.html">Buttons.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Buttons:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_buttons__inherit__graph.png" border="0" usemap="#a_buttons_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_buttons_inherit__map" id="a_buttons_inherit__map">
-<area shape="rect" title=" " alt="" coords="42,123,176,299"/>
+<area shape="rect" title=" " alt="" coords="42,123,176,405"/>
 <area shape="rect" title=" " alt="" coords="5,5,90,75"/>
-<area shape="poly" title=" " alt="" coords="68,88,80,122,75,124,63,90"/>
+<area shape="poly" title=" " alt="" coords="63,88,73,122,68,123,58,90"/>
 <area shape="rect" title=" " alt="" coords="114,5,227,75"/>
-<area shape="poly" title=" " alt="" coords="155,90,143,124,138,122,150,88"/>
+<area shape="poly" title=" " alt="" coords="160,90,150,123,145,122,155,88"/>
 </map>
 </div>
 <div class="dynheader">
@@ -126,44 +129,366 @@ Collaboration diagram for Buttons:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_buttons__coll__graph.png" border="0" usemap="#a_buttons_coll__map" alt="Collaboration graph"/></div>
 <map name="a_buttons_coll__map" id="a_buttons_coll__map">
-<area shape="rect" title=" " alt="" coords="42,123,176,299"/>
+<area shape="rect" title=" " alt="" coords="42,123,176,405"/>
 <area shape="rect" title=" " alt="" coords="5,5,90,75"/>
-<area shape="poly" title=" " alt="" coords="68,88,80,122,75,124,63,90"/>
+<area shape="poly" title=" " alt="" coords="63,88,73,122,68,123,58,90"/>
 <area shape="rect" title=" " alt="" coords="114,5,227,75"/>
-<area shape="poly" title=" " alt="" coords="155,90,143,124,138,122,150,88"/>
+<area shape="poly" title=" " alt="" coords="160,90,150,123,145,122,155,88"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab5106c600c7a52f7f2688fafd61054a1" id="r_ab5106c600c7a52f7f2688fafd61054a1"><td class="memItemLeft" align="right" valign="top"><a id="ab5106c600c7a52f7f2688fafd61054a1" name="ab5106c600c7a52f7f2688fafd61054a1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Buttons</b> (const sf::Vector2f &amp;<a class="el" href="classposition.html">position</a>={0, 0}, const sf::Vector2f &amp;size={1, 1}, const std::string &amp;texturePath=&quot;&quot;, const std::string &amp;titleText=&quot;&quot;, const std::string &amp;fontPath=&quot;&quot;, const sf::Vector2f &amp;textScale={1, 1}, bool useSubRect=false, const sf::IntRect &amp;textureRect=sf::IntRect()={0, 0, 100, 100})</td></tr>
+<tr class="memitem:ab5106c600c7a52f7f2688fafd61054a1" id="r_ab5106c600c7a52f7f2688fafd61054a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5106c600c7a52f7f2688fafd61054a1">Buttons</a> (const sf::Vector2f &amp;<a class="el" href="classposition.html">position</a>={0, 0}, const sf::Vector2f &amp;size={1, 1}, const std::string &amp;texturePath=&quot;&quot;, const std::string &amp;titleText=&quot;&quot;, const std::string &amp;fontPath=&quot;&quot;, const sf::Vector2f &amp;textScale={1, 1}, bool useSubRect=false, const sf::IntRect &amp;textureRect=sf::IntRect()={0, 0, 100, 100})</td></tr>
 <tr class="separator:ab5106c600c7a52f7f2688fafd61054a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ca65cf25d76d344f89395bf1eb37194" id="r_a7ca65cf25d76d344f89395bf1eb37194"><td class="memItemLeft" align="right" valign="top"><a id="a7ca65cf25d76d344f89395bf1eb37194" name="a7ca65cf25d76d344f89395bf1eb37194"></a>
-sf::Text &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getTitle</b> ()</td></tr>
+<tr class="memitem:a7ca65cf25d76d344f89395bf1eb37194" id="r_a7ca65cf25d76d344f89395bf1eb37194"><td class="memItemLeft" align="right" valign="top">sf::Text &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ca65cf25d76d344f89395bf1eb37194">getTitle</a> ()</td></tr>
 <tr class="separator:a7ca65cf25d76d344f89395bf1eb37194"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa01250eb8a84e4b23d0bc65a56ef23e" id="r_aaa01250eb8a84e4b23d0bc65a56ef23e"><td class="memItemLeft" align="right" valign="top"><a id="aaa01250eb8a84e4b23d0bc65a56ef23e" name="aaa01250eb8a84e4b23d0bc65a56ef23e"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>draw</b> (sf::RenderTarget &amp;target, sf::RenderStates states) const override</td></tr>
+<tr class="memitem:aaa01250eb8a84e4b23d0bc65a56ef23e" id="r_aaa01250eb8a84e4b23d0bc65a56ef23e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa01250eb8a84e4b23d0bc65a56ef23e">draw</a> (sf::RenderTarget &amp;target, sf::RenderStates states) const override</td></tr>
 <tr class="separator:aaa01250eb8a84e4b23d0bc65a56ef23e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae25f76d0c230cd6870201d425dd29ddf" id="r_ae25f76d0c230cd6870201d425dd29ddf"><td class="memItemLeft" align="right" valign="top"><a id="ae25f76d0c230cd6870201d425dd29ddf" name="ae25f76d0c230cd6870201d425dd29ddf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Select</b> (sf::Color color)</td></tr>
+<tr class="memitem:ae25f76d0c230cd6870201d425dd29ddf" id="r_ae25f76d0c230cd6870201d425dd29ddf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae25f76d0c230cd6870201d425dd29ddf">Select</a> (sf::Color color)</td></tr>
 <tr class="separator:ae25f76d0c230cd6870201d425dd29ddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83e143b72f5e09ffcc0d0b7362cd4fea" id="r_a83e143b72f5e09ffcc0d0b7362cd4fea"><td class="memItemLeft" align="right" valign="top"><a id="a83e143b72f5e09ffcc0d0b7362cd4fea" name="a83e143b72f5e09ffcc0d0b7362cd4fea"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Deselect</b> (sf::Color color)</td></tr>
+<tr class="memitem:a83e143b72f5e09ffcc0d0b7362cd4fea" id="r_a83e143b72f5e09ffcc0d0b7362cd4fea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83e143b72f5e09ffcc0d0b7362cd4fea">Deselect</a> (sf::Color color)</td></tr>
 <tr class="separator:a83e143b72f5e09ffcc0d0b7362cd4fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d3c7a2b4214af78096419ece6996b8c" id="r_a4d3c7a2b4214af78096419ece6996b8c"><td class="memItemLeft" align="right" valign="top"><a id="a4d3c7a2b4214af78096419ece6996b8c" name="a4d3c7a2b4214af78096419ece6996b8c"></a>
-sf::FloatRect&#160;</td><td class="memItemRight" valign="bottom"><b>GetGlobalBounds</b> () const</td></tr>
+<tr class="memitem:a4d3c7a2b4214af78096419ece6996b8c" id="r_a4d3c7a2b4214af78096419ece6996b8c"><td class="memItemLeft" align="right" valign="top">sf::FloatRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d3c7a2b4214af78096419ece6996b8c">GetGlobalBounds</a> () const</td></tr>
 <tr class="separator:a4d3c7a2b4214af78096419ece6996b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ab2e05e1d9ee13cd48cc87415ae2f29e0" id="r_ab2e05e1d9ee13cd48cc87415ae2f29e0"><td class="memItemLeft" align="right" valign="top">sf::Text&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2e05e1d9ee13cd48cc87415ae2f29e0">title</a></td></tr>
+<tr class="separator:ab2e05e1d9ee13cd48cc87415ae2f29e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc87107fd3a9486774f54f5dcb93e840" id="r_afc87107fd3a9486774f54f5dcb93e840"><td class="memItemLeft" align="right" valign="top">sf::Font&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc87107fd3a9486774f54f5dcb93e840">font</a></td></tr>
+<tr class="separator:afc87107fd3a9486774f54f5dcb93e840"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07e1742d124d2d689e8ab8971c870a87" id="r_a07e1742d124d2d689e8ab8971c870a87"><td class="memItemLeft" align="right" valign="top">sf::RectangleShape&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07e1742d124d2d689e8ab8971c870a87">Background</a></td></tr>
+<tr class="separator:a07e1742d124d2d689e8ab8971c870a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e4734a99867a8dda71d113ad5009b78" id="r_a3e4734a99867a8dda71d113ad5009b78"><td class="memItemLeft" align="right" valign="top">sf::Texture&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e4734a99867a8dda71d113ad5009b78">texture</a></td></tr>
+<tr class="separator:a3e4734a99867a8dda71d113ad5009b78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadfdedcf64e958803be696c0fd4f73c5" id="r_aadfdedcf64e958803be696c0fd4f73c5"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aadfdedcf64e958803be696c0fd4f73c5">font_file</a></td></tr>
+<tr class="separator:aadfdedcf64e958803be696c0fd4f73c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f0024720e1aa34cf8f4b17c00479a40" id="r_a7f0024720e1aa34cf8f4b17c00479a40"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f0024720e1aa34cf8f4b17c00479a40">name_textuer_file</a></td></tr>
+<tr class="separator:a7f0024720e1aa34cf8f4b17c00479a40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a8e24ebcee6f2bae51fa747cb756a5241" id="r_a8e24ebcee6f2bae51fa747cb756a5241"><td class="memItemLeft" align="right" valign="top"><a id="a8e24ebcee6f2bae51fa747cb756a5241" name="a8e24ebcee6f2bae51fa747cb756a5241"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>sf::Drawable</b></td></tr>
+<tr class="memitem:a8e24ebcee6f2bae51fa747cb756a5241" id="r_a8e24ebcee6f2bae51fa747cb756a5241"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e24ebcee6f2bae51fa747cb756a5241">sf::Drawable</a></td></tr>
 <tr class="separator:a8e24ebcee6f2bae51fa747cb756a5241"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ab5106c600c7a52f7f2688fafd61054a1" name="ab5106c600c7a52f7f2688fafd61054a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5106c600c7a52f7f2688fafd61054a1">&#9670;&#160;</a></span>Buttons()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Buttons::Buttons </td>
+          <td>(</td>
+          <td class="paramtype">const sf::Vector2f &amp;</td>          <td class="paramname"><span class="paramname"><em>position</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{0,0}</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const sf::Vector2f &amp;</td>          <td class="paramname"><span class="paramname"><em>size</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{1,1}</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>texturePath</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>titleText</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>fontPath</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const sf::Vector2f &amp;</td>          <td class="paramname"><span class="paramname"><em>textScale</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{1,1}</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>useSubRect</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const sf::IntRect &amp;</td>          <td class="paramname"><span class="paramname"><em>textureRect</em></span><span class="paramdefsep"> = </span><span class="paramdefval">sf::IntRect()&#160;=&#160;{0,0,100,100}</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a83e143b72f5e09ffcc0d0b7362cd4fea" name="a83e143b72f5e09ffcc0d0b7362cd4fea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83e143b72f5e09ffcc0d0b7362cd4fea">&#9670;&#160;</a></span>Deselect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Buttons::Deselect </td>
+          <td>(</td>
+          <td class="paramtype">sf::Color</td>          <td class="paramname"><span class="paramname"><em>color</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaa01250eb8a84e4b23d0bc65a56ef23e" name="aaa01250eb8a84e4b23d0bc65a56ef23e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa01250eb8a84e4b23d0bc65a56ef23e">&#9670;&#160;</a></span>draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Buttons::draw </td>
+          <td>(</td>
+          <td class="paramtype">sf::RenderTarget &amp;</td>          <td class="paramname"><span class="paramname"><em>target</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::RenderStates</td>          <td class="paramname"><span class="paramname"><em>states</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d3c7a2b4214af78096419ece6996b8c" name="a4d3c7a2b4214af78096419ece6996b8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d3c7a2b4214af78096419ece6996b8c">&#9670;&#160;</a></span>GetGlobalBounds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::FloatRect Buttons::GetGlobalBounds </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7ca65cf25d76d344f89395bf1eb37194" name="a7ca65cf25d76d344f89395bf1eb37194"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ca65cf25d76d344f89395bf1eb37194">&#9670;&#160;</a></span>getTitle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Text &amp; Buttons::getTitle </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae25f76d0c230cd6870201d425dd29ddf" name="ae25f76d0c230cd6870201d425dd29ddf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae25f76d0c230cd6870201d425dd29ddf">&#9670;&#160;</a></span>Select()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Buttons::Select </td>
+          <td>(</td>
+          <td class="paramtype">sf::Color</td>          <td class="paramname"><span class="paramname"><em>color</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Symbol Documentation</h2>
+<a id="a8e24ebcee6f2bae51fa747cb756a5241" name="a8e24ebcee6f2bae51fa747cb756a5241"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e24ebcee6f2bae51fa747cb756a5241">&#9670;&#160;</a></span>sf::Drawable</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class sf::Drawable</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel friend">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a07e1742d124d2d689e8ab8971c870a87" name="a07e1742d124d2d689e8ab8971c870a87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07e1742d124d2d689e8ab8971c870a87">&#9670;&#160;</a></span>Background</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::RectangleShape Buttons::Background</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afc87107fd3a9486774f54f5dcb93e840" name="afc87107fd3a9486774f54f5dcb93e840"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc87107fd3a9486774f54f5dcb93e840">&#9670;&#160;</a></span>font</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Font Buttons::font</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aadfdedcf64e958803be696c0fd4f73c5" name="aadfdedcf64e958803be696c0fd4f73c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadfdedcf64e958803be696c0fd4f73c5">&#9670;&#160;</a></span>font_file</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string Buttons::font_file</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7f0024720e1aa34cf8f4b17c00479a40" name="a7f0024720e1aa34cf8f4b17c00479a40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f0024720e1aa34cf8f4b17c00479a40">&#9670;&#160;</a></span>name_textuer_file</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string Buttons::name_textuer_file</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3e4734a99867a8dda71d113ad5009b78" name="a3e4734a99867a8dda71d113ad5009b78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e4734a99867a8dda71d113ad5009b78">&#9670;&#160;</a></span>texture</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Texture Buttons::texture</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab2e05e1d9ee13cd48cc87415ae2f29e0" name="ab2e05e1d9ee13cd48cc87415ae2f29e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2e05e1d9ee13cd48cc87415ae2f29e0">&#9670;&#160;</a></span>title</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Text Buttons::title</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_buttons_8h_source.html">Buttons.h</a></li>
-<li><b>Buttons.cpp</b></li>
+<li><a class="el" href="_buttons_8cpp.html">Buttons.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

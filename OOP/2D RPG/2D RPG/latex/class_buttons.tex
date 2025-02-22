@@ -2,6 +2,10 @@
 \hypertarget{class_buttons}{}\label{class_buttons}\index{Buttons@{Buttons}}
 
 
+{\ttfamily \#include $<$Buttons.\+h$>$}
+
+
+
 Inheritance diagram for Buttons\+:
 \nopagebreak
 \begin{figure}[H]
@@ -23,33 +27,131 @@ Collaboration diagram for Buttons\+:
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_buttons_ab5106c600c7a52f7f2688fafd61054a1}\label{class_buttons_ab5106c600c7a52f7f2688fafd61054a1} 
-{\bfseries Buttons} (const sf\+::\+Vector2f \&\mbox{\hyperlink{classposition}{position}}=\{0, 0\}, const sf\+::\+Vector2f \&size=\{1, 1\}, const std\+::string \&texture\+Path="{}"{}, const std\+::string \&title\+Text="{}"{}, const std\+::string \&font\+Path="{}"{}, const sf\+::\+Vector2f \&text\+Scale=\{1, 1\}, bool use\+Sub\+Rect=false, const sf\+::\+Int\+Rect \&texture\+Rect=sf\+::\+Int\+Rect()=\{0, 0, 100, 100\})
+\mbox{\hyperlink{class_buttons_ab5106c600c7a52f7f2688fafd61054a1}{Buttons}} (const sf\+::\+Vector2f \&\mbox{\hyperlink{classposition}{position}}=\{0, 0\}, const sf\+::\+Vector2f \&size=\{1, 1\}, const std\+::string \&texture\+Path="{}"{}, const std\+::string \&title\+Text="{}"{}, const std\+::string \&font\+Path="{}"{}, const sf\+::\+Vector2f \&text\+Scale=\{1, 1\}, bool use\+Sub\+Rect=false, const sf\+::\+Int\+Rect \&texture\+Rect=sf\+::\+Int\+Rect()=\{0, 0, 100, 100\})
 \item 
-\Hypertarget{class_buttons_a7ca65cf25d76d344f89395bf1eb37194}\label{class_buttons_a7ca65cf25d76d344f89395bf1eb37194} 
-sf\+::\+Text \& {\bfseries get\+Title} ()
+sf\+::\+Text \& \mbox{\hyperlink{class_buttons_a7ca65cf25d76d344f89395bf1eb37194}{get\+Title}} ()
 \item 
-\Hypertarget{class_buttons_aaa01250eb8a84e4b23d0bc65a56ef23e}\label{class_buttons_aaa01250eb8a84e4b23d0bc65a56ef23e} 
-virtual void {\bfseries draw} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const override
+virtual void \mbox{\hyperlink{class_buttons_aaa01250eb8a84e4b23d0bc65a56ef23e}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const override
 \item 
-\Hypertarget{class_buttons_ae25f76d0c230cd6870201d425dd29ddf}\label{class_buttons_ae25f76d0c230cd6870201d425dd29ddf} 
-void {\bfseries Select} (sf\+::\+Color color)
+void \mbox{\hyperlink{class_buttons_ae25f76d0c230cd6870201d425dd29ddf}{Select}} (sf\+::\+Color color)
 \item 
-\Hypertarget{class_buttons_a83e143b72f5e09ffcc0d0b7362cd4fea}\label{class_buttons_a83e143b72f5e09ffcc0d0b7362cd4fea} 
-void {\bfseries Deselect} (sf\+::\+Color color)
+void \mbox{\hyperlink{class_buttons_a83e143b72f5e09ffcc0d0b7362cd4fea}{Deselect}} (sf\+::\+Color color)
 \item 
-\Hypertarget{class_buttons_a4d3c7a2b4214af78096419ece6996b8c}\label{class_buttons_a4d3c7a2b4214af78096419ece6996b8c} 
-sf\+::\+Float\+Rect {\bfseries Get\+Global\+Bounds} () const
+sf\+::\+Float\+Rect \mbox{\hyperlink{class_buttons_a4d3c7a2b4214af78096419ece6996b8c}{Get\+Global\+Bounds}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Text \mbox{\hyperlink{class_buttons_ab2e05e1d9ee13cd48cc87415ae2f29e0}{title}}
+\item 
+sf\+::\+Font \mbox{\hyperlink{class_buttons_afc87107fd3a9486774f54f5dcb93e840}{font}}
+\item 
+sf\+::\+Rectangle\+Shape \mbox{\hyperlink{class_buttons_a07e1742d124d2d689e8ab8971c870a87}{Background}}
+\item 
+sf\+::\+Texture \mbox{\hyperlink{class_buttons_a3e4734a99867a8dda71d113ad5009b78}{texture}}
+\item 
+const std\+::string \mbox{\hyperlink{class_buttons_aadfdedcf64e958803be696c0fd4f73c5}{font\+\_\+file}}
+\item 
+const std\+::string \mbox{\hyperlink{class_buttons_a7f0024720e1aa34cf8f4b17c00479a40}{name\+\_\+textuer\+\_\+file}}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_buttons_a8e24ebcee6f2bae51fa747cb756a5241}\label{class_buttons_a8e24ebcee6f2bae51fa747cb756a5241} 
-class {\bfseries sf\+::\+Drawable}
+class \mbox{\hyperlink{class_buttons_a8e24ebcee6f2bae51fa747cb756a5241}{sf\+::\+Drawable}}
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_buttons_ab5106c600c7a52f7f2688fafd61054a1}\index{Buttons@{Buttons}!Buttons@{Buttons}}
+\index{Buttons@{Buttons}!Buttons@{Buttons}}
+\doxysubsubsection{\texorpdfstring{Buttons()}{Buttons()}}
+{\footnotesize\ttfamily \label{class_buttons_ab5106c600c7a52f7f2688fafd61054a1} 
+Buttons\+::\+Buttons (\begin{DoxyParamCaption}\item[{const sf\+::\+Vector2f \&}]{position}{ = {\ttfamily \{0,0\}}, }\item[{const sf\+::\+Vector2f \&}]{size}{ = {\ttfamily \{1,1\}}, }\item[{const std\+::string \&}]{texture\+Path}{ = {\ttfamily "{}"{}}, }\item[{const std\+::string \&}]{title\+Text}{ = {\ttfamily "{}"{}}, }\item[{const std\+::string \&}]{font\+Path}{ = {\ttfamily "{}"{}}, }\item[{const sf\+::\+Vector2f \&}]{text\+Scale}{ = {\ttfamily \{1,1\}}, }\item[{bool}]{use\+Sub\+Rect}{ = {\ttfamily false}, }\item[{const sf\+::\+Int\+Rect \&}]{texture\+Rect}{ = {\ttfamily sf\+:\+:IntRect()~=~\{0,0,100,100\}}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_buttons_a83e143b72f5e09ffcc0d0b7362cd4fea}\index{Buttons@{Buttons}!Deselect@{Deselect}}
+\index{Deselect@{Deselect}!Buttons@{Buttons}}
+\doxysubsubsection{\texorpdfstring{Deselect()}{Deselect()}}
+{\footnotesize\ttfamily \label{class_buttons_a83e143b72f5e09ffcc0d0b7362cd4fea} 
+void Buttons\+::\+Deselect (\begin{DoxyParamCaption}\item[{sf\+::\+Color}]{color}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_buttons_aaa01250eb8a84e4b23d0bc65a56ef23e}\index{Buttons@{Buttons}!draw@{draw}}
+\index{draw@{draw}!Buttons@{Buttons}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{class_buttons_aaa01250eb8a84e4b23d0bc65a56ef23e} 
+void Buttons\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target}{, }\item[{sf\+::\+Render\+States}]{states}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\Hypertarget{class_buttons_a4d3c7a2b4214af78096419ece6996b8c}\index{Buttons@{Buttons}!GetGlobalBounds@{GetGlobalBounds}}
+\index{GetGlobalBounds@{GetGlobalBounds}!Buttons@{Buttons}}
+\doxysubsubsection{\texorpdfstring{GetGlobalBounds()}{GetGlobalBounds()}}
+{\footnotesize\ttfamily \label{class_buttons_a4d3c7a2b4214af78096419ece6996b8c} 
+sf\+::\+Float\+Rect Buttons\+::\+Get\+Global\+Bounds (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_buttons_a7ca65cf25d76d344f89395bf1eb37194}\index{Buttons@{Buttons}!getTitle@{getTitle}}
+\index{getTitle@{getTitle}!Buttons@{Buttons}}
+\doxysubsubsection{\texorpdfstring{getTitle()}{getTitle()}}
+{\footnotesize\ttfamily \label{class_buttons_a7ca65cf25d76d344f89395bf1eb37194} 
+sf\+::\+Text \& Buttons\+::get\+Title (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_buttons_ae25f76d0c230cd6870201d425dd29ddf}\index{Buttons@{Buttons}!Select@{Select}}
+\index{Select@{Select}!Buttons@{Buttons}}
+\doxysubsubsection{\texorpdfstring{Select()}{Select()}}
+{\footnotesize\ttfamily \label{class_buttons_ae25f76d0c230cd6870201d425dd29ddf} 
+void Buttons\+::\+Select (\begin{DoxyParamCaption}\item[{sf\+::\+Color}]{color}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_buttons_a8e24ebcee6f2bae51fa747cb756a5241}\index{Buttons@{Buttons}!sf::Drawable@{sf::Drawable}}
+\index{sf::Drawable@{sf::Drawable}!Buttons@{Buttons}}
+\doxysubsubsection{\texorpdfstring{sf::Drawable}{sf::Drawable}}
+{\footnotesize\ttfamily \label{class_buttons_a8e24ebcee6f2bae51fa747cb756a5241} 
+friend class sf\+::\+Drawable\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_buttons_a07e1742d124d2d689e8ab8971c870a87}\index{Buttons@{Buttons}!Background@{Background}}
+\index{Background@{Background}!Buttons@{Buttons}}
+\doxysubsubsection{\texorpdfstring{Background}{Background}}
+{\footnotesize\ttfamily \label{class_buttons_a07e1742d124d2d689e8ab8971c870a87} 
+sf\+::\+Rectangle\+Shape Buttons\+::\+Background\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_buttons_afc87107fd3a9486774f54f5dcb93e840}\index{Buttons@{Buttons}!font@{font}}
+\index{font@{font}!Buttons@{Buttons}}
+\doxysubsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily \label{class_buttons_afc87107fd3a9486774f54f5dcb93e840} 
+sf\+::\+Font Buttons\+::font\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_buttons_aadfdedcf64e958803be696c0fd4f73c5}\index{Buttons@{Buttons}!font\_file@{font\_file}}
+\index{font\_file@{font\_file}!Buttons@{Buttons}}
+\doxysubsubsection{\texorpdfstring{font\_file}{font\_file}}
+{\footnotesize\ttfamily \label{class_buttons_aadfdedcf64e958803be696c0fd4f73c5} 
+const std\+::string Buttons\+::font\+\_\+file\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_buttons_a7f0024720e1aa34cf8f4b17c00479a40}\index{Buttons@{Buttons}!name\_textuer\_file@{name\_textuer\_file}}
+\index{name\_textuer\_file@{name\_textuer\_file}!Buttons@{Buttons}}
+\doxysubsubsection{\texorpdfstring{name\_textuer\_file}{name\_textuer\_file}}
+{\footnotesize\ttfamily \label{class_buttons_a7f0024720e1aa34cf8f4b17c00479a40} 
+const std\+::string Buttons\+::name\+\_\+textuer\+\_\+file\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_buttons_a3e4734a99867a8dda71d113ad5009b78}\index{Buttons@{Buttons}!texture@{texture}}
+\index{texture@{texture}!Buttons@{Buttons}}
+\doxysubsubsection{\texorpdfstring{texture}{texture}}
+{\footnotesize\ttfamily \label{class_buttons_a3e4734a99867a8dda71d113ad5009b78} 
+sf\+::\+Texture Buttons\+::texture\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_buttons_ab2e05e1d9ee13cd48cc87415ae2f29e0}\index{Buttons@{Buttons}!title@{title}}
+\index{title@{title}!Buttons@{Buttons}}
+\doxysubsubsection{\texorpdfstring{title}{title}}
+{\footnotesize\ttfamily \label{class_buttons_ab2e05e1d9ee13cd48cc87415ae2f29e0} 
+sf\+::\+Text Buttons\+::title\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Buttons.\+h\item 
-Buttons.\+cpp\end{DoxyCompactItemize}
+\mbox{\hyperlink{_buttons_8h}{Buttons.\+h}}\item 
+\mbox{\hyperlink{_buttons_8cpp}{Buttons.\+cpp}}\end{DoxyCompactItemize}

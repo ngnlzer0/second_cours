@@ -1,0 +1,20 @@
+<map id="Armor.h" name="Armor.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="159,5,226,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,116,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,35,98,75,95,70,168,30"/>
+<area shape="rect" id="Node000003" href="$_buttons_8h.html" title=" " alt="" coords="302,80,379,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="219,30,302,70,300,75,217,35"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="57,155,194,181"/>
+<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="189,34,140,142,135,139,184,31"/>
+<area shape="rect" id="Node000007" href="$_base_item_8h.html" title=" " alt="" coords="190,80,278,107"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="202,31,222,65,217,68,197,34"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="304,110,178,152,177,147,302,105"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="314,155,367,181"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="343,107,343,139,338,139,338,107"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="392,155,460,181"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="357,105,402,143,398,147,354,109"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="217,109,159,148,156,143,214,105"/>
+<area shape="poly" id="edge9_Node000007_Node000005" title=" " alt="" coords="254,105,311,143,308,148,251,109"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="218,155,290,181"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="240,106,249,139,244,141,235,108"/>
+</map>

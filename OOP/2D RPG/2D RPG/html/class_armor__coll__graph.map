@@ -1,7 +1,12 @@
 <map id="Armor" name="Armor">
-<area shape="rect" id="Node000001" title=" " alt="" coords="54,293,166,576"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,91,90,160"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="60,174,84,293,79,294,55,175"/>
-<area shape="rect" id="Node000003" href="$class_base_item.html" title=" " alt="" coords="114,5,234,245"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="149,261,142,294,137,293,144,260"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="85,471,219,860"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,90,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="50,90,55,232,63,319,76,406,90,470,85,471,70,407,58,320,50,233,45,90"/>
+<area shape="rect" id="Node000004" href="$class_buttons.html" title=" " alt="" coords="85,124,219,407"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="72,87,89,123,84,125,67,89"/>
+<area shape="rect" id="Node000003" href="$class_base_item.html" title=" " alt="" coords="242,145,362,385"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="261,400,243,448,221,505,216,503,239,446,256,398"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="154,406,154,453,149,453,149,406"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="114,5,227,75"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="169,90,166,124,161,124,164,89"/>
 </map>
