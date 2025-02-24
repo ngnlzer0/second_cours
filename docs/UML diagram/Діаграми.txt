@@ -1,0 +1,160 @@
+Use Case 
+@startuml
+
+actor Player
+
+rectangle "Game" {
+    usecase "Start Game" as UC1
+    usecase "Interact with Main Menu" as UC2
+    usecase "Play" as UC3
+    usecase "Settings" as UC4
+    usecase "Control Hero" as UC5
+    usecase "Fight Enemies" as UC6
+    usecase "Collect Items" as UC7
+    usecase "Leave" as UC8
+    usecase "Save progres" as UC9
+}
+
+Player --> UC1
+UC1 --> UC2
+UC2 --> UC3
+UC2 --> UC4
+UC2 --> UC8
+UC3 --> UC5
+UC3 --> UC6
+UC3 --> UC7
+UC3 --> UC9
+
+@enduml
+
+ОНОВЛЕНА Activity ДІАГРАМА
+
+@startuml
+
+start
+
+:Start Game;
+if (Main Menu) then (yes)
+    :Choose Option;
+    if (New Game?) then (yes)
+        :Initialize Game;
+    else
+        if (Load Game?) then (yes)
+            :Load Save;
+        else
+            if (Settings?) then (yes)
+                :Adjust Settings;
+            endif
+        endif
+    endif
+endif
+
+:Play Game;
+repeat
+    :Control Hero;
+    if (Encounter Enemy?) then (yes)
+        :Fight Enemies;
+        if (Win Fight?) then (yes)
+            :Collect Loot;
+        else
+            :Respawn or Game Over;
+        endif
+    endif
+    
+    if (Find Item?) then (yes)
+        :Collect Items;
+        if (Inventory Full?) then (yes)
+            :Manage Inventory;
+        endif
+    endif
+    
+    if (Interact with NPC?) then (yes)
+        :Dialogue or Quest;
+        if (Quest Accepted?) then (yes)
+            :Track Quest Progress;
+        endif
+    endif
+    
+    if (Pause?) then (yes)
+        :Pause Menu;
+        if (Save?) then (yes)
+            :Save Progress;
+        endif
+    endif
+repeat while (Game Not Over)
+
+if (Game Over?) then (yes)
+    :Show Game Over Screen;
+endif
+
+stop
+
+@enduml
+
+sequence diagram
+
+@startuml
+
+actor Player
+participant "Game Engine" as Game
+participant "Hero" as Hero
+participant "Enemy" as Enemy
+participant "Item" as Item
+
+Player -> Game: Start Game
+Game -> Hero: Initialize Hero
+Game -> Game: Load Level
+
+loop Game Loop
+    Player -> Hero: Move Hero
+    Hero -> Game: Update Position
+
+    alt Enemy Encountered
+        Hero -> Enemy: Attack Enemy
+        Enemy -> Hero: Counter Attack
+
+        opt Hero Wins
+            Enemy -> Item: Drop Loot
+            Hero -> Item: Collect Item
+        end
+
+        opt Enemy Wins
+            Hero -> Game: Respawn or Game Over
+        end
+    end
+end
+
+Player -> Game: Exit Game
+
+@enduml
+
+sequence diagram 2
+
+@startuml
+
+actor Player
+participant "Game Engine" as Game
+participant "Hero" as Hero
+participant "Inventory" as Inventory
+participant "Item" as Item
+
+Player -> Game: Open Inventory
+Game -> Inventory: Request Inventory Data
+Inventory -> Player: Display Item List
+
+alt Item Available
+    Player -> Inventory: Select Item
+    Inventory -> Item: Verify Usability
+    
+    alt Item Usable
+        Inventory -> Hero: Apply Item Effect
+        Hero -> Hero: Update Stats
+        Inventory -> Inventory: Remove Used Item
+    else Item Not Usable
+        Inventory -> Player: Display Error Message
+    end
+else Inventory Empty
+    Inventory -> Player: Display Empty Inventory Message
+end
+
+Player -> Game: Close Inventory
