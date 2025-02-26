@@ -1,48 +1,6 @@
-﻿  BaseItem.cpp
-  Hero.cpp
-  WFC.cpp
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\WFC\WFC.cpp(105,59): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-  Animation.cpp
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\Unit_sprite\Animation\Animation.cpp(62,46): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-  Armor.cpp
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\Armor.cpp(32,49): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\Armor.cpp(32,49): warning C4244:         with
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\Armor.cpp(32,49): warning C4244:         [
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\Armor.cpp(32,49): warning C4244:             T=float
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\Armor.cpp(32,49): warning C4244:         ]
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\Armor.cpp(32,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\Armor.cpp(32,42): warning C4244:         with
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\Armor.cpp(32,42): warning C4244:         [
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\Armor.cpp(32,42): warning C4244:             T=float
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\Armor.cpp(32,42): warning C4244:         ]
-  Buttons.cpp
-  cheast.cpp
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\cheast.cpp(8,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Game.cpp
-  input_manager.cpp
-  Inventors.cpp
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\Inventors.cpp(200,41): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\Inventors.cpp(230,39): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-  Main.cpp
-  Main_menu.cpp
-  position.cpp
-  potion.cpp
-  stamina_pot.cpp
-  Unit.cpp
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\Unit.cpp(52,22): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\Unit.cpp(65,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\Unit.cpp(74,21): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-  Unit_Sprite.cpp
-  weapon.cpp
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\weapon.cpp(29,50): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\weapon.cpp(29,50): warning C4244:         with
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\weapon.cpp(29,50): warning C4244:         [
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\weapon.cpp(29,50): warning C4244:             T=float
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\weapon.cpp(29,50): warning C4244:         ]
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\weapon.cpp(29,43): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\weapon.cpp(29,43): warning C4244:         with
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\weapon.cpp(29,43): warning C4244:         [
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\weapon.cpp(29,43): warning C4244:             T=float
-C:\Git.repos\second_cours\OOP\2D RPG\2D RPG\weapon.cpp(29,43): warning C4244:         ]
+﻿  Main.cpp
+  TEST.cpp
   Generating Code...
-  2D RPG.vcxproj -> C:\Git.repos\second_cours\OOP\2D RPG\Binary\x64\Debug\2D RPG.exe
+  LINK : C:\Git.repos\second_cours\OOP\2D RPG\Binary\x64\Debug\2D RPG.exe not found or not built by the last incremental link; performing full link
+TEST.obj : error LNK2005: main already defined in Main.obj
+C:\Git.repos\second_cours\OOP\2D RPG\Binary\x64\Debug\2D RPG.exe : fatal error LNK1169: one or more multiply defined symbols found

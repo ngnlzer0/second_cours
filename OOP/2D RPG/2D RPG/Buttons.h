@@ -33,6 +33,7 @@ public:
     void Select(sf::Color color);
     void Deselect(sf::Color color);
     sf::FloatRect GetGlobalBounds() const;
+    const std::string Get_texture_name() { return name_textuer_file; };
 };
 
 

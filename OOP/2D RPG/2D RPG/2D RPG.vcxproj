@@ -160,6 +160,12 @@
     <ClCompile Include="Unit.cpp" />
     <ClCompile Include="Unit_sprite\Unit_Sprite.cpp" />
     <ClCompile Include="weapon.cpp" />
+    <ClCompile Include="TEST.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </ExcludedFromBuild>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseItem.h" />

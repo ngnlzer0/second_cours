@@ -1,10 +1,20 @@
 ﻿#include"Game.h"
 #include"Unit.h"
+#define DOCTEST_CONFIG_IMPLEMENT
+#include"docktest/doctest.h"
 
 int main()
-{   
-     //Game game;
-     //game.Run();
+{
+    doctest::Context context;
 
-        return 0;
+    int res = context.run(); // Запускає тести
+
+    if (context.shouldExit()) {
+        return res; // Якщо були тільки тести, завершуємо програму
+    }
+
+     Game game;
+     game.Run();
+
+     return 0;
 }

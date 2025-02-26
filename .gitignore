@@ -38,3 +38,4 @@ docker-compo
 *.zip
 *.exe
 *.iso
+*.pdb

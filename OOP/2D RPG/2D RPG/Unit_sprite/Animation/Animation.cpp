@@ -49,6 +49,7 @@ Animation& Animation::operator=(const Animation& other)
     return *this;
 }
 
+
 void Animation::update(float deltaTime) {
     elapsedTime += deltaTime;
     if (elapsedTime >= duration / frames.size()) {
@@ -64,7 +65,6 @@ void Animation::update(float deltaTime) {
         }
     }
 }
-
 
 void Animation::reset() {
     currentFrame = 0;

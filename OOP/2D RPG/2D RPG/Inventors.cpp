@@ -55,21 +55,32 @@ void Inventors::initializeCells(unsigned int columns, float slotSize, float padd
 
 // Додати предмет в інвентар
 bool Inventors::addItem(const std::shared_ptr<BaseItem>& item) {
+    if (!item) {
+        std::cerr << "Cannot add item: Null pointer!" << std::endl;
+        return false;
+    }
+
+    std::cout << "Trying to add item: " << item.get() << " (weight: " << item->getWeight() << ")" << std::endl;
+
     if (currentWeight + item->getWeight() > maxWeight) {
         std::cerr << "Cannot add item: Exceeds max weight!" << std::endl;
         return false;
     }
 
     for (unsigned int i = 0; i < size; ++i) {
-        if (!slots[i]) { // Знаходимо перший порожній слот
+        if (!slots[i]) { // Знаходимо перший вільний слот
             slots[i] = item;
             currentWeight += item->getWeight();
+
+            std::cout << "Item added at index: " << i << ", Address: " << slots[i].get() << std::endl;
             return true;
         }
     }
-    std::cerr << "Cannot add item: Inventors is full!" << std::endl;
+
+    std::cerr << "Cannot add item: Inventory is full!" << std::endl;
     return false;
 }
+
 
 // Видалити предмет зі слоту
 bool Inventors::removeItem(unsigned int index) {
