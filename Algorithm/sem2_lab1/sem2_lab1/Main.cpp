@@ -1,175 +1,143 @@
-#include<iostream>
-
-// ідеальне хешування для дійсних чисел (подання даних йде вектором)
 #include <iostream>
-#include <cmath>
-#include <limits>
+#include <vector>
+#include <unordered_map>
 
-class RealNumber {
+class Hash_entry {
+public:
+    std::vector<double> key;
+    int hash;
+    Hash_entry* next;
+
+    Hash_entry(std::vector<double> k, int h) : key(k), hash(h), next(nullptr) {}
+};
+
+class Hash_table {
 private:
-    double value;
-    static constexpr double EPSILON = 1e-9;  // Похибка для порівняння
+    std::vector<Hash_entry*> table;
+    std::unordered_map<int, std::vector<Hash_entry*>> subTables;
+    int size;
 
 public:
-    // Конструктори
-    RealNumber() : value(0.0) {}
-    RealNumber(double v) : value(v) {}
-
-    // Спеціальні константи
-    static RealNumber infinity() { return RealNumber(std::numeric_limits<double>::infinity()); }
-    static RealNumber nan() { return RealNumber(std::numeric_limits<double>::quiet_NaN()); }
-
-    // Арифметичні оператори
-    RealNumber operator+(const RealNumber& other) const {
-        return RealNumber(value + other.value);
+    Hash_table(int s) : size(s) {
+        table.resize(size, nullptr);
     }
 
-    RealNumber operator-(const RealNumber& other) const {
-        return RealNumber(value - other.value);
-    }
-
-    RealNumber operator*(const RealNumber& other) const {
-        return RealNumber(value * other.value);
-    }
-
-    RealNumber operator/(const RealNumber& other) const {
-        if (std::abs(other.value) < EPSILON) {
-            return RealNumber::infinity();
+    int hash(const std::vector<double>& key) {
+        const size_t prime = 173;
+        size_t num_hash = 0;
+        for (double val : key) {
+            size_t bits = *reinterpret_cast<const size_t*>(&val);
+            num_hash ^= num_hash * prime + 2654435 + (bits << 5) + (bits >> 3);
         }
-        return RealNumber(value / other.value);
+        return num_hash % size;
     }
 
-    // Оператори порівняння з урахуванням похибки
-    bool operator==(const RealNumber& other) const {
-        if (std::isnan(value) || std::isnan(other.value)) return false;
-        if (std::isinf(value) || std::isinf(other.value)) return value == other.value;
-        return std::abs(value - other.value) < EPSILON;
+    void insert(std::vector<double> key) {
+        int h = hash(key);
+
+        if (table[h] == nullptr) {
+            table[h] = new Hash_entry(key, h);
+        }
+        else {
+            std::vector<Hash_entry*>& bucket = subTables[h];
+
+            // Перевіряємо, чи вже є цей ключ у підтаблиці
+            for (Hash_entry* entry : bucket) {
+                if (entry->key == key) {
+                    std::cerr << "Key already exists in the hash table.\n";
+                    return;
+                }
+            }
+
+            // Додаємо новий елемент у підхеш-таблицю
+            bucket.push_back(new Hash_entry(key, h));
+
+            // Якщо кількість елементів у підтаблиці зросла, створюємо новий розмір (квадрат кількості)
+            int subTableSize = bucket.size() * bucket.size();
+            std::vector<Hash_entry*> newSubTable(subTableSize, nullptr);
+
+            // Реінсертимо всі елементи у нову підтаблицю
+            for (Hash_entry* entry : bucket) {
+                int subHash = entry->hash % subTableSize;
+                while (newSubTable[subHash] != nullptr) {
+                    subHash = (subHash + 1) % subTableSize;
+                }
+                newSubTable[subHash] = entry;
+            }
+
+            // Оновлюємо підхеш-таблицю
+            subTables[h] = newSubTable;
+        }
     }
 
-    bool operator!=(const RealNumber& other) const {
-        return !(*this == other);
+    int getHash(std::vector<double> key) {
+        int h = hash(key);
+
+        // Перевіряємо основну таблицю
+        if (table[h] && table[h]->key == key) {
+            return table[h]->hash;
+        }
+
+        // Перевіряємо підхеш-таблицю
+        if (subTables.find(h) != subTables.end()) {
+            for (Hash_entry* entry : subTables[h]) {
+                if (entry && entry->key == key) {
+                    return entry->hash;
+                }
+            }
+        }
+        return -1;
     }
 
-    bool operator<(const RealNumber& other) const {
-        return value < other.value - EPSILON;
-    }
+    void printHash() {
+        std::cout << "Main Hash Table:\n";
+        for (int i = 0; i < size; i++) {
+            if (table[i] != nullptr) {
+                std::cout << "Hash for { ";
+                for (double val : table[i]->key) {
+                    std::cout << val << " ";
+                }
+                std::cout << "}: " << table[i]->hash << std::endl;
+            }
+        }
 
-    bool operator>(const RealNumber& other) const {
-        return value > other.value + EPSILON;
-    }
-
-    bool operator<=(const RealNumber& other) const {
-        return !(*this > other);
-    }
-
-    bool operator>=(const RealNumber& other) const {
-        return !(*this < other);
-    }
-
-    // Оператор приведення до double
-    operator double() const {
-        return value;
-    }
-
-    // Додаткові математичні функції
-    RealNumber sqrt() const {
-        if (value < 0) return RealNumber::nan();
-        return RealNumber(std::sqrt(value));
-    }
-
-    RealNumber pow(double exponent) const {
-        return RealNumber(std::pow(value, exponent));
-    }
-
-    RealNumber abs() const {
-        return RealNumber(std::abs(value));
-    }
-
-    // Ввід/вивід
-    friend std::ostream& operator<<(std::ostream& os, const RealNumber& num) {
-        if (std::isinf(num.value)) os << "inf";
-        else if (std::isnan(num.value)) os << "NaN";
-        else os << num.value;
-        return os;
-    }
-
-    friend std::istream& operator>>(std::istream& is, RealNumber& num) {
-        is >> num.value;
-        return is;
+        std::cout << "\nSub Hash Tables:\n";
+        for (const auto& pair : subTables) {
+            std::cout << "Sub-table for index " << pair.first << ":\n";
+            for (const Hash_entry* entry : pair.second) {
+                if (entry) {
+                    std::cout << "  { ";
+                    for (double val : entry->key) {
+                        std::cout << val << " ";
+                    }
+                    std::cout << "}: " << entry->hash << std::endl;
+                }
+            }
+        }
     }
 };
 
-// Клас для представлення раціональних чисел (додатково)
-#include <iostream>
+int main() {
 
-class Fraction {
-private:
-    int numerator, denominator;
+    std::vector<std::vector<double>> HESH_LIST = {
+        {24.2, -1.195, 12, 123.52},
+        {413.41124, 195, 3193.12, -0.577},
+        {0, -1238.132, 303.412, 9.669},
+        {885.231, -13.231, 0, 123.42}
+        ,{-3232.2, -12, 0.0032}
+    };
 
-public:
-    Fraction(int num, int denom) : numerator(num), denominator(denom) {
-        if (denominator == 0) {
-            throw std::runtime_error("Знаменник не може бути 0!");
-        }
-        if (denominator < 0) {  // Переносимо знак у чисельник
-            numerator = -numerator;
-            denominator = -denominator;
-        }
+    Hash_table hashing(HESH_LIST.size());
+
+
+    for (auto& vec : HESH_LIST) {
+        hashing.insert(vec);
     }
 
-    // Конструктор з `RealNumber`
-    Fraction(double real) {
-        int denom = 1;
-        while (real != static_cast<int>(real) && denom < 1000000) {  // Обмежуємо знаменник
-            real *= 10;
-            denom *= 10;
-        }
-        numerator = static_cast<int>(real);
-        denominator = denom;
-        if (denominator < 0) {  // Знову переносимо знак у чисельник
-            numerator = -numerator;
-            denominator = -denominator;
-        }
-    }
+    hashing.printHash();
+    std::cout << "Cheking a vector {24.2, -1.195, 12, 123.52} in our hesh-table, and it index = " << hashing.getHash(std::vector<double>{24.2, -1.195, 12, 123.52}) << std::endl;
+    std::cout << "Cheking a vector {24, -1.195, 12, 123.52} in our hesh-table, and it index = " << hashing.getHash(std::vector<double>{24, -1.195, 12, 123.52}) << std::endl;
 
-    // Перетворення у `double`
-    operator double() const {
-        return static_cast<double>(numerator) / denominator;
-    }
 
-    // Вивід
-    friend std::ostream& operator<<(std::ostream& os, const Fraction& frac) {
-        os << frac.numerator << "/" << frac.denominator;
-        return os;
-    }
-};
-
-class HashTable
-{
-
-};
-
-int main() 
-{
-    setlocale(LC_CTYPE, "ukr");
-
-    RealNumber a = 2.0, b = -9.0;
-    std::cout << "Квадратний корінь з " << a << " = " << a.sqrt() << std::endl;
-    std::cout << "Модуль " << b << " = " << b.abs() << std::endl;
-    std::cout << "2^3 = " << a.pow(3) << std::endl;
-
-    RealNumber inf = RealNumber::infinity();
-    RealNumber nan = RealNumber::nan();
-    std::cout << "Нескінченність: " << inf << std::endl;
-    std::cout << "NaN: " << nan << std::endl;
-
-    // Приклад дробу
-    Fraction frac1(3, 4);
-    std::cout << "Дріб: " << frac1 << " = " << static_cast<double>(frac1) << std::endl;
-
-    Fraction frac2(RealNumber(0.75));
-    std::cout << "Реальне число 0.75 як дріб: " << frac2 << std::endl;
-
-    system("pause");
-    return 1;
+    return 0;
 }
