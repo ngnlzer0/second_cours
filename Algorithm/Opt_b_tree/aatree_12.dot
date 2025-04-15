@@ -1,0 +1,9 @@
+digraph G {
+	"25/12 (0.452381)" [style=filled, fillcolor=black, fontcolor=white];
+	"25/12 (0.452381)" -> "1/2 (0.190476)";
+	"1/2 (0.190476)" [style=filled, fillcolor=black, fontcolor=white];
+	"1/2 (0.190476)" -> "3/10 (0.142857)";
+	"3/10 (0.142857)" [style=filled, fillcolor=black, fontcolor=white];
+	"25/12 (0.452381)" -> "5/2 (0.214286)";
+	"5/2 (0.214286)" [style=filled, fillcolor=black, fontcolor=white];
+}

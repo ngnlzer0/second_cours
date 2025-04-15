@@ -1,0 +1,13 @@
+digraph G {
+	"3 (0.341935)" [style=filled, fillcolor=black, fontcolor=white];
+	"3 (0.341935)" -> "1 (0.206452)";
+	"1 (0.206452)" [style=filled, fillcolor=black, fontcolor=white];
+	"1 (0.206452)" -> "2 (0.193548)";
+	"2 (0.193548)" [style=filled, fillcolor=black, fontcolor=white];
+	"3 (0.341935)" -> "20 (0.129032)";
+	"20 (0.129032)" [style=filled, fillcolor=black, fontcolor=white];
+	"20 (0.129032)" -> "5 (0.0967742)";
+	"5 (0.0967742)" [style=filled, fillcolor=black, fontcolor=white];
+	"20 (0.129032)" -> "25 (0.0322581)";
+	"25 (0.0322581)" [style=filled, fillcolor=black, fontcolor=white];
+}
