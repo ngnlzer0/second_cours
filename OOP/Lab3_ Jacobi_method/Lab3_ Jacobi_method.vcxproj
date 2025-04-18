@@ -133,11 +133,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="jacobi_thread.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="single_threaded_Jacobi_method.cpp" />
     <ClCompile Include="test.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="barrier.hpp" />
+    <ClInclude Include="jacobi_thread.h" />
     <ClInclude Include="single_threaded_Jacobi_method.h" />
     <ClInclude Include="Timer.h" />
   </ItemGroup>

@@ -24,12 +24,21 @@
     <ClCompile Include="single_threaded_Jacobi_method.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="jacobi_thread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Timer.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="single_threaded_Jacobi_method.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="jacobi_thread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="barrier.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
