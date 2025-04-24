@@ -4,6 +4,9 @@
 
 using namespace std::chrono;
 
+/**
+ * The simple class which implements a simple timer
+ */
 class Timer
 {
 private:

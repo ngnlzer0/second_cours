@@ -1,87 +1,68 @@
 #pragma once
 #include <vector>
 
-/// <summary>
-/// This is a class that implements an approximate iterative solution
-/// to a system of linear equations.
-/// This class does everything in one thread  
-/// </summary>
-
-class single_threaded_Jacobi_method
-{
+/**
+ * @class single_threaded_Jacobi_method
+ * @brief Single-threaded implementation of the Jacobi iterative method.
+ *        Approximates solutions for systems of linear equations.
+ */
+class single_threaded_Jacobi_method {
 protected:
-	std::vector<std::vector<double>> A; // is the matrix A with coefficients at x[i][j]
-	std::vector<double> X; // is the vector of desired coefficients
-	std::vector<double> B; // vector column B
-	std::vector<std::vector<double>> R; // is a matrix containing elements from the diagonal of matrix A, all other elements are zero
-	std::vector<std::vector<double>> D; // is a matrix containing all elements except the diagonal ones from matrix A, the diagonal ones are zero
-	int SIZE; // the number of unknowns, and the sizes of matrices and vectors
+    std::vector<std::vector<double>> A;      ///< Coefficient matrix A
+    std::vector<double> X;                   ///< Solution vector X
+    std::vector<double> B;                   ///< Vector of free terms B
+    std::vector<std::vector<double>> R;      ///< Matrix R with diagonal elements from A
+    std::vector<std::vector<double>> D;      ///< Matrix D with off-diagonal elements from A
+    int SIZE;                                ///< Number of unknowns
 
-	/// <summary>
-	/// decoupling matrix A to R and D
-	/// </summary>
-	void decoupling();
+    /**
+     * @brief Splits matrix A into matrices R (diagonal) and D (off-diagonal).
+     */
+    void decoupling();
 
-	/// 
-	/// @param i number the row
-	/// @param x currently vector solution
-	///
-	/// This function find a sum product to R[i][j] * x[j] = SUM
-	/// 
-	/// @return SUM
-	double SumR(int i, std::vector<double>& x);
+    /**
+     * @brief Calculates the sum of R[i][j] * x[j] for a given row i.
+     * @param i Index of the row
+     * @param x Current approximation of the solution
+     * @return Sum of products for the ith row
+     */
+    double SumR(int i, std::vector<double>& x);
 
 public:
-	/// <summary>
-	/// basic constructor
-	/// </summary>
-	single_threaded_Jacobi_method();
+    /**
+     * @brief Default constructor.
+     */
+    single_threaded_Jacobi_method();
 
+    /**
+     * @brief Parameterized constructor.
+     * @param a Coefficient matrix A
+     * @param b Vector of free terms B
+     * @param size Size of the system
+     */
+    single_threaded_Jacobi_method(std::vector<std::vector<double>> a, std::vector<double> b, int size);
 
-	/// <summary>
-	///
-	/// a basic constructor that initializes our matrix and vector
-	/// 
-	/// </summary>
-	/// <param name="a"> the matrix A</param>
-	/// <param name="b"> the vector B</param>
-	/// <param name="size"> size a matrixs and vectors</param>
-	single_threaded_Jacobi_method(std::vector<std::vector<double>> a, std::vector<double> b, int size);
+    /**
+     * @brief Performs the Jacobi iterative algorithm to solve the system.
+     * @param epsilon Desired accuracy
+     */
+    virtual void Main_method(double epsilon);
 
+    /**
+     * @brief Displays the current solution vector X.
+     */
+    void ShowX();
 
-	///
-	/// The main method, that performs the main algorithm
-	/// algorithm looks like:
-	///
-	/// 1)
-	/// First, we check whether our matrix A, the diagonal-dominant:
-	///  If so, we can use this algorithm and move on, if not, this algorithm will not work and return;
-	/// 2) We have vector X_prev and X_cur which are initially zero
-	/// 3) then we search for each Xi step by step by the formula:
-	///        x_cur[i] = (1.0 / D[i][i]) * (B[i] - SumR(i, x_prev));
-	///  and repeat this step until this condition is met: (x_cur[i] - x_prev[i]) > epsilo)
-	/// if the condition is fulfilled for each element X, our algorithm terminates
-	/// @param epsilo the accuracy of our unknowns
-	virtual void Main_method(double epsilo);
+    /**
+     * @brief Checks if matrix A is diagonally dominant.
+     * @return True if the matrix is diagonally dominant, false otherwise.
+     */
+    bool Check_working_method();
 
-	/// <summary>
-	/// This Function Show our shows our unknowns(X[i])
-	/// </summary>
-	void ShowX();
-
-	/// <summary>
-	/// this function checks whether our matrix A is diagonally dominated by the formula :
-	/// |a[i][i]| >= ? (|a[i][j]|) ;
-	/// if this is done for all rows, then the matrix is diagonally dominated, otherwise it is not
-	/// </summary>
-	/// <returns></returns>
-	bool Check_working_method();
-
-	/// <summary>
-	/// geting a number in index i, for a doctest or other
-	/// </summary>
-	/// <param name="i">index the element in vector</param>
-	/// <returns></returns>
-	double Get_Xi(int i) { return X[i]; };
+    /**
+     * @brief Gets the value of X[i].
+     * @param i Index in the solution vector
+     * @return Value at index i
+     */
+    double Get_Xi(int i) { return X[i]; };
 };
-

@@ -55,9 +55,11 @@ void single_threaded_Jacobi_method::Main_method(double epsilo)
 	bool done = false;
 
 	decoupling();
+	int k = 0;
 
 	do
 	{
+		//std::cout << "Number iteration = " << k << std::endl;
 		done = true;
 		for (int i = 0; i < SIZE;i++)
 		{
@@ -74,6 +76,7 @@ void single_threaded_Jacobi_method::Main_method(double epsilo)
 		for (int i = 0; i < SIZE; ++i)
 			X[i] = x_cur[i];
 
+		//k++;
 	} while (!done);
 }
 

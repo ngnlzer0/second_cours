@@ -24,7 +24,7 @@
     <ClCompile Include="single_threaded_Jacobi_method.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="jacobi_thread.cpp">
+    <ClCompile Include="thread_jacobi.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -35,10 +35,10 @@
     <ClInclude Include="single_threaded_Jacobi_method.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="jacobi_thread.h">
+    <ClInclude Include="utils.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="barrier.hpp">
+    <ClInclude Include="thread_jacobi.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
